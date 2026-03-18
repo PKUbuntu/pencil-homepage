@@ -22,33 +22,33 @@
 
 ### 安装依赖
 
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 ### 启动开发服务器
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 访问 [http://localhost:5173](http://localhost:5173) 查看页面。
 
 ### 构建生产版本
 
-\`\`\`bash
+```bash
 npm run build
-\`\`\`
+```
 
 ### 预览生产构建
 
-\`\`\`bash
+```bash
 npm run preview
-\`\`\`
+```
 
 ## 项目结构
 
-\`\`\`
+```
 pencil-homepage/
 ├── src/
 │   ├── components/       # React 组件
@@ -65,7 +65,7 @@ pencil-homepage/
 ├── vite.config.js        # Vite 配置
 ├── tailwind.config.js    # Tailwind CSS 配置
 └── package.json          # 项目配置
-\`\`\`
+```
 
 ## 组件说明
 
