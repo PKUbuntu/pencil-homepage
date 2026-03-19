@@ -13,6 +13,7 @@ export default function Header() {
         <Link to="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</Link>
         <Link to="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</Link>
         <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
+        <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
       </nav>
 
       <div className="flex items-center gap-4">
@@ -31,9 +32,9 @@ export default function Header() {
             </svg>
           )}
         </button>
-        <button className="px-5 py-2.5 bg-primary text-primary-foreground rounded-md text-sm font-medium hover:opacity-90 transition-opacity">
+        <Link to="/signup" className="px-5 py-2.5 bg-primary text-primary-foreground rounded-md text-sm font-medium hover:opacity-90 transition-opacity">
           Get Started
-        </button>
+        </Link>
       </div>
     </header>
   )
