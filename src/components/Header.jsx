@@ -9,8 +9,8 @@ export default function Header() {
       <Link to="/" className="text-2xl font-bold text-foreground hover:opacity-80 transition-opacity">Brand</Link>
 
       <nav className="hidden md:flex items-center gap-8">
-        <Link to="/#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</Link>
-        <Link to="/#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</Link>
+        <Link to="/features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</Link>
+        <Link to="/pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</Link>
         <Link to="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</Link>
         <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
       </nav>
