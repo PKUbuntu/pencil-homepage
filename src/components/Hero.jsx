@@ -17,9 +17,14 @@ export default function Hero() {
         <button className="px-7 py-3.5 bg-primary text-primary-foreground rounded-lg text-base font-semibold hover:opacity-90 transition-opacity">
           Start Free Trial
         </button>
-        <button className="px-7 py-3.5 bg-transparent border border-border text-foreground rounded-lg text-base font-medium hover:bg-muted transition-colors">
-          Watch Demo
-        </button>
+        <a 
+          href="https://pkubuntu.github.io/huawei-occ-screen/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="px-7 py-3.5 bg-transparent border border-border text-foreground rounded-lg text-base font-medium hover:bg-muted transition-colors inline-block text-center"
+        >
+          Take a Tour
+        </a>
       </div>
     </section>
   )
