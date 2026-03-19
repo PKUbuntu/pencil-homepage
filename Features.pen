@@ -1,0 +1,262 @@
+{
+  "version": "2.6",
+  "themes": {
+    "Mode": ["Light", "Dark"],
+    "Base": ["Neutral", "Gray", "Stone", "Zinc", "Slate"],
+    "Accent": ["Default", "Red", "Rose", "Orange", "Green", "Blue", "Yellow", "Violet"]
+  },
+  "variables": {
+    "--background": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#09090b", "theme": {"Mode": "Dark"}}]},
+    "--foreground": {"type": "color", "value": [{"value": "#09090b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--muted": {"type": "color", "value": [{"value": "#f4f4f5"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--muted-foreground": {"type": "color", "value": [{"value": "#71717a"}, {"value": "#a1a1aa", "theme": {"Mode": "Dark"}}]},
+    "--card": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]},
+    "--card-foreground": {"type": "color", "value": [{"value": "#09090b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--border": {"type": "color", "value": [{"value": "#e4e4e7"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--primary": {"type": "color", "value": [{"value": "#18181b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--primary-foreground": {"type": "color", "value": [{"value": "#fafafa"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]},
+    "--secondary": {"type": "color", "value": [{"value": "#f4f4f5"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--accent": {"type": "color", "value": [{"value": "#3b82f6"}, {"value": "#3b82f6", "theme": {"Mode": "Dark"}}]}
+  },
+  "children": [
+    {
+      "type": "frame",
+      "id": "features-page",
+      "name": "Features Page",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": "fit_content",
+      "fill": "$--background",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "header",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$--background",
+          "stroke": {"fill": "$--border", "thickness": 1},
+          "padding": [0, 48],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "layout": "horizontal",
+          "children": [
+            {"type": "text", "id": "logo", "content": "Brand", "fontSize": 24, "fontWeight": "bold", "fill": "$--foreground"},
+            {
+              "type": "frame",
+              "name": "Navigation",
+              "gap": 32,
+              "alignItems": "center",
+              "layout": "horizontal",
+              "children": [
+                {"type": "text", "content": "Features", "fontSize": 14, "fill": "$--foreground", "fontWeight": "500"},
+                {"type": "text", "content": "Pricing", "fontSize": 14, "fill": "$--muted-foreground"},
+                {"type": "text", "content": "About", "fontSize": 14, "fill": "$--muted-foreground"},
+                {"type": "text", "content": "Contact", "fontSize": 14, "fill": "$--muted-foreground"}
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "CTA",
+              "fill": "$--primary",
+              "cornerRadius": 6,
+              "padding": [10, 20],
+              "children": [
+                {"type": "text", "content": "Get Started", "fontSize": 14, "fontWeight": "500", "fill": "$--primary-foreground"}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hero-section",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "height": "fit_content",
+          "padding": [80, 48],
+          "gap": 24,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layout": "vertical",
+          "children": [
+            {"type": "text", "content": "Features", "fontSize": 56, "fontWeight": "bold", "fill": "$--foreground", "textAlign": "center"},
+            {"type": "text", "content": "Everything you need to build better products, faster.", "fontSize": 20, "fill": "$--muted-foreground", "textAlign": "center", "width": 600}
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "features-grid",
+          "name": "Features Grid",
+          "width": "fill_container",
+          "padding": [0, 48, 80, 48],
+          "gap": 32,
+          "layout": "horizontal",
+          "justifyContent": "center",
+          "flexWrap": "wrap",
+          "children": [
+            {
+              "type": "frame",
+              "name": "Feature 1",
+              "width": 380,
+              "height": "fit_content",
+              "fill": "$--card",
+              "stroke": {"fill": "$--border", "thickness": 1},
+              "cornerRadius": 12,
+              "padding": 32,
+              "gap": 16,
+              "layout": "vertical",
+              "children": [
+                {"type": "frame", "width": 48, "height": 48, "fill": "$--accent", "cornerRadius": 8},
+                {"type": "text", "content": "Real-time Collaboration", "fontSize": 20, "fontWeight": "600", "fill": "$--foreground"},
+                {"type": "text", "content": "Work together with your team in real-time. See changes instantly as they happen, no matter where your team is located.", "fontSize": 14, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"}
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Feature 2",
+              "width": 380,
+              "height": "fit_content",
+              "fill": "$--card",
+              "stroke": {"fill": "$--border", "thickness": 1},
+              "cornerRadius": 12,
+              "padding": 32,
+              "gap": 16,
+              "layout": "vertical",
+              "children": [
+                {"type": "frame", "width": 48, "height": 48, "fill": "#22c55e", "cornerRadius": 8},
+                {"type": "text", "content": "Advanced Analytics", "fontSize": 20, "fontWeight": "600", "fill": "$--foreground"},
+                {"type": "text", "content": "Get deep insights into your team's performance. Track metrics, identify bottlenecks, and make data-driven decisions.", "fontSize": 14, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"}
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Feature 3",
+              "width": 380,
+              "height": "fit_content",
+              "fill": "$--card",
+              "stroke": {"fill": "$--border", "thickness": 1},
+              "cornerRadius": 12,
+              "padding": 32,
+              "gap": 16,
+              "layout": "vertical",
+              "children": [
+                {"type": "frame", "width": 48, "height": 48, "fill": "#ef4444", "cornerRadius": 8},
+                {"type": "text", "content": "Enterprise Security", "fontSize": 20, "fontWeight": "600", "fill": "$--foreground"},
+                {"type": "text", "content": "Bank-level security with SOC 2 compliance. Your data is encrypted at rest and in transit, with role-based access control.", "fontSize": 14, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"}
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Feature 4",
+              "width": 380,
+              "height": "fit_content",
+              "fill": "$--card",
+              "stroke": {"fill": "$--border", "thickness": 1},
+              "cornerRadius": 12,
+              "padding": 32,
+              "gap": 16,
+              "layout": "vertical",
+              "children": [
+                {"type": "frame", "width": 48, "height": 48, "fill": "#8b5cf6", "cornerRadius": 8},
+                {"type": "text", "content": "AI-Powered Automation", "fontSize": 20, "fontWeight": "600", "fill": "$--foreground"},
+                {"type": "text", "content": "Let AI handle repetitive tasks. Smart suggestions, automated workflows, and intelligent routing save hours every week.", "fontSize": 14, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"}
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Feature 5",
+              "width": 380,
+              "height": "fit_content",
+              "fill": "$--card",
+              "stroke": {"fill": "$--border", "thickness": 1},
+              "cornerRadius": 12,
+              "padding": 32,
+              "gap": 16,
+              "layout": "vertical",
+              "children": [
+                {"type": "frame", "width": 48, "height": 48, "fill": "#f59e0b", "cornerRadius": 8},
+                {"type": "text", "content": "Custom Integrations", "fontSize": 20, "fontWeight": "600", "fill": "$--foreground"},
+                {"type": "text", "content": "Connect with 200+ tools you already use. Slack, GitHub, Jira, Figma, and many more integrate seamlessly.", "fontSize": 14, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"}
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Feature 6",
+              "width": 380,
+              "height": "fit_content",
+              "fill": "$--card",
+              "stroke": {"fill": "$--border", "thickness": 1},
+              "cornerRadius": 12,
+              "padding": 32,
+              "gap": 16,
+              "layout": "vertical",
+              "children": [
+                {"type": "frame", "width": 48, "height": 48, "fill": "#06b6d4", "cornerRadius": 8},
+                {"type": "text", "content": "Version Control", "fontSize": 20, "fontWeight": "600", "fill": "$--foreground"},
+                {"type": "text", "content": "Never lose work again. Automatic version history, branching, and rollback capabilities for all your projects.", "fontSize": 14, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cta-section",
+          "name": "CTA Section",
+          "width": "fill_container",
+          "height": "fit_content",
+          "fill": "$--muted",
+          "padding": 80,
+          "gap": 24,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layout": "vertical",
+          "children": [
+            {"type": "text", "content": "Ready to get started?", "fontSize": 36, "fontWeight": "bold", "fill": "$--foreground"},
+            {"type": "text", "content": "Join thousands of teams already using our platform.", "fontSize": 18, "fill": "$--muted-foreground"},
+            {
+              "type": "frame",
+              "name": "CTA Button",
+              "fill": "$--primary",
+              "cornerRadius": 8,
+              "padding": [14, 28],
+              "children": [
+                {"type": "text", "content": "Start Free Trial", "fontSize": 16, "fontWeight": "600", "fill": "$--primary-foreground"}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "footer",
+          "name": "Footer",
+          "width": "fill_container",
+          "height": "fit_content",
+          "fill": "$--background",
+          "stroke": {"fill": "$--border", "thickness": 1},
+          "padding": 48,
+          "gap": 32,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "name": "Footer Content",
+              "width": "fill_container",
+              "gap": 48,
+              "justifyContent": "space_between",
+              "layout": "horizontal",
+              "children": [
+                {"type": "text", "content": "Brand", "fontSize": 20, "fontWeight": "bold", "fill": "$--foreground"},
+                {"type": "text", "content": "Features", "fontSize": 14, "fill": "$--muted-foreground"},
+                {"type": "text", "content": "Pricing", "fontSize": 14, "fill": "$--muted-foreground"},
+                {"type": "text", "content": "About", "fontSize": 14, "fill": "$--muted-foreground"}
+              ]
+            },
+            {"type": "text", "content": "© 2026 Brand. All rights reserved.", "fontSize": 14, "fill": "$--muted-foreground"}
+          ]
+        }
+      ]
+    }
+  ]
+}

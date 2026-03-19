@@ -1,0 +1,159 @@
+{
+  "version": "2.6",
+  "themes": {
+    "Mode": ["Light", "Dark"],
+    "Base": ["Neutral", "Gray", "Stone", "Zinc", "Slate"],
+    "Accent": ["Default", "Red", "Rose", "Orange", "Green", "Blue", "Yellow", "Violet"]
+  },
+  "variables": {
+    "--background": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#09090b", "theme": {"Mode": "Dark"}}]},
+    "--foreground": {"type": "color", "value": [{"value": "#09090b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--muted": {"type": "color", "value": [{"value": "#f4f4f5"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--muted-foreground": {"type": "color", "value": [{"value": "#71717a"}, {"value": "#a1a1aa", "theme": {"Mode": "Dark"}}]},
+    "--card": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]},
+    "--border": {"type": "color", "value": [{"value": "#e4e4e7"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--primary": {"type": "color", "value": [{"value": "#18181b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--primary-foreground": {"type": "color", "value": [{"value": "#fafafa"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]},
+    "--accent": {"type": "color", "value": [{"value": "#3b82f6"}, {"value": "#3b82f6", "theme": {"Mode": "Dark"}}]}
+  },
+  "children": [
+    {
+      "type": "frame",
+      "id": "security-page",
+      "name": "Security Page",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": "fit_content",
+      "fill": "$--background",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$--background",
+          "stroke": {"fill": "$--border", "thickness": 1},
+          "padding": [0, 48],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "layout": "horizontal",
+          "children": [
+            {"type": "text", "content": "Brand", "fontSize": 24, "fontWeight": "bold", "fill": "$--foreground"},
+            {"type": "frame", "fill": "$--primary", "cornerRadius": 6, "padding": [10, 20], "children": [{"type": "text", "content": "Get Started", "fontSize": 14, "fontWeight": "500", "fill": "$--primary-foreground"}]}
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Hero",
+          "width": "fill_container",
+          "padding": [80, 48],
+          "gap": 16,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layout": "vertical",
+          "children": [
+            {"type": "text", "content": "🔒", "fontSize": 48},
+            {"type": "text", "content": "Enterprise-Grade Security", "fontSize": 48, "fontWeight": "bold", "fill": "$--foreground"},
+            {"type": "text", "content": "Your data security is our top priority. We use industry-leading practices to protect your information.", "fontSize": 20, "fill": "$--muted-foreground", "textAlign": "center", "width": 600}
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Security Features",
+          "width": "fill_container",
+          "padding": [0, 48, 60, 48],
+          "gap": 32,
+          "layout": "horizontal",
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "frame",
+              "width": 320,
+              "fill": "$--card",
+              "stroke": {"fill": "$--border", "thickness": 1},
+              "cornerRadius": 12,
+              "padding": 24,
+              "gap": 16,
+              "layout": "vertical",
+              "children": [
+                {"type": "text", "content": "🔐", "fontSize": 32},
+                {"type": "text", "content": "Encryption at Rest", "fontSize": 20, "fontWeight": "600", "fill": "$--foreground"},
+                {"type": "text", "content": "All data is encrypted using AES-256 encryption, ensuring your information is protected even at rest.", "fontSize": 14, "fill": "$--muted-foreground", "width": "fill_container"}
+              ]
+            },
+            {
+              "type": "frame",
+              "width": 320,
+              "fill": "$--card",
+              "stroke": {"fill": "$--border", "thickness": 1},
+              "cornerRadius": 12,
+              "padding": 24,
+              "gap": 16,
+              "layout": "vertical",
+              "children": [
+                {"type": "text", "content": "🛡️", "fontSize": 32},
+                {"type": "text", "content": "SOC 2 Compliant", "fontSize": 20, "fontWeight": "600", "fill": "$--foreground"},
+                {"type": "text", "content": "We maintain SOC 2 Type II certification, demonstrating our commitment to security best practices.", "fontSize": 14, "fill": "$--muted-foreground", "width": "fill_container"}
+              ]
+            },
+            {
+              "type": "frame",
+              "width": 320,
+              "fill": "$--card",
+              "stroke": {"fill": "$--border", "thickness": 1},
+              "cornerRadius": 12,
+              "padding": 24,
+              "gap": 16,
+              "layout": "vertical",
+              "children": [
+                {"type": "text", "content": "✅", "fontSize": 32},
+                {"type": "text", "content": "99.9% Uptime SLA", "fontSize": 20, "fontWeight": "600", "fill": "$--foreground"},
+                {"type": "text", "content": "Our enterprise plan includes a 99.9% uptime guarantee with financial credits for any downtime.", "fontSize": 14, "fill": "$--muted-foreground", "width": "fill_container"}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Compliance",
+          "width": "fill_container",
+          "fill": "$--muted",
+          "padding": [60, 48],
+          "gap": 24,
+          "layout": "vertical",
+          "alignItems": "center",
+          "children": [
+            {"type": "text", "content": "Compliance & Certifications", "fontSize": 28, "fontWeight": "bold", "fill": "$--foreground"},
+            {
+              "type": "frame",
+              "gap": 24,
+              "layout": "horizontal",
+              "justifyContent": "center",
+              "children": [
+                {"type": "frame", "width": 120, "height": 60, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "children": [{"type": "text", "content": "SOC 2", "fontSize": 14, "fontWeight": "600", "fill": "$--foreground"}]}],
+                {"type": "frame", "width": 120, "height": 60, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "children": [{"type": "text", "content": "GDPR", "fontSize": 14, "fontWeight": "600", "fill": "$--foreground"}]},
+                {"type": "frame", "width": 120, "height": 60, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "children": [{"type": "text", "content": "HIPAA", "fontSize": 14, "fontWeight": "600", "fill": "$--foreground"}]},
+                {"type": "frame", "width": 120, "height": 60, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "children": [{"type": "text", "content": "ISO 27001", "fontSize": 14, "fontWeight": "600", "fill": "$--foreground"}]}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Footer",
+          "width": "fill_container",
+          "height": "fit_content",
+          "fill": "$--background",
+          "stroke": {"fill": "$--border", "thickness": 1},
+          "padding": 48,
+          "justifyContent": "center",
+          "children": [
+            {"type": "text", "content": "© 2026 Brand. All rights reserved.", "fontSize": 14, "fill": "$--muted-foreground"}
+          ]
+        }
+      ]
+    }
+  ]
+}

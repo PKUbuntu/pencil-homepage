@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useTheme } from '../lib/theme'
 
 export default function Header() {
@@ -5,13 +6,13 @@ export default function Header() {
 
   return (
     <header className="h-16 border-b bg-background px-6 md:px-12 flex items-center justify-between">
-      <div className="text-2xl font-bold text-foreground">Brand</div>
+      <Link to="/" className="text-2xl font-bold text-foreground hover:opacity-80 transition-opacity">Brand</Link>
 
       <nav className="hidden md:flex items-center gap-8">
-        <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>
-        <a href="#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
-        <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</a>
-        <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+        <Link to="/#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</Link>
+        <Link to="/#pricing" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Pricing</Link>
+        <Link to="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</Link>
+        <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
       </nav>
 
       <div className="flex items-center gap-4">

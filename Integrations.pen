@@ -1,0 +1,117 @@
+{
+  "version": "2.6",
+  "themes": {
+    "Mode": ["Light", "Dark"],
+    "Base": ["Neutral", "Gray", "Stone", "Zinc", "Slate"],
+    "Accent": ["Default", "Red", "Rose", "Orange", "Green", "Blue", "Yellow", "Violet"]
+  },
+  "variables": {
+    "--background": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#09090b", "theme": {"Mode": "Dark"}}]},
+    "--foreground": {"type": "color", "value": [{"value": "#09090b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--muted": {"type": "color", "value": [{"value": "#f4f4f5"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--muted-foreground": {"type": "color", "value": [{"value": "#71717a"}, {"value": "#a1a1aa", "theme": {"Mode": "Dark"}}]},
+    "--card": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]},
+    "--border": {"type": "color", "value": [{"value": "#e4e4e7"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--primary": {"type": "color", "value": [{"value": "#18181b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--primary-foreground": {"type": "color", "value": [{"value": "#fafafa"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]},
+    "--accent": {"type": "color", "value": [{"value": "#3b82f6"}, {"value": "#3b82f6", "theme": {"Mode": "Dark"}}]}
+  },
+  "children": [
+    {
+      "type": "frame",
+      "id": "integrations-page",
+      "name": "Integrations Page",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": "fit_content",
+      "fill": "$--background",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$--background",
+          "stroke": {"fill": "$--border", "thickness": 1},
+          "padding": [0, 48],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "layout": "horizontal",
+          "children": [
+            {"type": "text", "content": "Brand", "fontSize": 24, "fontWeight": "bold", "fill": "$--foreground"},
+            {"type": "frame", "fill": "$--primary", "cornerRadius": 6, "padding": [10, 20], "children": [{"type": "text", "content": "Get Started", "fontSize": 14, "fontWeight": "500", "fill": "$--primary-foreground"}]}
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Hero",
+          "width": "fill_container",
+          "padding": [80, 48],
+          "gap": 16,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layout": "vertical",
+          "children": [
+            {"type": "text", "content": "Integrations", "fontSize": 48, "fontWeight": "bold", "fill": "$--foreground"},
+            {"type": "text", "content": "Connect with the tools you already use.", "fontSize": 20, "fill": "$--muted-foreground"},
+            {"type": "text", "content": "200+ integrations and counting", "fontSize": 16, "fill": "$--accent", "fontWeight": "500"}
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Integrations Grid",
+          "width": "fill_container",
+          "padding": [0, 48, 80, 48],
+          "gap": 24,
+          "layout": "horizontal",
+          "justifyContent": "center",
+          "flexWrap": "wrap",
+          "children": [
+            {"type": "frame", "width": 160, "height": 80, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "alignItems": "center", "children": [{"type": "text", "content": "Slack", "fontSize": 14, "fontWeight": "500", "fill": "$--foreground"}]}]},
+            {"type": "frame", "width": 160, "height": 80, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "alignItems": "center", "children": [{"type": "text", "content": "GitHub", "fontSize": 14, "fontWeight": "500", "fill": "$--foreground"}]}]},
+            {"type": "frame", "width": 160, "height": 80, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "alignItems": "center", "children": [{"type": "text", "content": "Jira", "fontSize": 14, "fontWeight": "500", "fill": "$--foreground"}]}]},
+            {"type": "frame", "width": 160, "height": 80, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "alignItems": "center", "children": [{"type": "text", "content": "Figma", "fontSize": 14, "fontWeight": "500", "fill": "$--foreground"}]}]},
+            {"type": "frame", "width": 160, "height": 80, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "alignItems": "center", "children": [{"type": "text", "content": "Notion", "fontSize": 14, "fontWeight": "500", "fill": "$--foreground"}]}]},
+            {"type": "frame", "width": 160, "height": 80, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "alignItems": "center", "children": [{"type": "text", "content": "Linear", "fontSize": 14, "fontWeight": "500", "fill": "$--foreground"}]}]},
+            {"type": "frame", "width": 160, "height": 80, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "alignItems": "center", "children": [{"type": "text", "content": "Asana", "fontSize": 14, "fontWeight": "500", "fill": "$--foreground"}]}]},
+            {"type": "frame", "width": 160, "height": 80, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "alignItems": "center", "children": [{"type": "text", "content": "Trello", "fontSize": 14, "fontWeight": "500", "fill": "$--foreground"}]}]},
+            {"type": "frame", "width": 160, "height": 80, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "alignItems": "center", "children": [{"type": "text", "content": "Dropbox", "fontSize": 14, "fontWeight": "500", "fill": "$--foreground"}]}]},
+            {"type": "frame", "width": 160, "height": 80, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "alignItems": "center", "children": [{"type": "text", "content": "Google Drive", "fontSize": 14, "fontWeight": "500", "fill": "$--foreground"}]}]},
+            {"type": "frame", "width": 160, "height": 80, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "alignItems": "center", "children": [{"type": "text", "content": "Zoom", "fontSize": 14, "fontWeight": "500", "fill": "$--foreground"}]}]},
+            {"type": "frame", "width": 160, "height": 80, "fill": "$--card", "stroke": {"fill": "$--border", "thickness": 1}, "cornerRadius": 8, "justifyContent": "center", "alignItems": "center", "children": [{"type": "text", "content": "Teams", "fontSize": 14, "fontWeight": "500", "fill": "$--foreground"}]}]}
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "CTA",
+          "width": "fill_container",
+          "fill": "$--muted",
+          "padding": 60,
+          "gap": 16,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layout": "vertical",
+          "children": [
+            {"type": "text", "content": "Don't see your tool?", "fontSize": 24, "fontWeight": "600", "fill": "$--foreground"},
+            {"type": "text", "content": "We're always adding new integrations. Let us know what you need.", "fontSize": 16, "fill": "$--muted-foreground"},
+            {"type": "frame", "fill": "$--accent", "cornerRadius": 8, "padding": [12, 24], "children": [{"type": "text", "content": "Request Integration", "fontSize": 14, "fontWeight": "600", "fill": "#ffffff"}]}
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$--background",
+          "stroke": {"fill": "$--border", "thickness": 1},
+          "padding": 48,
+          "justifyContent": "center",
+          "children": [
+            {"type": "text", "content": "© 2026 Brand. All rights reserved.", "fontSize": 14, "fill": "$--muted-foreground"}
+          ]
+        }
+      ]
+    }
+  ]
+}

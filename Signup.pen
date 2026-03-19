@@ -1,0 +1,220 @@
+{
+  "version": "2.6",
+  "themes": {
+    "Mode": ["Light", "Dark"],
+    "Base": ["Neutral", "Gray", "Stone", "Zinc", "Slate"],
+    "Accent": ["Default", "Red", "Rose", "Orange", "Green", "Blue", "Yellow", "Violet"]
+  },
+  "variables": {
+    "--background": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#09090b", "theme": {"Mode": "Dark"}}]},
+    "--foreground": {"type": "color", "value": [{"value": "#09090b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--muted": {"type": "color", "value": [{"value": "#f4f4f5"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--muted-foreground": {"type": "color", "value": [{"value": "#71717a"}, {"value": "#a1a1aa", "theme": {"Mode": "Dark"}}]},
+    "--card": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]},
+    "--border": {"type": "color", "value": [{"value": "#e4e4e7"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--primary": {"type": "color", "value": [{"value": "#18181b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--primary-foreground": {"type": "color", "value": [{"value": "#fafafa"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]},
+    "--accent": {"type": "color", "value": [{"value": "#3b82f6"}, {"value": "#3b82f6", "theme": {"Mode": "Dark"}}]}
+  },
+  "children": [
+    {
+      "type": "frame",
+      "id": "signup-page",
+      "name": "Sign Up Page",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "fill": "$--background",
+      "layout": "horizontal",
+      "children": [
+        {
+          "type": "frame",
+          "name": "Left Panel",
+          "width": 600,
+          "height": "fill_container",
+          "fill": "$--accent",
+          "padding": 60,
+          "gap": 48,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "frame",
+              "gap": 16,
+              "layout": "vertical",
+              "children": [
+                {"type": "text", "content": "Brand", "fontSize": 32, "fontWeight": "bold", "fill": "#ffffff"},
+                {"type": "text", "content": "Build better products, faster.", "fontSize": 20, "fill": "#ffffff", "opacity": 0.9}
+              ]
+            },
+            {
+              "type": "frame",
+              "gap": 24,
+              "layout": "vertical",
+              "children": [
+                {"type": "text", "content": "✓ Free 14-day trial", "fontSize": 16, "fill": "#ffffff"},
+                {"type": "text", "content": "✓ No credit card required", "fontSize": 16, "fill": "#ffffff"},
+                {"type": "text", "content": "✓ Cancel anytime", "fontSize": 16, "fill": "#ffffff"},
+                {"type": "text", "content": "✓ Full access to all features", "fontSize": 16, "fill": "#ffffff"}
+              ]
+            },
+            {
+              "type": "frame",
+              "gap": 16,
+              "children": [
+                {"type": "text", "content": "\"This tool has transformed how our team works. We've cut our development time in half.\"", "fontSize": 16, "fill": "#ffffff", "fontStyle": "italic", "width": 400},
+                {"type": "text", "content": "— Sarah Chen, CTO at TechCorp", "fontSize": 14, "fill": "#ffffff", "opacity": 0.8}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Right Panel",
+          "width": "fill_container",
+          "height": "fill_container",
+          "padding": 60,
+          "gap": 32,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "width": 400,
+              "gap": 24,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "gap": 8,
+                  "layout": "vertical",
+                  "alignItems": "center",
+                  "children": [
+                    {"type": "text", "content": "Create your account", "fontSize": 28, "fontWeight": "bold", "fill": "$--foreground"},
+                    {"type": "text", "content": "Get started with your free trial today", "fontSize": 16, "fill": "$--muted-foreground"}
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "gap": 16,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$--background",
+                      "stroke": {"fill": "$--border", "thickness": 1},
+                      "cornerRadius": 6,
+                      "padding": [0, 12],
+                      "alignItems": "center",
+                      "children": [
+                        {"type": "text", "content": "Full Name", "fontSize": 14, "fill": "$--muted-foreground"}
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$--background",
+                      "stroke": {"fill": "$--border", "thickness": 1},
+                      "cornerRadius": 6,
+                      "padding": [0, 12],
+                      "alignItems": "center",
+                      "children": [
+                        {"type": "text", "content": "Work Email", "fontSize": 14, "fill": "$--muted-foreground"}
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "width": "fill_container",
+                      "height": 44,
+                      "fill": "$--background",
+                      "stroke": {"fill": "$--border", "thickness": 1},
+                      "cornerRadius": 6,
+                      "padding": [0, 12],
+                      "alignItems": "center",
+                      "children": [
+                        {"type": "text", "content": "Password", "fontSize": 14, "fill": "$--muted-foreground"}
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "width": "fill_container",
+                      "fill": "$--accent",
+                      "cornerRadius": 8,
+                      "padding": [12, 24],
+                      "justifyContent": "center",
+                      "children": [
+                        {"type": "text", "content": "Create Account", "fontSize": 16, "fontWeight": "600", "fill": "#ffffff", "textAlign": "center"}
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {"type": "text", "content": "───────  or continue with  ───────", "fontSize": 12, "fill": "$--muted-foreground"}
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "gap": 12,
+                  "layout": "horizontal",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "width": 180,
+                      "height": 44,
+                      "fill": "$--background",
+                      "stroke": {"fill": "$--border", "thickness": 1},
+                      "cornerRadius": 6,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {"type": "text", "content": "Google", "fontSize": 14, "fill": "$--foreground"}
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "width": 180,
+                      "height": 44,
+                      "fill": "$--background",
+                      "stroke": {"fill": "$--border", "thickness": 1},
+                      "cornerRadius": 6,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {"type": "text", "content": "GitHub", "fontSize": 14, "fill": "$--foreground"}
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "justifyContent": "center",
+                  "children": [
+                    {"type": "text", "content": "Already have an account? ", "fontSize": 14, "fill": "$--muted-foreground"},
+                    {"type": "text", "content": "Sign in", "fontSize": 14, "fill": "$--accent", "fontWeight": "500"}
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "justifyContent": "center",
+                  "children": [
+                    {"type": "text", "content": "By signing up, you agree to our Terms of Service and Privacy Policy.", "fontSize": 12, "fill": "$--muted-foreground", "textAlign": "center"}
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

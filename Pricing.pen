@@ -1,0 +1,342 @@
+{
+  "version": "2.6",
+  "themes": {
+    "Mode": ["Light", "Dark"],
+    "Base": ["Neutral", "Gray", "Stone", "Zinc", "Slate"],
+    "Accent": ["Default", "Red", "Rose", "Orange", "Green", "Blue", "Yellow", "Violet"]
+  },
+  "variables": {
+    "--background": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#09090b", "theme": {"Mode": "Dark"}}]},
+    "--foreground": {"type": "color", "value": [{"value": "#09090b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--muted": {"type": "color", "value": [{"value": "#f4f4f5"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--muted-foreground": {"type": "color", "value": [{"value": "#71717a"}, {"value": "#a1a1aa", "theme": {"Mode": "Dark"}}]},
+    "--card": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]},
+    "--border": {"type": "color", "value": [{"value": "#e4e4e7"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--primary": {"type": "color", "value": [{"value": "#18181b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--primary-foreground": {"type": "color", "value": [{"value": "#fafafa"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]},
+    "--accent": {"type": "color", "value": [{"value": "#3b82f6"}, {"value": "#3b82f6", "theme": {"Mode": "Dark"}}]}
+  },
+  "children": [
+    {
+      "type": "frame",
+      "id": "pricing-page",
+      "name": "Pricing Page",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": "fit_content",
+      "fill": "$--background",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "header",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$--background",
+          "stroke": {"fill": "$--border", "thickness": 1},
+          "padding": [0, 48],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "layout": "horizontal",
+          "children": [
+            {"type": "text", "content": "Brand", "fontSize": 24, "fontWeight": "bold", "fill": "$--foreground"},
+            {
+              "type": "frame",
+              "gap": 32,
+              "alignItems": "center",
+              "layout": "horizontal",
+              "children": [
+                {"type": "text", "content": "Features", "fontSize": 14, "fill": "$--muted-foreground"},
+                {"type": "text", "content": "Pricing", "fontSize": 14, "fill": "$--foreground", "fontWeight": "500"},
+                {"type": "text", "content": "About", "fontSize": 14, "fill": "$--muted-foreground"},
+                {"type": "text", "content": "Contact", "fontSize": 14, "fill": "$--muted-foreground"}
+              ]
+            },
+            {
+              "type": "frame",
+              "fill": "$--primary",
+              "cornerRadius": 6,
+              "padding": [10, 20],
+              "children": [
+                {"type": "text", "content": "Get Started", "fontSize": 14, "fontWeight": "500", "fill": "$--primary-foreground"}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hero-section",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "height": "fit_content",
+          "padding": [80, 48, 48, 48],
+          "gap": 16,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layout": "vertical",
+          "children": [
+            {"type": "text", "content": "Simple, transparent pricing", "fontSize": 48, "fontWeight": "bold", "fill": "$--foreground", "textAlign": "center"},
+            {"type": "text", "content": "No hidden fees. No surprises. Cancel anytime.", "fontSize": 20, "fill": "$--muted-foreground", "textAlign": "center"}
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pricing-cards",
+          "name": "Pricing Cards",
+          "width": "fill_container",
+          "padding": [0, 48, 80, 48],
+          "gap": 24,
+          "justifyContent": "center",
+          "layout": "horizontal",
+          "children": [
+            {
+              "type": "frame",
+              "name": "Starter Plan",
+              "width": 340,
+              "height": "fit_content",
+              "fill": "$--card",
+              "stroke": {"fill": "$--border", "thickness": 1},
+              "cornerRadius": 12,
+              "padding": 32,
+              "gap": 24,
+              "layout": "vertical",
+              "children": [
+                {"type": "text", "content": "Starter", "fontSize": 18, "fontWeight": "600", "fill": "$--muted-foreground"},
+                {
+                  "type": "frame",
+                  "gap": 4,
+                  "alignItems": "end",
+                  "children": [
+                    {"type": "text", "content": "$0", "fontSize": 48, "fontWeight": "bold", "fill": "$--foreground"},
+                    {"type": "text", "content": "/month", "fontSize": 16, "fill": "$--muted-foreground"}
+                  ]
+                },
+                {"type": "text", "content": "Perfect for trying out the platform", "fontSize": 14, "fill": "$--muted-foreground"},
+                {
+                  "type": "frame",
+                  "gap": 12,
+                  "layout": "vertical",
+                  "children": [
+                    {"type": "text", "content": "✓ Up to 3 projects", "fontSize": 14, "fill": "$--foreground"},
+                    {"type": "text", "content": "✓ 1GB storage", "fontSize": 14, "fill": "$--foreground"},
+                    {"type": "text", "content": "✓ Basic analytics", "fontSize": 14, "fill": "$--foreground"},
+                    {"type": "text", "content": "✓ Community support", "fontSize": 14, "fill": "$--foreground"}
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "width": "fill_container",
+                  "fill": "$--muted",
+                  "cornerRadius": 8,
+                  "padding": [12, 24],
+                  "justifyContent": "center",
+                  "children": [
+                    {"type": "text", "content": "Get Started Free", "fontSize": 14, "fontWeight": "500", "fill": "$--foreground"}
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Pro Plan",
+              "width": 340,
+              "height": "fit_content",
+              "fill": "$--card",
+              "stroke": {"fill": "$--accent", "thickness": 2},
+              "cornerRadius": 12,
+              "padding": 32,
+              "gap": 24,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "width": "fit_content",
+                  "fill": "$--accent",
+                  "cornerRadius": 4,
+                  "padding": [4, 8],
+                  "children": [
+                    {"type": "text", "content": "Most Popular", "fontSize": 12, "fontWeight": "500", "fill": "#ffffff"}
+                  ]
+                },
+                {"type": "text", "content": "Pro", "fontSize": 18, "fontWeight": "600", "fill": "$--foreground"},
+                {
+                  "type": "frame",
+                  "gap": 4,
+                  "alignItems": "end",
+                  "children": [
+                    {"type": "text", "content": "$29", "fontSize": 48, "fontWeight": "bold", "fill": "$--foreground"},
+                    {"type": "text", "content": "/month", "fontSize": 16, "fill": "$--muted-foreground"}
+                  ]
+                },
+                {"type": "text", "content": "Best for growing teams", "fontSize": 14, "fill": "$--muted-foreground"},
+                {
+                  "type": "frame",
+                  "gap": 12,
+                  "layout": "vertical",
+                  "children": [
+                    {"type": "text", "content": "✓ Unlimited projects", "fontSize": 14, "fill": "$--foreground"},
+                    {"type": "text", "content": "✓ 50GB storage", "fontSize": 14, "fill": "$--foreground"},
+                    {"type": "text", "content": "✓ Advanced analytics", "fontSize": 14, "fill": "$--foreground"},
+                    {"type": "text", "content": "✓ Priority support", "fontSize": 14, "fill": "$--foreground"},
+                    {"type": "text", "content": "✓ Custom integrations", "fontSize": 14, "fill": "$--foreground"}
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "width": "fill_container",
+                  "fill": "$--accent",
+                  "cornerRadius": 8,
+                  "padding": [12, 24],
+                  "justifyContent": "center",
+                  "children": [
+                    {"type": "text", "content": "Start Free Trial", "fontSize": 14, "fontWeight": "600", "fill": "#ffffff"}
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "name": "Enterprise Plan",
+              "width": 340,
+              "height": "fit_content",
+              "fill": "$--card",
+              "stroke": {"fill": "$--border", "thickness": 1},
+              "cornerRadius": 12,
+              "padding": 32,
+              "gap": 24,
+              "layout": "vertical",
+              "children": [
+                {"type": "text", "content": "Enterprise", "fontSize": 18, "fontWeight": "600", "fill": "$--muted-foreground"},
+                {
+                  "type": "frame",
+                  "gap": 4,
+                  "alignItems": "end",
+                  "children": [
+                    {"type": "text", "content": "Custom", "fontSize": 36, "fontWeight": "bold", "fill": "$--foreground"}
+                  ]
+                },
+                {"type": "text", "content": "For large organizations", "fontSize": 14, "fill": "$--muted-foreground"},
+                {
+                  "type": "frame",
+                  "gap": 12,
+                  "layout": "vertical",
+                  "children": [
+                    {"type": "text", "content": "✓ Everything in Pro", "fontSize": 14, "fill": "$--foreground"},
+                    {"type": "text", "content": "✓ Unlimited storage", "fontSize": 14, "fill": "$--foreground"},
+                    {"type": "text", "content": "✓ SSO & SAML", "fontSize": 14, "fill": "$--foreground"},
+                    {"type": "text", "content": "✓ Dedicated support", "fontSize": 14, "fill": "$--foreground"},
+                    {"type": "text", "content": "✓ SLA guarantee", "fontSize": 14, "fill": "$--foreground"},
+                    {"type": "text", "content": "✓ Custom contracts", "fontSize": 14, "fill": "$--foreground"}
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "width": "fill_container",
+                  "fill": "$--primary",
+                  "cornerRadius": 8,
+                  "padding": [12, 24],
+                  "justifyContent": "center",
+                  "children": [
+                    {"type": "text", "content": "Contact Sales", "fontSize": 14, "fontWeight": "500", "fill": "$--primary-foreground"}
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "faq-section",
+          "name": "FAQ Section",
+          "width": "fill_container",
+          "height": "fit_content",
+          "fill": "$--muted",
+          "padding": [60, 48],
+          "gap": 32,
+          "layout": "vertical",
+          "alignItems": "center",
+          "children": [
+            {"type": "text", "content": "Frequently Asked Questions", "fontSize": 32, "fontWeight": "bold", "fill": "$--foreground"},
+            {
+              "type": "frame",
+              "width": 600,
+              "gap": 16,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "width": "fill_container",
+                  "fill": "$--card",
+                  "stroke": {"fill": "$--border", "thickness": 1},
+                  "cornerRadius": 8,
+                  "padding": 16,
+                  "gap": 8,
+                  "layout": "vertical",
+                  "children": [
+                    {"type": "text", "content": "Can I change plans anytime?", "fontSize": 16, "fontWeight": "500", "fill": "$--foreground"},
+                    {"type": "text", "content": "Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.", "fontSize": 14, "fill": "$--muted-foreground", "width": "fill_container"}
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "width": "fill_container",
+                  "fill": "$--card",
+                  "stroke": {"fill": "$--border", "thickness": 1},
+                  "cornerRadius": 8,
+                  "padding": 16,
+                  "gap": 8,
+                  "layout": "vertical",
+                  "children": [
+                    {"type": "text", "content": "What payment methods do you accept?", "fontSize": 16, "fontWeight": "500", "fill": "$--foreground"},
+                    {"type": "text", "content": "We accept all major credit cards, PayPal, and bank transfers for enterprise customers.", "fontSize": 14, "fill": "$--muted-foreground", "width": "fill_container"}
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "width": "fill_container",
+                  "fill": "$--card",
+                  "stroke": {"fill": "$--border", "thickness": 1},
+                  "cornerRadius": 8,
+                  "padding": 16,
+                  "gap": 8,
+                  "layout": "vertical",
+                  "children": [
+                    {"type": "text", "content": "Is there a free trial?", "fontSize": 16, "fontWeight": "500", "fill": "$--foreground"},
+                    {"type": "text", "content": "Yes! The Pro plan comes with a 14-day free trial. No credit card required.", "fontSize": 14, "fill": "$--muted-foreground", "width": "fill_container"}
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "footer",
+          "name": "Footer",
+          "width": "fill_container",
+          "height": "fit_content",
+          "fill": "$--background",
+          "stroke": {"fill": "$--border", "thickness": 1},
+          "padding": 48,
+          "gap": 16,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "width": "fill_container",
+              "gap": 48,
+              "justifyContent": "space_between",
+              "layout": "horizontal",
+              "children": [
+                {"type": "text", "content": "Brand", "fontSize": 20, "fontWeight": "bold", "fill": "$--foreground"},
+                {"type": "text", "content": "© 2026 Brand. All rights reserved.", "fontSize": 14, "fill": "$--muted-foreground"}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

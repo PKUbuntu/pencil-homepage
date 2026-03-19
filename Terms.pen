@@ -1,0 +1,83 @@
+{
+  "version": "2.6",
+  "themes": {
+    "Mode": ["Light", "Dark"],
+    "Base": ["Neutral", "Gray", "Stone", "Zinc", "Slate"],
+    "Accent": ["Default", "Red", "Rose", "Orange", "Green", "Blue", "Yellow", "Violet"]
+  },
+  "variables": {
+    "--background": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#09090b", "theme": {"Mode": "Dark"}}]},
+    "--foreground": {"type": "color", "value": [{"value": "#09090b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--muted": {"type": "color", "value": [{"value": "#f4f4f5"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--muted-foreground": {"type": "color", "value": [{"value": "#71717a"}, {"value": "#a1a1aa", "theme": {"Mode": "Dark"}}]},
+    "--card": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]},
+    "--border": {"type": "color", "value": [{"value": "#e4e4e7"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--primary": {"type": "color", "value": [{"value": "#18181b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--primary-foreground": {"type": "color", "value": [{"value": "#fafafa"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]}
+  },
+  "children": [
+    {
+      "type": "frame",
+      "id": "terms-page",
+      "name": "Terms of Service Page",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": "fit_content",
+      "fill": "$--background",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$--background",
+          "stroke": {"fill": "$--border", "thickness": 1},
+          "padding": [0, 48],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "layout": "horizontal",
+          "children": [
+            {"type": "text", "content": "Brand", "fontSize": 24, "fontWeight": "bold", "fill": "$--foreground"},
+            {"type": "frame", "fill": "$--primary", "cornerRadius": 6, "padding": [10, 20], "children": [{"type": "text", "content": "Get Started", "fontSize": 14, "fontWeight": "500", "fill": "$--primary-foreground"}]}
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Content",
+          "width": "fill_container",
+          "padding": [60, 200],
+          "gap": 32,
+          "layout": "vertical",
+          "children": [
+            {"type": "text", "content": "Terms of Service", "fontSize": 40, "fontWeight": "bold", "fill": "$--foreground"},
+            {"type": "text", "content": "Last updated: March 2026", "fontSize": 14, "fill": "$--muted-foreground"},
+            {"type": "text", "content": "1. Acceptance of Terms", "fontSize": 24, "fontWeight": "600", "fill": "$--foreground"},
+            {"type": "text", "content": "By accessing or using our service, you agree to be bound by these Terms of Service and all applicable laws and regulations.", "fontSize": 16, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"},
+            {"type": "text", "content": "2. Use License", "fontSize": 24, "fontWeight": "600", "fill": "$--foreground"},
+            {"type": "text", "content": "Permission is granted to temporarily use our service for personal or commercial purposes, subject to the restrictions in these terms.", "fontSize": 16, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"},
+            {"type": "text", "content": "3. User Responsibilities", "fontSize": 24, "fontWeight": "600", "fill": "$--foreground"},
+            {"type": "text", "content": "You are responsible for maintaining the confidentiality of your account and for all activities that occur under your account.", "fontSize": 16, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"},
+            {"type": "text", "content": "4. Payment Terms", "fontSize": 24, "fontWeight": "600", "fill": "$--foreground"},
+            {"type": "text", "content": "Paid subscriptions are billed in advance on a monthly or annual basis. You may cancel at any time, and access continues until the end of your billing period.", "fontSize": 16, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"},
+            {"type": "text", "content": "5. Limitation of Liability", "fontSize": 24, "fontWeight": "600", "fill": "$--foreground"},
+            {"type": "text", "content": "Our service is provided 'as is' without warranties of any kind. We shall not be liable for any indirect, incidental, or consequential damages.", "fontSize": 16, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"}
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Footer",
+          "width": "fill_container",
+          "height": "fit_content",
+          "fill": "$--muted",
+          "padding": 32,
+          "justifyContent": "center",
+          "children": [
+            {"type": "text", "content": "© 2026 Brand. All rights reserved.", "fontSize": 14, "fill": "$--muted-foreground"}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "version": "2.6",
+  "themes": {
+    "Mode": ["Light", "Dark"],
+    "Base": ["Neutral", "Gray", "Stone", "Zinc", "Slate"],
+    "Accent": ["Default", "Red", "Rose", "Orange", "Green", "Blue", "Yellow", "Violet"]
+  },
+  "variables": {
+    "--background": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#09090b", "theme": {"Mode": "Dark"}}]},
+    "--foreground": {"type": "color", "value": [{"value": "#09090b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--muted": {"type": "color", "value": [{"value": "#f4f4f5"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--muted-foreground": {"type": "color", "value": [{"value": "#71717a"}, {"value": "#a1a1aa", "theme": {"Mode": "Dark"}}]},
+    "--card": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]},
+    "--border": {"type": "color", "value": [{"value": "#e4e4e7"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--primary": {"type": "color", "value": [{"value": "#18181b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--primary-foreground": {"type": "color", "value": [{"value": "#fafafa"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]}
+  },
+  "children": [
+    {
+      "type": "frame",
+      "id": "privacy-page",
+      "name": "Privacy Policy Page",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": "fit_content",
+      "fill": "$--background",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$--background",
+          "stroke": {"fill": "$--border", "thickness": 1},
+          "padding": [0, 48],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "layout": "horizontal",
+          "children": [
+            {"type": "text", "content": "Brand", "fontSize": 24, "fontWeight": "bold", "fill": "$--foreground"},
+            {"type": "frame", "fill": "$--primary", "cornerRadius": 6, "padding": [10, 20], "children": [{"type": "text", "content": "Get Started", "fontSize": 14, "fontWeight": "500", "fill": "$--primary-foreground"}]}
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Content",
+          "width": "fill_container",
+          "padding": [60, 200],
+          "gap": 32,
+          "layout": "vertical",
+          "children": [
+            {"type": "text", "content": "Privacy Policy", "fontSize": 40, "fontWeight": "bold", "fill": "$--foreground"},
+            {"type": "text", "content": "Last updated: March 2026", "fontSize": 14, "fill": "$--muted-foreground"},
+            {"type": "text", "content": "1. Introduction", "fontSize": 24, "fontWeight": "600", "fill": "$--foreground"},
+            {"type": "text", "content": "We take your privacy seriously. This policy describes what information we collect, how we use it, and your rights regarding your personal data.", "fontSize": 16, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"},
+            {"type": "text", "content": "2. Information We Collect", "fontSize": 24, "fontWeight": "600", "fill": "$--foreground"},
+            {"type": "text", "content": "We collect information you provide directly, such as your name, email, and account details. We also automatically collect usage data to improve our service.", "fontSize": 16, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"},
+            {"type": "text", "content": "3. How We Use Your Data", "fontSize": 24, "fontWeight": "600", "fill": "$--foreground"},
+            {"type": "text", "content": "Your data is used to provide and improve our services, communicate with you, and ensure platform security. We never sell your personal information.", "fontSize": 16, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"},
+            {"type": "text", "content": "4. Data Security", "fontSize": 24, "fontWeight": "600", "fill": "$--foreground"},
+            {"type": "text", "content": "We implement industry-standard security measures including encryption, access controls, and regular security audits to protect your data.", "fontSize": 16, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"},
+            {"type": "text", "content": "5. Your Rights", "fontSize": 24, "fontWeight": "600", "fill": "$--foreground"},
+            {"type": "text", "content": "You have the right to access, correct, or delete your personal data. Contact us at privacy@brand.com for any data-related requests.", "fontSize": 16, "fill": "$--muted-foreground", "lineHeight": 1.6, "width": "fill_container"}
+          ]
+        },
+        {
+          "type": "frame",
+          "name": "Footer",
+          "width": "fill_container",
+          "height": "fit_content",
+          "fill": "$--muted",
+          "padding": 32,
+          "justifyContent": "center",
+          "children": [
+            {"type": "text", "content": "© 2026 Brand. All rights reserved.", "fontSize": 14, "fill": "$--muted-foreground"}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "version": "2.6",
+  "themes": {
+    "Mode": ["Light", "Dark"],
+    "Base": ["Neutral", "Gray", "Stone", "Zinc", "Slate"],
+    "Accent": ["Default", "Red", "Rose", "Orange", "Green", "Blue", "Yellow", "Violet"]
+  },
+  "variables": {
+    "--background": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#09090b", "theme": {"Mode": "Dark"}}]},
+    "--foreground": {"type": "color", "value": [{"value": "#09090b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--muted": {"type": "color", "value": [{"value": "#f4f4f5"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--muted-foreground": {"type": "color", "value": [{"value": "#71717a"}, {"value": "#a1a1aa", "theme": {"Mode": "Dark"}}]},
+    "--card": {"type": "color", "value": [{"value": "#ffffff"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]},
+    "--border": {"type": "color", "value": [{"value": "#e4e4e7"}, {"value": "#27272a", "theme": {"Mode": "Dark"}}]},
+    "--primary": {"type": "color", "value": [{"value": "#18181b"}, {"value": "#fafafa", "theme": {"Mode": "Dark"}}]},
+    "--primary-foreground": {"type": "color", "value": [{"value": "#fafafa"}, {"value": "#18181b", "theme": {"Mode": "Dark"}}]},
+    "--accent": {"type": "color", "value": [{"value": "#3b82f6"}, {"value": "#3b82f6", "theme": {"Mode": "Dark"}}]}
+  },
+  "children": [
+    {
+      "type": "frame",
+      "id": "about-page",
+      "name": "About Page",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": "fit_content",
+      "fill": "$--background",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "header",
+          "name": "Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$--background",
+          "stroke": {"fill": "$--border", "thickness": 1},
+          "padding": [0, 48],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "layout": "horizontal",
+          "children": [
+            {"type": "text", "content": "Brand", "fontSize": 24, "fontWeight": "bold", "fill": "$--foreground"},
+            {
+              "type": "frame",
+              "gap": 32,
+              "alignItems": "center",
+              "layout": "horizontal",
+              "children": [
+                {"type": "text", "content": "Features", "fontSize": 14, "fill": "$--muted-foreground"},
+                {"type": "text", "content": "Pricing", "fontSize": 14, "fill": "$--muted-foreground"},
+                {"type": "text", "content": "About", "fontSize": 14, "fill": "$--foreground", "fontWeight": "500"},
+                {"type": "text", "content": "Contact", "fontSize": 14, "fill": "$--muted-foreground"}
+              ]
+            },
+            {
+              "type": "frame",
+              "fill": "$--primary",
+              "cornerRadius": 6,
+              "padding": [10, 20],
+              "children": [
+                {"type": "text", "content": "Get Started", "fontSize": 14, "fontWeight": "500", "fill": "$--primary-foreground"}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hero-section",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "height": "fit_content",
+          "padding": [100, 48],
+          "gap": 24,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layout": "vertical",
+          "children": [
+            {"type": "text", "content": "About Us", "fontSize": 56, "fontWeight": "bold", "fill": "$--foreground", "textAlign": "center"},
+            {"type": "text", "content": "We're on a mission to help teams build better products, faster.", "fontSize": 20, "fill": "$--muted-foreground", "textAlign": "center", "width": 600}
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "story-section",
+          "name": "Story Section",
+          "width": "fill_container",
+          "height": "fit_content",
+          "padding": [60, 48],
+          "gap": 48,
+          "layout": "horizontal",
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "frame",
+              "width": 500,
+              "gap": 24,
+              "layout": "vertical",
+              "children": [
+                {"type": "text", "content": "Our Story", "fontSize": 32, "fontWeight": "bold", "fill": "$--foreground"},
+                {"type": "text", "content": "Founded in 2020, we started with a simple idea: what if building software could be as intuitive as using it? Today, we serve over 10,000 teams worldwide, helping them collaborate better and ship faster.", "fontSize": 16, "fill": "$--muted-foreground", "lineHeight": 1.8, "width": "fill_container"},
+                {"type": "text", "content": "Our team of 50+ engineers, designers, and product experts work remotely from 15 countries, united by our passion for great software.", "fontSize": 16, "fill": "$--muted-foreground", "lineHeight": 1.8, "width": "fill_container"}
+              ]
+            },
+            {
+              "type": "frame",
+              "width": 400,
+              "height": 300,
+              "fill": "$--muted",
+              "cornerRadius": 12
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "values-section",
+          "name": "Values Section",
+          "width": "fill_container",
+          "height": "fit_content",
+          "fill": "$--muted",
+          "padding": [80, 48],
+          "gap": 32,
+          "layout": "vertical",
+          "alignItems": "center",
+          "children": [
+            {"type": "text", "content": "Our Values", "fontSize": 36, "fontWeight": "bold", "fill": "$--foreground"},
+            {
+              "type": "frame",
+              "gap": 24,
+              "layout": "horizontal",
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "width": 280,
+                  "fill": "$--card",
+                  "stroke": {"fill": "$--border", "thickness": 1},
+                  "cornerRadius": 12,
+                  "padding": 24,
+                  "gap": 16,
+                  "layout": "vertical",
+                  "children": [
+                    {"type": "text", "content": "🚀", "fontSize": 32},
+                    {"type": "text", "content": "Ship Fast", "fontSize": 20, "fontWeight": "600", "fill": "$--foreground"},
+                    {"type": "text", "content": "We believe in rapid iteration and continuous improvement. Done is better than perfect.", "fontSize": 14, "fill": "$--muted-foreground", "width": "fill_container"}
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "width": 280,
+                  "fill": "$--card",
+                  "stroke": {"fill": "$--border", "thickness": 1},
+                  "cornerRadius": 12,
+                  "padding": 24,
+                  "gap": 16,
+                  "layout": "vertical",
+                  "children": [
+                    {"type": "text", "content": "🤝", "fontSize": 32},
+                    {"type": "text", "content": "Customer First", "fontSize": 20, "fontWeight": "600", "fill": "$--foreground"},
+                    {"type": "text", "content": "Every decision we make starts with the customer. Your success is our success.", "fontSize": 14, "fill": "$--muted-foreground", "width": "fill_container"}
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "width": 280,
+                  "fill": "$--card",
+                  "stroke": {"fill": "$--border", "thickness": 1},
+                  "cornerRadius": 12,
+                  "padding": 24,
+                  "gap": 16,
+                  "layout": "vertical",
+                  "children": [
+                    {"type": "text", "content": "💡", "fontSize": 32},
+                    {"type": "text", "content": "Innovation", "fontSize": 20, "fontWeight": "600", "fill": "$--foreground"},
+                    {"type": "text", "content": "We embrace new ideas and technologies to stay ahead of the curve.", "fontSize": 14, "fill": "$--muted-foreground", "width": "fill_container"}
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "stats-section",
+          "name": "Stats Section",
+          "width": "fill_container",
+          "height": "fit_content",
+          "padding": [80, 48],
+          "gap": 48,
+          "layout": "horizontal",
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "frame",
+              "gap": 8,
+              "layout": "vertical",
+              "alignItems": "center",
+              "children": [
+                {"type": "text", "content": "10,000+", "fontSize": 48, "fontWeight": "bold", "fill": "$--accent"},
+                {"type": "text", "content": "Teams using our platform", "fontSize": 16, "fill": "$--muted-foreground"}
+              ]
+            },
+            {
+              "type": "frame",
+              "gap": 8,
+              "layout": "vertical",
+              "alignItems": "center",
+              "children": [
+                {"type": "text", "content": "50+", "fontSize": 48, "fontWeight": "bold", "fill": "$--accent"},
+                {"type": "text", "content": "Team members", "fontSize": 16, "fill": "$--muted-foreground"}
+              ]
+            },
+            {
+              "type": "frame",
+              "gap": 8,
+              "layout": "vertical",
+              "alignItems": "center",
+              "children": [
+                {"type": "text", "content": "15", "fontSize": 48, "fontWeight": "bold", "fill": "$--accent"},
+                {"type": "text", "content": "Countries represented", "fontSize": 16, "fill": "$--muted-foreground"}
+              ]
+            },
+            {
+              "type": "frame",
+              "gap": 8,
+              "layout": "vertical",
+              "alignItems": "center",
+              "children": [
+                {"type": "text", "content": "99.9%", "fontSize": 48, "fontWeight": "bold", "fill": "$--accent"},
+                {"type": "text", "content": "Uptime guarantee", "fontSize": 16, "fill": "$--muted-foreground"}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cta-section",
+          "name": "CTA Section",
+          "width": "fill_container",
+          "height": "fit_content",
+          "fill": "$--accent",
+          "padding": 80,
+          "gap": 24,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "layout": "vertical",
+          "children": [
+            {"type": "text", "content": "Join our team", "fontSize": 36, "fontWeight": "bold", "fill": "#ffffff"},
+            {"type": "text", "content": "We're always looking for talented people to join our mission.", "fontSize": 18, "fill": "#ffffff", "opacity": 0.9},
+            {
+              "type": "frame",
+              "fill": "#ffffff",
+              "cornerRadius": 8,
+              "padding": [14, 28],
+              "children": [
+                {"type": "text", "content": "View Open Positions", "fontSize": 16, "fontWeight": "600", "fill": "$--accent"}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "footer",
+          "name": "Footer",
+          "width": "fill_container",
+          "height": "fit_content",
+          "fill": "$--background",
+          "stroke": {"fill": "$--border", "thickness": 1},
+          "padding": 48,
+          "gap": 16,
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "width": "fill_container",
+              "gap": 48,
+              "justifyContent": "space_between",
+              "layout": "horizontal",
+              "children": [
+                {"type": "text", "content": "Brand", "fontSize": 20, "fontWeight": "bold", "fill": "$--foreground"},
+                {"type": "text", "content": "© 2026 Brand. All rights reserved.", "fontSize": 14, "fill": "$--muted-foreground"}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
