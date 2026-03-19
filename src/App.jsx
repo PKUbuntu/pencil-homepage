@@ -10,6 +10,7 @@ import IntegrationsPage from './pages/IntegrationsPage'
 import PrivacyPage from './pages/PrivacyPage'
 import TermsPage from './pages/TermsPage'
 import SecurityPage from './pages/SecurityPage'
+import DashboardPage from './pages/DashboardPage'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />
         <Route path="/security" element={<SecurityPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
       </Routes>
     </HashRouter>
   )

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Hero() {
   return (
     <section className="px-6 md:px-12 py-16 md:py-20 flex flex-col items-center justify-center gap-6 text-center">
@@ -14,17 +16,18 @@ export default function Hero() {
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 mt-4">
-        <button className="px-7 py-3.5 bg-primary text-primary-foreground rounded-lg text-base font-semibold hover:opacity-90 transition-opacity">
+        <Link 
+          to="/signup"
+          className="px-7 py-3.5 bg-primary text-primary-foreground rounded-lg text-base font-semibold hover:opacity-90 transition-opacity inline-block text-center"
+        >
           Start Free Trial
-        </button>
-        <a 
-          href="https://pkubuntu.github.io/huawei-occ-screen/" 
-          target="_blank" 
-          rel="noopener noreferrer"
+        </Link>
+        <Link 
+          to="/dashboard"
           className="px-7 py-3.5 bg-transparent border border-border text-foreground rounded-lg text-base font-medium hover:bg-muted transition-colors inline-block text-center"
         >
           Take a Tour
-        </a>
+        </Link>
       </div>
     </section>
   )
