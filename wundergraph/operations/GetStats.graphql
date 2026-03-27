@@ -1,0 +1,23 @@
+query GetStats {
+  spacex_launchesPast(limit: 100) {
+    mission_name
+    launch_success
+    rocket {
+      rocket_name
+    }
+    launch_date_utc
+  }
+  spacex_launchesUpcoming(limit: 1) {
+    mission_name
+    launch_date_utc
+  }
+  spacex_launchLatest {
+    mission_name
+    launch_success
+    rocket {
+      rocket_name
+    }
+    launch_date_utc
+    details
+  }
+}

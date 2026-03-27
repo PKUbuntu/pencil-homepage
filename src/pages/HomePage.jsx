@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import Hero from '../components/Hero'
+import Stats from '../components/Stats'
 import Features from '../components/Features'
 import Footer from '../components/Footer'
 
@@ -9,6 +10,7 @@ function HomePage() {
       <Header />
       <main className="flex-1 flex flex-col">
         <Hero />
+        <Stats />
         <Features />
       </main>
       <Footer />

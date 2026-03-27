@@ -1,0 +1,15 @@
+{
+  "name": "pencil-homepage-wundergraph",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "wundergraph generate",
+    "dev": "wundergraph dev"
+  },
+  "dependencies": {
+    "@wundergraph/sdk": "^0.15.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
