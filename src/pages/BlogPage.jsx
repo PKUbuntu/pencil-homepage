@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Weather from '../components/Weather'
 
 const posts = [
   {
@@ -36,6 +37,9 @@ function BlogPage() {
           <h1 className="text-5xl font-bold">Blog</h1>
           <p className="text-xl text-muted-foreground">Insights, updates, and stories from our team.</p>
         </section>
+
+        {/* Weather Section - tRPC/Zod Demo */}
+        <Weather />
 
         {/* Featured Post */}
         <section className="px-12 pb-8">
