@@ -3,9 +3,9 @@ import { weatherApi, WEATHER_CODES } from '../lib/trpc.js'
 
 // 默认城市配置
 const DEFAULT_CITY = {
-  name: '北京',
-  lat: 39.9,
-  lon: 116.4,
+  name: '上海',
+  lat: 31.2,
+  lon: 121.5,
 }
 
 // 骨架屏组件
