@@ -13,7 +13,7 @@ function TimeWeatherCard({ currentTime }) {
       {/* 时间显示 */}
       <div className="flex flex-col items-center">
         <span className="text-4xl font-bold font-mono tracking-wider">{formatTime(currentTime)}</span>
-        <span className="text-sm text-gray-400 mt-1">{formatDate(currentTime)}</span>
+        <span className="text-sm text-muted-foreground mt-1">{formatDate(currentTime)}</span>
       </div>
       
       {/* 天气显示 */}
@@ -21,7 +21,7 @@ function TimeWeatherCard({ currentTime }) {
         <span className="text-4xl">☀️</span>
         <div className="flex flex-col">
           <span className="text-2xl font-bold">23°C</span>
-          <span className="text-xs text-gray-400">晴 | 湿度 45%</span>
+          <span className="text-xs text-muted-foreground">晴 | 湿度 45%</span>
         </div>
       </div>
     </div>
