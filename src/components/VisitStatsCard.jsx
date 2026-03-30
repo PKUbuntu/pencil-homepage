@@ -12,27 +12,27 @@ function VisitStatsCard() {
         {/* 简化的环形图 */}
         <div className="relative w-40 h-40">
           <svg viewBox="0 0 100 100" className="w-full h-full transform -rotate-90">
-            <circle cx="50" cy="50" r="40" fill="none" stroke="#0A1629" strokeWidth="12" />
-            <circle cx="50" cy="50" r="40" fill="none" stroke="#00D9FF" strokeWidth="12" strokeDasharray="50.24 201" strokeLinecap="round" />
-            <circle cx="50" cy="50" r="40" fill="none" stroke="#3B82F6" strokeWidth="12" strokeDasharray="201 50.24" strokeDashoffset="-50.24" strokeLinecap="round" />
+            <circle cx="50" cy="50" r="40" fill="none" stroke="hsl(var(--occ-darker))" strokeWidth="12" />
+            <circle cx="50" cy="50" r="40" fill="none" stroke="hsl(var(--occ-cyan))" strokeWidth="12" strokeDasharray="50.24 201" strokeLinecap="round" />
+            <circle cx="50" cy="50" r="40" fill="none" stroke="hsl(var(--occ-blue))" strokeWidth="12" strokeDasharray="201 50.24" strokeDashoffset="-50.24" strokeLinecap="round" />
           </svg>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <span className="text-2xl font-bold">28,654</span>
-            <span className="text-xs text-gray-400">总人数</span>
+            <span className="text-xs text-muted-foreground">总人数</span>
           </div>
         </div>
-        <span className="text-sm text-occ-cyan">今日: 5,847人</span>
+        <span className="text-sm text-occ-cyan">今日：5,847 人</span>
       </div>
       
       {/* 图例 */}
       <div className="flex justify-between text-xs">
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 bg-occ-cyan rounded-sm"></div>
-          <span className="text-gray-400">今日 20.4%</span>
+          <span className="text-muted-foreground">今日 20.4%</span>
         </div>
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 bg-occ-blue rounded-sm"></div>
-          <span className="text-gray-400">累计 79.6%</span>
+          <span className="text-muted-foreground">累计 79.6%</span>
         </div>
       </div>
     </div>
