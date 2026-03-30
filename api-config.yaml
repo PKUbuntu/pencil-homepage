@@ -1,0 +1,475 @@
+# Pencil Homepage API Configuration
+# 接口配置文件 - 示例
+
+version: "1.0"
+
+# 自定义类型定义（可复用）
+types:
+  PageInfo:
+    type: object
+    properties:
+      total:
+        type: integer
+        description: 总数
+      page:
+        type: integer
+        description: 当前页码
+      pageSize:
+        type: integer
+        description: 每页数量
+      hasMore:
+        type: boolean
+        description: 是否有更多数据
+    required:
+      - total
+      - page
+      - pageSize
+      - hasMore
+
+  WeatherData:
+    type: object
+    properties:
+      temperature:
+        type: number
+        description: 温度（摄氏度）
+      feelsLike:
+        type: number
+        description: 体感温度
+      humidity:
+        type: number
+        description: 湿度（百分比）
+      windSpeed:
+        type: number
+        description: 风速（km/h）
+      condition:
+        type: string
+        description: 天气状况
+      icon:
+        type: string
+        description: 天气图标代码
+    required:
+      - temperature
+      - condition
+
+# API 定义列表
+apis:
+  # ==================== 天气 API ====================
+  - name: getWeather
+    method: GET
+    path: /api/weather
+    description: 获取指定位置的当前天气信息
+    params:
+      - name: lat
+        type: number
+        required: true
+        description: 纬度
+        min: -90
+        max: 90
+        default: 39.9042
+      - name: lon
+        type: number
+        required: true
+        description: 经度
+        min: -180
+        max: 180
+        default: 116.4074
+      - name: units
+        type: string
+        required: false
+        description: 温度单位
+        enum: [celsius, fahrenheit]
+        default: celsius
+    response:
+      type: object
+      properties:
+        location:
+          type: object
+          properties:
+            name:
+              type: string
+            country:
+              type: string
+            timezone:
+              type: string
+          required:
+            - timezone
+        current:
+          $ref: WeatherData
+        updatedAt:
+          type: string
+          description: 数据更新时间（ISO 8601）
+      required:
+        - current
+        - updatedAt
+    cache:
+      enabled: true
+      ttl: 300
+      key: "weather:{lat}:{lon}:{units}"
+
+  # ==================== 天气预报 API ====================
+  - name: getWeatherForecast
+    method: GET
+    path: /api/weather/forecast
+    description: 获取指定位置的天气预报
+    params:
+      - name: lat
+        type: number
+        required: true
+        min: -90
+        max: 90
+      - name: lon
+        type: number
+        required: true
+        min: -180
+        max: 180
+      - name: days
+        type: integer
+        required: false
+        description: 预报天数
+        min: 1
+        max: 14
+        default: 7
+    response:
+      type: object
+      properties:
+        location:
+          type: object
+          properties:
+            name:
+              type: string
+            lat:
+              type: number
+            lon:
+              type: number
+          required:
+            - lat
+            - lon
+        forecast:
+          type: array
+          items:
+            type: object
+            properties:
+              date:
+                type: string
+                description: 日期（YYYY-MM-DD）
+              tempMax:
+                type: number
+                description: 最高温度
+              tempMin:
+                type: number
+                description: 最低温度
+              condition:
+                type: string
+                description: 天气状况
+              precipitationChance:
+                type: number
+                description: 降水概率（0-100）
+            required:
+              - date
+              - tempMax
+              - tempMin
+              - condition
+      required:
+        - location
+        - forecast
+    cache:
+      enabled: true
+      ttl: 600
+
+  # ==================== SpaceX 发射数据 API ====================
+  - name: getLaunches
+    type: graphql
+    path: launches
+    description: 获取 SpaceX 火箭发射列表
+    params:
+      - name: limit
+        type: integer
+        required: false
+        description: 返回数量限制
+        min: 1
+        max: 100
+        default: 10
+      - name: offset
+        type: integer
+        required: false
+        description: 偏移量
+        min: 0
+        default: 0
+      - name: upcoming
+        type: boolean
+        required: false
+        description: 是否仅查询即将发射的任务
+        default: false
+    response:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              name:
+                type: string
+              dateUtc:
+                type: string
+              success:
+                type: boolean
+              details:
+                type: string
+              rocket:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  active:
+                    type: boolean
+                required:
+                  - id
+                  - name
+            required:
+              - id
+              - name
+              - dateUtc
+        pageInfo:
+          $ref: PageInfo
+      required:
+        - data
+        - pageInfo
+
+  # ==================== 用户 API ====================
+  - name: getUserProfile
+    method: GET
+    path: /api/users/:id
+    description: 获取用户资料
+    auth: true
+    params:
+      - name: id
+        type: string
+        required: true
+        description: 用户 ID
+        pattern: "^[a-zA-Z0-9]{24}$"
+    response:
+      type: object
+      properties:
+        id:
+          type: string
+        username:
+          type: string
+        email:
+          type: string
+        avatar:
+          type: string
+        bio:
+          type: string
+        createdAt:
+          type: string
+        updatedAt:
+          type: string
+      required:
+        - id
+        - username
+        - email
+        - createdAt
+    cache:
+      enabled: true
+      ttl: 600
+      key: "user:profile:{id}"
+
+  # ==================== 创建用户 API ====================
+  - name: createUser
+    method: POST
+    path: /api/users
+    description: 创建新用户
+    body:
+      type: object
+      properties:
+        username:
+          type: string
+          required: true
+          description: 用户名
+          min: 3
+          max: 20
+          pattern: "^[a-zA-Z][a-zA-Z0-9_]*$"
+        email:
+          type: string
+          required: true
+          description: 邮箱
+          email: true
+        password:
+          type: string
+          required: true
+          description: 密码
+          min: 8
+          max: 128
+        bio:
+          type: string
+          required: false
+          description: 个人简介
+          max: 500
+      required:
+        - username
+        - email
+        - password
+    response:
+      type: object
+      properties:
+        id:
+          type: string
+        username:
+          type: string
+        email:
+          type: string
+        createdAt:
+          type: string
+      required:
+        - id
+        - username
+        - email
+        - createdAt
+
+  # ==================== 更新用户 API ====================
+  - name: updateUser
+    method: PUT
+    path: /api/users/:id
+    description: 更新用户资料
+    auth: true
+    params:
+      - name: id
+        type: string
+        required: true
+        description: 用户 ID
+    body:
+      type: object
+      properties:
+        username:
+          type: string
+          required: false
+          min: 3
+          max: 20
+        email:
+          type: string
+          required: false
+          email: true
+        bio:
+          type: string
+          required: false
+          max: 500
+        avatar:
+          type: string
+          required: false
+          url: true
+
+  # ==================== 删除用户 API ====================
+  - name: deleteUser
+    method: DELETE
+    path: /api/users/:id
+    description: 删除用户
+    auth: true
+    params:
+      - name: id
+        type: string
+        required: true
+        description: 用户 ID
+    response:
+      type: object
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+      required:
+        - success
+
+  # ==================== 统计 API ====================
+  - name: getStats
+    method: GET
+    path: /api/stats
+    description: 获取网站统计数据
+    params:
+      - name: period
+        type: string
+        required: false
+        description: 统计周期
+        enum: [day, week, month, year]
+        default: week
+    response:
+      type: object
+      properties:
+        period:
+          type: string
+        pageViews:
+          type: integer
+        uniqueVisitors:
+          type: integer
+        avgSessionDuration:
+          type: number
+        bounceRate:
+          type: number
+        topPages:
+          type: array
+          items:
+            type: object
+            properties:
+              path:
+                type: string
+              views:
+                type: integer
+            required:
+              - path
+              - views
+      required:
+        - period
+        - pageViews
+        - uniqueVisitors
+    cache:
+      enabled: true
+      ttl: 60
+
+  # ==================== 联系表单 API ====================
+  - name: submitContactForm
+    method: POST
+    path: /api/contact
+    description: 提交联系表单
+    body:
+      type: object
+      properties:
+        name:
+          type: string
+          required: true
+          min: 2
+          max: 100
+        email:
+          type: string
+          required: true
+          email: true
+        subject:
+          type: string
+          required: true
+          min: 5
+          max: 200
+        message:
+          type: string
+          required: true
+          min: 10
+          max: 2000
+      required:
+        - name
+        - email
+        - subject
+        - message
+    response:
+      type: object
+      properties:
+        success:
+          type: boolean
+        ticketId:
+          type: string
+        message:
+          type: string
+      required:
+        - success
+        - ticketId
