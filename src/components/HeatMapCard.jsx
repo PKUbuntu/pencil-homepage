@@ -5,7 +5,7 @@ function HeatMapCard() {
     { height: '58%', color: 'bg-occ-purple' },
     { height: '45%', color: 'bg-occ-green' },
     { height: '38%', color: 'bg-occ-orange' },
-    { height: '28%', color: 'bg-gray-500' },
+    { height: '28%', color: 'bg-muted-foreground' },
   ]
 
   return (
@@ -14,7 +14,7 @@ function HeatMapCard() {
       <div className="flex items-center gap-2">
         <div className="w-4 h-4 bg-occ-green rounded-sm"></div>
         <span className="text-base font-bold">展区热度分析</span>
-        <span className="ml-auto text-xs text-gray-500">更新于 14:35</span>
+        <span className="ml-auto text-xs text-muted-foreground">更新于 14:35</span>
       </div>
       
       {/* 柱状图 */}
@@ -29,10 +29,10 @@ function HeatMapCard() {
         ))}
       </div>
       
-      {/* X轴标签 */}
-      <div className="flex justify-around text-xs text-gray-500 px-4">
-        <span>AI区</span>
-        <span>5G区</span>
+      {/* X 轴标签 */}
+      <div className="flex justify-around text-xs text-muted-foreground px-4">
+        <span>AI 区</span>
+        <span>5G 区</span>
         <span>云展厅</span>
         <span>数据中心</span>
         <span>安全展厅</span>

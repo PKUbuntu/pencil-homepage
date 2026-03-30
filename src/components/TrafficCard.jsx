@@ -20,13 +20,13 @@ function TrafficCard() {
           <svg viewBox="0 0 400 150" className="w-full h-full">
             {/* 网格线 */}
             {[0, 1, 2, 3, 4].map(i => (
-              <line key={i} x1="0" y1={30 * i + 15} x2="400" y2={30 * i + 15} stroke="#1E40AF" strokeWidth="0.5" strokeDasharray="5,5" />
+              <line key={i} x1="0" y1={30 * i + 15} x2="400" y2={30 * i + 15} stroke="hsl(var(--occ-border))" strokeWidth="0.5" strokeDasharray="5,5" />
             ))}
             {/* 折线 */}
             <polyline
               points="0,120 50,90 100,100 150,70 200,85 250,50 300,65 350,45 400,55"
               fill="none"
-              stroke="#00D9FF"
+              stroke="hsl(var(--occ-cyan))"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -34,8 +34,8 @@ function TrafficCard() {
             {/* 渐变填充 */}
             <defs>
               <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stopColor="#00D9FF" stopOpacity="0.3" />
-                <stop offset="100%" stopColor="#00D9FF" stopOpacity="0" />
+                <stop offset="0%" stopColor="hsl(var(--occ-cyan))" stopOpacity="0.3" />
+                <stop offset="100%" stopColor="hsl(var(--occ-cyan))" stopOpacity="0" />
               </linearGradient>
             </defs>
             <polygon
@@ -49,7 +49,7 @@ function TrafficCard() {
         <div className="flex justify-around pt-2 border-t border-occ-border">
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col items-center">
-              <span className="text-xs text-gray-500">{stat.label}</span>
+              <span className="text-xs text-muted-foreground">{stat.label}</span>
               <span className={`text-lg font-bold ${stat.color}`}>{stat.value}</span>
             </div>
           ))}

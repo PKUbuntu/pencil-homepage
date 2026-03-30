@@ -1,7 +1,7 @@
 function TopZonesCard() {
   const zones = [
     { rank: 1, name: 'AI 智能体验区', count: 2156, color: 'bg-occ-orange' },
-    { rank: 2, name: '5G 展示区', count: 1892, color: 'bg-gray-500' },
+    { rank: 2, name: '5G 展示区', count: 1892, color: 'bg-muted-foreground' },
     { rank: 3, name: '云计算展厅', count: 1654, color: 'bg-occ-purple' },
   ]
 
