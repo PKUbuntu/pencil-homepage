@@ -1,0 +1,46 @@
+{
+  "name": "PageTemplate",
+  "description": "Standard page layout with Header, Main content, and Footer",
+  "version": "1.0.0",
+  "slots": {
+    "header": {
+      "description": "Page header area, typically contains logo and navigation",
+      "required": false,
+      "defaultRef": "components/header"
+    },
+    "main": {
+      "description": "Main content area for page-specific content",
+      "required": true
+    },
+    "footer": {
+      "description": "Page footer area, typically contains links and copyright",
+      "required": false,
+      "defaultRef": "components/footer"
+    }
+  },
+  "structure": {
+    "type": "frame",
+    "name": "Page",
+    "layout": "vertical",
+    "width": "fill_container",
+    "height": "fit_content",
+    "children": [
+      {
+        "type": "slot",
+        "name": "header",
+        "slot": "header"
+      },
+      {
+        "type": "slot",
+        "name": "main",
+        "slot": "main",
+        "flex": 1
+      },
+      {
+        "type": "slot",
+        "name": "footer",
+        "slot": "footer"
+      }
+    ]
+  }
+}

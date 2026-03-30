@@ -1,0 +1,65 @@
+{
+  "name": "Footer",
+  "description": "Standard footer component with links and copyright",
+  "version": "1.0.0",
+  "parameters": {
+    "columns": {
+      "type": "array",
+      "description": "Footer link columns",
+      "default": [
+        {"title": "Product", "links": ["Features", "Pricing", "Integrations"]},
+        {"title": "Company", "links": ["About", "Blog", "Careers"]},
+        {"title": "Support", "links": ["Help Center", "Contact", "Status"]}
+      ]
+    },
+    "copyright": {
+      "type": "string",
+      "description": "Copyright text",
+      "default": "© 2024 Company Name. All rights reserved."
+    }
+  },
+  "structure": {
+    "type": "frame",
+    "name": "Footer",
+    "width": "fill_container",
+    "height": "fit_content",
+    "fill": "$--background",
+    "stroke": {
+      "fill": "$--border",
+      "thickness": 1
+    },
+    "padding": [48, 48],
+    "layout": "vertical",
+    "gap": 32,
+    "children": [
+      {
+        "type": "frame",
+        "name": "Footer Links",
+        "width": "fill_container",
+        "height": "fit_content",
+        "layout": "horizontal",
+        "gap": 64,
+        "justifyContent": "center",
+        "children": "${columns|map:col=>({type:'frame',name:col.title+' Column',layout:'vertical',gap:16,children:[{type:'text',name:col.title,content:col.title,fontWeight:'600',fill:'$--foreground'},...col.links.map(link=>({type:'text',name:link,content:link,fill:'$--muted-foreground'}))]})}"
+      },
+      {
+        "type": "frame",
+        "name": "Copyright",
+        "width": "fill_container",
+        "height": "fit_content",
+        "justifyContent": "center",
+        "layout": "horizontal",
+        "children": [
+          {
+            "type": "text",
+            "name": "Copyright Text",
+            "content": "${copyright}",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          }
+        ]
+      }
+    ]
+  }
+}

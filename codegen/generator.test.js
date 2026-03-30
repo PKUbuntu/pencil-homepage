@@ -4,11 +4,11 @@
  */
 
 import { describe, it, expect } from 'vitest';
-import { generate, generateComponent, generateAll } from '../generator/index.js';
-import { generateContainerClasses, generateTextClasses } from '../generator/component-generator.js';
-import { generateStyles, generateCSSVariables } from '../generator/style-generator.js';
-import { generateLayout, generateFlexLayout } from '../generator/layout-generator.js';
-import { generateResponsive, generateResponsiveFontSize } from '../generator/responsive-generator.js';
+import { generate, generateComponent, generateAll } from './generator/index.js';
+import { generateContainerClasses, generateTextClasses } from './generator/component-generator.js';
+import { generateStyles, generateCSSVariables } from './generator/style-generator.js';
+import { generateLayout, generateFlexLayout } from './generator/layout-generator.js';
+import { generateResponsive, generateResponsiveFontSize } from './generator/responsive-generator.js';
 
 // Sample .pen data for testing
 const samplePenData = {
