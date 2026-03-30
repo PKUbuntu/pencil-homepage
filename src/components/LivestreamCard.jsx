@@ -17,11 +17,11 @@ function LivestreamCard() {
       {/* 指标数据 */}
       <div className="flex justify-between">
         <div className="flex flex-col">
-          <span className="text-sm text-gray-400">今日观看</span>
+          <span className="text-sm text-muted-foreground">今日观看</span>
           <span className="text-3xl font-bold text-occ-purple">15.2K</span>
         </div>
         <div className="flex flex-col">
-          <span className="text-sm text-gray-400">累计观看</span>
+          <span className="text-sm text-muted-foreground">累计观看</span>
           <span className="text-3xl font-bold text-occ-blue">89.6K</span>
         </div>
       </div>
@@ -30,7 +30,7 @@ function LivestreamCard() {
       <div className="flex gap-2">
         {channels.map((channel, index) => (
           <div key={index} className="flex-1 bg-occ-card-light rounded px-3 py-2 flex justify-between items-center">
-            <span className="text-xs text-gray-400">{channel.name}</span>
+            <span className="text-xs text-muted-foreground">{channel.name}</span>
             <span className="text-xs font-bold">{channel.viewers}</span>
           </div>
         ))}
