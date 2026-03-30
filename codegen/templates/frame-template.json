@@ -1,0 +1,47 @@
+{
+  "name": "FrameTemplate",
+  "description": "Reusable frame template with reference support",
+  "version": "1.0.0",
+  "parameters": {
+    "name": {
+      "type": "string",
+      "description": "Frame name identifier",
+      "required": true
+    },
+    "width": {
+      "type": "string|number",
+      "description": "Frame width (number or 'fill_container')",
+      "default": "fill_container"
+    },
+    "height": {
+      "type": "string|number",
+      "description": "Frame height (number or 'fit_content')",
+      "default": "fit_content"
+    },
+    "layout": {
+      "type": "string",
+      "description": "Layout type: horizontal, vertical, grid, none",
+      "default": "vertical"
+    },
+    "padding": {
+      "type": "number|array",
+      "description": "Padding value or [top, right, bottom, left]",
+      "default": 0
+    },
+    "gap": {
+      "type": "number",
+      "description": "Gap between children",
+      "default": 0
+    }
+  },
+  "structure": {
+    "type": "frame",
+    "name": "${name}",
+    "width": "${width}",
+    "height": "${height}",
+    "layout": "${layout}",
+    "padding": "${padding}",
+    "gap": "${gap}",
+    "children": []
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "name": "Header",
+  "description": "Standard header component with logo and navigation",
+  "version": "1.0.0",
+  "parameters": {
+    "logoText": {
+      "type": "string",
+      "description": "Logo text content",
+      "default": "Brand"
+    },
+    "navItems": {
+      "type": "array",
+      "description": "Navigation items",
+      "default": ["Features", "Pricing", "About", "Contact"]
+    },
+    "ctaText": {
+      "type": "string",
+      "description": "Call-to-action button text",
+      "default": "Get Started"
+    },
+    "ctaLink": {
+      "type": "string",
+      "description": "Call-to-action button link",
+      "default": "/signup"
+    }
+  },
+  "structure": {
+    "type": "frame",
+    "name": "Header",
+    "width": "fill_container",
+    "height": 64,
+    "fill": "$--background",
+    "stroke": {
+      "fill": "$--border",
+      "thickness": 1
+    },
+    "padding": [0, 48],
+    "justifyContent": "space_between",
+    "alignItems": "center",
+    "layout": "horizontal",
+    "children": [
+      {
+        "type": "text",
+        "name": "Logo",
+        "content": "${logoText}",
+        "fontFamily": "Inter",
+        "fontSize": 24,
+        "fontWeight": "bold",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "frame",
+        "name": "Navigation",
+        "width": "fit_content",
+        "height": "fit_content",
+        "gap": 32,
+        "alignItems": "center",
+        "layout": "horizontal",
+        "children": "${navItems|map:item=>({type:'text',name:item,content:item,fontFamily:'Inter',fontSize:14,fill:'$--muted-foreground'})}"
+      },
+      {
+        "type": "frame",
+        "name": "CTA Button",
+        "width": "fit_content",
+        "height": "fit_content",
+        "fill": "$--primary",
+        "cornerRadius": 6,
+        "padding": [10, 20],
+        "justifyContent": "center",
+        "alignItems": "center",
+        "layout": "horizontal",
+        "children": [
+          {
+            "type": "text",
+            "name": "CTA Text",
+            "content": "${ctaText}",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "fill": "$--primary-foreground"
+          }
+        ]
+      }
+    ]
+  }
+}

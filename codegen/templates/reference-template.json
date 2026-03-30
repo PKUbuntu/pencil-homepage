@@ -1,0 +1,28 @@
+{
+  "name": "ReferenceTemplate",
+  "description": "Component reference for reusing frames/components across templates",
+  "version": "1.0.0",
+  "parameters": {
+    "ref": {
+      "type": "string",
+      "description": "Reference path to the component (e.g., 'components/Header' or 'templates/page-template')",
+      "required": true
+    },
+    "props": {
+      "type": "object",
+      "description": "Props to pass to the referenced component",
+      "default": {}
+    },
+    "as": {
+      "type": "string",
+      "description": "Optional alias name for this reference instance",
+      "required": false
+    }
+  },
+  "structure": {
+    "type": "reference",
+    "ref": "${ref}",
+    "props": "${props}",
+    "as": "${as}"
+  }
+}
