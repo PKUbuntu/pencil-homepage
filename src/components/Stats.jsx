@@ -33,10 +33,10 @@ const GET_STATS_QUERY = `
 
 function SkeletonCard() {
   return (
-    <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 animate-pulse">
-      <div className="h-8 w-8 bg-white/20 rounded-lg mb-4"></div>
-      <div className="h-12 w-32 bg-white/20 rounded mb-3"></div>
-      <div className="h-4 w-24 bg-white/20 rounded"></div>
+    <div className="bg-card-glass backdrop-blur-sm rounded-2xl p-8 animate-pulse">
+      <div className="h-8 w-8 bg-card-glass-light rounded-lg mb-4"></div>
+      <div className="h-12 w-32 bg-card-glass-light rounded mb-3"></div>
+      <div className="h-4 w-24 bg-card-glass-light rounded"></div>
     </div>
   )
 }
@@ -106,7 +106,7 @@ function Stats() {
     return (
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl p-12">
+          <div className="bg-gradient-to-r from-gradient-start to-gradient-end rounded-3xl p-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <SkeletonCard />
               <SkeletonCard />
@@ -122,10 +122,10 @@ function Stats() {
     return (
       <section className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl p-12">
+          <div className="bg-gradient-to-r from-gradient-start to-gradient-end rounded-3xl p-12">
             <div className="text-center text-white">
               <p className="text-lg">Unable to load stats. Please try again later.</p>
-              <p className="text-sm text-purple-100 mt-2">Error: {error}</p>
+              <p className="text-sm text-white/80 mt-2">Error: {error}</p>
             </div>
           </div>
         </div>
@@ -136,40 +136,40 @@ function Stats() {
   return (
     <section className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl p-12 shadow-2xl">
+        <div className="bg-gradient-to-r from-gradient-start to-gradient-end rounded-3xl p-12 shadow-2xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Total Launches */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-card-glass backdrop-blur-sm rounded-2xl p-8 text-center transform hover:scale-105 transition-transform duration-300">
               <div className="text-5xl mb-4">🚀</div>
               <div className="text-5xl font-bold text-white mb-3">
                 {stats?.totalLaunches || 0}
               </div>
-              <div className="text-sm text-purple-100 uppercase tracking-wide">
+              <div className="text-sm text-white/80 uppercase tracking-wide">
                 Total Launches
               </div>
             </div>
 
             {/* Success Rate */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-card-glass backdrop-blur-sm rounded-2xl p-8 text-center transform hover:scale-105 transition-transform duration-300">
               <div className="text-5xl mb-4">✅</div>
               <div className="text-5xl font-bold text-white mb-3">
                 {stats?.successRate || 0}%
               </div>
-              <div className="text-sm text-purple-100 uppercase tracking-wide">
+              <div className="text-sm text-white/80 uppercase tracking-wide">
                 Success Rate
               </div>
             </div>
 
             {/* Latest Mission */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center transform hover:scale-105 transition-transform duration-300">
+            <div className="bg-card-glass backdrop-blur-sm rounded-2xl p-8 text-center transform hover:scale-105 transition-transform duration-300">
               <div className="text-5xl mb-4">🛰️</div>
               <div className="text-2xl font-bold text-white mb-2 line-clamp-2">
                 {stats?.latestMission || 'N/A'}
               </div>
-              <div className="text-xs text-purple-100 mb-3">
+              <div className="text-xs text-white/80 mb-3">
                 {stats?.latestDate || ''}
               </div>
-              <div className="text-sm text-purple-100 uppercase tracking-wide">
+              <div className="text-sm text-white/80 uppercase tracking-wide">
                 Latest Mission
               </div>
             </div>
@@ -177,7 +177,7 @@ function Stats() {
 
           {/* Data Source Footer */}
           <div className="mt-8 text-center">
-            <p className="text-xs text-purple-100">
+            <p className="text-xs text-white/80">
               📊 Data source: SpaceX API • Real-time launch statistics
             </p>
           </div>
