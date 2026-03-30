@@ -1,0 +1,5905 @@
+{
+  "metadata": {
+    "source": "Homepage.pen",
+    "parsedAt": "2026-03-30T17:11:59.421Z",
+    "version": "2.6"
+  },
+  "statistics": {
+    "totalElements": 125,
+    "frameCount": 53,
+    "textCount": 72,
+    "shapeCount": 0
+  },
+  "themes": {
+    "Mode": [
+      "Light",
+      "Dark"
+    ],
+    "Base": [
+      "Neutral",
+      "Gray",
+      "Stone",
+      "Zinc",
+      "Slate"
+    ],
+    "Accent": [
+      "Default",
+      "Red",
+      "Rose",
+      "Orange",
+      "Green",
+      "Blue",
+      "Yellow",
+      "Violet"
+    ]
+  },
+  "variables": {
+    "--background": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#ffffff"
+        },
+        {
+          "value": "#09090b",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#09090b"
+        },
+        {
+          "value": "#fafafa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--muted": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#f4f4f5"
+        },
+        {
+          "value": "#27272a",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--muted-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#71717a"
+        },
+        {
+          "value": "#a1a1aa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--card": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#ffffff"
+        },
+        {
+          "value": "#18181b",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--card-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#09090b"
+        },
+        {
+          "value": "#fafafa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--border": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#e4e4e7"
+        },
+        {
+          "value": "#27272a",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#18181b"
+        },
+        {
+          "value": "#fafafa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--primary-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#fafafa"
+        },
+        {
+          "value": "#18181b",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--secondary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#f4f4f5"
+        },
+        {
+          "value": "#27272a",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--secondary-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#18181b"
+        },
+        {
+          "value": "#fafafa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--accent": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#f4f4f5"
+        },
+        {
+          "value": "#27272a",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--accent-foreground": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#18181b"
+        },
+        {
+          "value": "#fafafa",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    },
+    "--ring": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#a1a1aa"
+        },
+        {
+          "value": "#71717a",
+          "theme": {
+            "Mode": "Dark"
+          }
+        }
+      ]
+    }
+  },
+  "elements": {
+    "frames": [
+      {
+        "type": "frame",
+        "id": "bi8Au",
+        "name": "Frame",
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 600,
+        "fill": "#FFFFFF",
+        "clip": true,
+        "layout": "none"
+      },
+      {
+        "type": "frame",
+        "id": "XFTOk",
+        "name": "Homepage",
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": "fit_content(1200)",
+        "fill": "$--background",
+        "layout": "vertical",
+        "padding": 0,
+        "theme": {
+          "Mode": "Light"
+        },
+        "children": [
+          {
+            "type": "frame",
+            "id": "JRu89",
+            "name": "Header",
+            "width": "fill_container",
+            "height": 64,
+            "fill": "$--background",
+            "stroke": {
+              "fill": "$--border",
+              "thickness": 1
+            },
+            "padding": [
+              0,
+              48
+            ],
+            "justifyContent": "space_between",
+            "alignItems": "center",
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "qbBKR",
+                "name": "Logo",
+                "content": "Brand",
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": "bold",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "frame",
+                "id": "ulVR6",
+                "name": "Navigation",
+                "width": "fit_content",
+                "height": "fit_content",
+                "gap": 32,
+                "alignItems": "center",
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "XXmeb",
+                    "name": "navItem1",
+                    "content": "Features",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "1xYVs",
+                    "name": "navItem2",
+                    "content": "Pricing",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "zhjB1",
+                    "name": "navItem3",
+                    "content": "About",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "DynMr",
+                    "name": "navItem4",
+                    "content": "Contact",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "95XN0",
+                "name": "CTA Button",
+                "width": "fit_content",
+                "height": "fit_content",
+                "fill": "$--primary",
+                "cornerRadius": 6,
+                "padding": [
+                  10,
+                  20
+                ],
+                "justifyContent": "center",
+                "alignItems": "center",
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "AtIoF",
+                    "name": "ctaText",
+                    "content": "Get Started",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "fill": "$--primary-foreground"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "QmVJ9",
+            "name": "Hero Section",
+            "width": "fill_container",
+            "height": "fit_content(500)",
+            "fill": "$--background",
+            "padding": [
+              80,
+              48
+            ],
+            "gap": 24,
+            "justifyContent": "center",
+            "alignItems": "center",
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "frame",
+                "id": "UWJ9m",
+                "name": "Badge",
+                "width": "fit_content",
+                "height": "fit_content",
+                "fill": "$--muted",
+                "cornerRadius": 100,
+                "padding": [
+                  6,
+                  16
+                ],
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "41Okt",
+                    "name": "badgeText",
+                    "content": "New Launch",
+                    "fontFamily": "Inter",
+                    "fontSize": 12,
+                    "fontWeight": "500",
+                    "fill": "$--foreground"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "id": "6KWzw",
+                "name": "Hero Headline",
+                "content": "Build Better Products",
+                "textGrowth": "fixed-width",
+                "width": "fill_container",
+                "fontFamily": "Inter",
+                "fontSize": 64,
+                "fontWeight": "bold",
+                "fill": "$--foreground",
+                "textAlign": "center",
+                "lineHeight": 1.1
+              },
+              {
+                "type": "text",
+                "id": "zlcH7",
+                "name": "Hero Subline",
+                "content": "The all-in-one platform for modern teams to collaborate, create, and ship faster.",
+                "textGrowth": "fixed-width",
+                "width": 700,
+                "fontFamily": "Inter",
+                "fontSize": 20,
+                "fill": "$--muted-foreground",
+                "textAlign": "center",
+                "lineHeight": 1.5
+              },
+              {
+                "type": "frame",
+                "id": "TjdFP",
+                "name": "Hero Buttons",
+                "width": "fit_content",
+                "height": "fit_content",
+                "gap": 16,
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "frame",
+                    "id": "dWXES",
+                    "name": "primaryBtn",
+                    "width": "fit_content",
+                    "height": "fit_content",
+                    "fill": "$--primary",
+                    "cornerRadius": 8,
+                    "padding": [
+                      14,
+                      28
+                    ],
+                    "layout": "horizontal",
+                    "children": [
+                      {
+                        "type": "text",
+                        "id": "MtVqc",
+                        "name": "primaryBtnText",
+                        "content": "Start Free Trial",
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": "600",
+                        "fill": "$--primary-foreground"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "frame",
+                    "id": "vUlcw",
+                    "name": "secondaryBtn",
+                    "width": "fit_content",
+                    "height": "fit_content",
+                    "fill": "transparent",
+                    "stroke": {
+                      "fill": "$--border",
+                      "thickness": 1
+                    },
+                    "cornerRadius": 8,
+                    "padding": [
+                      14,
+                      28
+                    ],
+                    "layout": "horizontal",
+                    "children": [
+                      {
+                        "type": "text",
+                        "id": "2o1Jj",
+                        "name": "secondaryBtnText",
+                        "content": "Watch Demo",
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": "500",
+                        "fill": "$--foreground"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "vIMSS",
+            "name": "Features Section",
+            "width": "fill_container",
+            "height": "fit_content(600)",
+            "fill": "$--muted",
+            "padding": [
+              80,
+              48
+            ],
+            "gap": 48,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "frame",
+                "id": "ePx22",
+                "name": "Features Header",
+                "width": "fill_container",
+                "height": "fit_content",
+                "gap": 12,
+                "alignItems": "center",
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "ha84z",
+                    "name": "Features Title",
+                    "content": "Everything you need",
+                    "textGrowth": "fixed-width",
+                    "width": "fill_container",
+                    "fontFamily": "Inter",
+                    "fontSize": 48,
+                    "fontWeight": "bold",
+                    "fill": "$--foreground",
+                    "textAlign": "center"
+                  },
+                  {
+                    "type": "text",
+                    "id": "JCkwI",
+                    "name": "Features Subtitle",
+                    "content": "Powerful features to help your team work smarter and deliver faster.",
+                    "textGrowth": "fixed-width",
+                    "width": 600,
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fill": "$--muted-foreground",
+                    "textAlign": "center"
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "xpLiX",
+                "name": "Feature Cards",
+                "width": "fill_container",
+                "height": "fit_content",
+                "gap": 32,
+                "justifyContent": "center",
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "frame",
+                    "id": "YeD62",
+                    "name": "Feature Card 1",
+                    "width": 320,
+                    "height": "fit_content",
+                    "fill": "$--card",
+                    "stroke": {
+                      "fill": "$--border",
+                      "thickness": 1
+                    },
+                    "cornerRadius": 12,
+                    "padding": 32,
+                    "gap": 16,
+                    "layout": "vertical",
+                    "children": [
+                      {
+                        "type": "frame",
+                        "id": "vA7I6",
+                        "name": "feature1Icon",
+                        "width": 48,
+                        "height": 48,
+                        "fill": "$--primary",
+                        "cornerRadius": 8
+                      },
+                      {
+                        "type": "text",
+                        "id": "hoXNh",
+                        "name": "Feature 1 Title",
+                        "content": "Real-time Collaboration",
+                        "fontFamily": "Inter",
+                        "fontSize": 20,
+                        "fontWeight": "600",
+                        "fill": "$--foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "2DoYU",
+                        "name": "Feature 1 Desc",
+                        "content": "Work together with your team in real-time, no matter where you are.",
+                        "textGrowth": "fixed-width",
+                        "width": "fill_container",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground",
+                        "lineHeight": 1.5
+                      }
+                    ]
+                  },
+                  {
+                    "type": "frame",
+                    "id": "9bFTk",
+                    "name": "Feature Card 2",
+                    "width": 320,
+                    "height": "fit_content",
+                    "fill": "$--card",
+                    "stroke": {
+                      "fill": "$--border",
+                      "thickness": 1
+                    },
+                    "cornerRadius": 12,
+                    "padding": 32,
+                    "gap": 16,
+                    "layout": "vertical",
+                    "children": [
+                      {
+                        "type": "frame",
+                        "id": "f7gNA",
+                        "name": "feature2Icon",
+                        "width": 48,
+                        "height": 48,
+                        "fill": "$--primary",
+                        "cornerRadius": 8
+                      },
+                      {
+                        "type": "text",
+                        "id": "ivLlP",
+                        "name": "Feature 2 Title",
+                        "content": "Advanced Analytics",
+                        "fontFamily": "Inter",
+                        "fontSize": 20,
+                        "fontWeight": "600",
+                        "fill": "$--foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "fBP1A",
+                        "name": "Feature 2 Desc",
+                        "content": "Get insights that help you make data-driven decisions.",
+                        "textGrowth": "fixed-width",
+                        "width": "fill_container",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground",
+                        "lineHeight": 1.5
+                      }
+                    ]
+                  },
+                  {
+                    "type": "frame",
+                    "id": "hsI2h",
+                    "name": "Feature Card 3",
+                    "width": 320,
+                    "height": "fit_content",
+                    "fill": "$--card",
+                    "stroke": {
+                      "fill": "$--border",
+                      "thickness": 1
+                    },
+                    "cornerRadius": 12,
+                    "padding": 32,
+                    "gap": 16,
+                    "layout": "vertical",
+                    "children": [
+                      {
+                        "type": "frame",
+                        "id": "NoyFR",
+                        "name": "feature3Icon",
+                        "width": 48,
+                        "height": 48,
+                        "fill": "$--primary",
+                        "cornerRadius": 8
+                      },
+                      {
+                        "type": "text",
+                        "id": "7wqJl",
+                        "name": "Feature 3 Title",
+                        "content": "Enterprise Security",
+                        "fontFamily": "Inter",
+                        "fontSize": 20,
+                        "fontWeight": "600",
+                        "fill": "$--foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "voxPq",
+                        "name": "Feature 3 Desc",
+                        "content": "Bank-level security to keep your data safe and compliant.",
+                        "textGrowth": "fixed-width",
+                        "width": "fill_container",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground",
+                        "lineHeight": 1.5
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "zcOqV",
+            "name": "Footer",
+            "width": "fill_container",
+            "height": "fit_content(200)",
+            "fill": "$--background",
+            "stroke": {
+              "fill": "$--border",
+              "thickness": 1
+            },
+            "padding": 48,
+            "gap": 32,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "frame",
+                "id": "QluZH",
+                "name": "Footer Content",
+                "width": "fill_container",
+                "height": "fit_content",
+                "gap": 48,
+                "justifyContent": "space_between",
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "frame",
+                    "id": "jE6eF",
+                    "name": "Footer Brand",
+                    "width": "fit_content",
+                    "height": "fit_content",
+                    "gap": 12,
+                    "layout": "vertical",
+                    "children": [
+                      {
+                        "type": "text",
+                        "id": "pFBCP",
+                        "name": "Footer Logo",
+                        "content": "Brand",
+                        "fontFamily": "Inter",
+                        "fontSize": 20,
+                        "fontWeight": "bold",
+                        "fill": "$--foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "heFpd",
+                        "name": "Footer Tagline",
+                        "content": "Build better products, faster.",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "frame",
+                    "id": "2i5Ah",
+                    "name": "Footer Links 1",
+                    "width": "fit_content",
+                    "height": "fit_content",
+                    "gap": 12,
+                    "layout": "vertical",
+                    "children": [
+                      {
+                        "type": "text",
+                        "id": "FGiUj",
+                        "name": "footerLinks1Title",
+                        "content": "Product",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                        "fill": "$--foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "JNWG7",
+                        "name": "footerLinks1Item1",
+                        "content": "Features",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "8YAjK",
+                        "name": "footerLinks1Item2",
+                        "content": "Pricing",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Ekek9",
+                        "name": "footerLinks1Item3",
+                        "content": "Integrations",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "frame",
+                    "id": "usUBg",
+                    "name": "Footer Links 2",
+                    "width": "fit_content",
+                    "height": "fit_content",
+                    "gap": 12,
+                    "layout": "vertical",
+                    "children": [
+                      {
+                        "type": "text",
+                        "id": "dLsoB",
+                        "name": "footerLinks2Title",
+                        "content": "Company",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                        "fill": "$--foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "CpcXV",
+                        "name": "footerLinks2Item1",
+                        "content": "About",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "N1x5S",
+                        "name": "footerLinks2Item2",
+                        "content": "Blog",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "ZStzV",
+                        "name": "footerLinks2Item3",
+                        "content": "Careers",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "frame",
+                    "id": "tYadC",
+                    "name": "Footer Links 3",
+                    "width": "fit_content",
+                    "height": "fit_content",
+                    "gap": 12,
+                    "layout": "vertical",
+                    "children": [
+                      {
+                        "type": "text",
+                        "id": "BWJz3",
+                        "name": "footerLinks3Title",
+                        "content": "Legal",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                        "fill": "$--foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "GdbUh",
+                        "name": "footerLinks3Item1",
+                        "content": "Privacy",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "pp0pF",
+                        "name": "footerLinks3Item2",
+                        "content": "Terms",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "0PuTX",
+                        "name": "footerLinks3Item3",
+                        "content": "Security",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "bbpZD",
+                "name": "Footer Bottom",
+                "width": "fill_container",
+                "height": "fit_content",
+                "padding": [
+                  24,
+                  0
+                ],
+                "justifyContent": "space_between",
+                "alignItems": "center",
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "nJiaC",
+                    "name": "Copyright",
+                    "content": "© 2026 Brand. All rights reserved.",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "frame",
+                    "id": "6XdbQ",
+                    "name": "Footer Social",
+                    "width": "fit_content",
+                    "height": "fit_content",
+                    "gap": 16,
+                    "layout": "horizontal",
+                    "children": [
+                      {
+                        "type": "text",
+                        "id": "afmdw",
+                        "name": "socialText",
+                        "content": "Twitter",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Z89T2",
+                        "name": "socialText2",
+                        "content": "GitHub",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "JRu89",
+        "name": "Header",
+        "width": "fill_container",
+        "height": 64,
+        "fill": "$--background",
+        "stroke": {
+          "fill": "$--border",
+          "thickness": 1
+        },
+        "layout": "horizontal",
+        "padding": [
+          0,
+          48
+        ],
+        "justifyContent": "space_between",
+        "alignItems": "center",
+        "children": [
+          {
+            "type": "text",
+            "id": "qbBKR",
+            "name": "Logo",
+            "content": "Brand",
+            "fontFamily": "Inter",
+            "fontSize": 24,
+            "fontWeight": "bold",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "frame",
+            "id": "ulVR6",
+            "name": "Navigation",
+            "width": "fit_content",
+            "height": "fit_content",
+            "gap": 32,
+            "alignItems": "center",
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "XXmeb",
+                "name": "navItem1",
+                "content": "Features",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "1xYVs",
+                "name": "navItem2",
+                "content": "Pricing",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "zhjB1",
+                "name": "navItem3",
+                "content": "About",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "DynMr",
+                "name": "navItem4",
+                "content": "Contact",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "95XN0",
+            "name": "CTA Button",
+            "width": "fit_content",
+            "height": "fit_content",
+            "fill": "$--primary",
+            "cornerRadius": 6,
+            "padding": [
+              10,
+              20
+            ],
+            "justifyContent": "center",
+            "alignItems": "center",
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "AtIoF",
+                "name": "ctaText",
+                "content": "Get Started",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": "500",
+                "fill": "$--primary-foreground"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "ulVR6",
+        "name": "Navigation",
+        "width": "fit_content",
+        "height": "fit_content",
+        "layout": "horizontal",
+        "gap": 32,
+        "alignItems": "center",
+        "children": [
+          {
+            "type": "text",
+            "id": "XXmeb",
+            "name": "navItem1",
+            "content": "Features",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "1xYVs",
+            "name": "navItem2",
+            "content": "Pricing",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "zhjB1",
+            "name": "navItem3",
+            "content": "About",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "DynMr",
+            "name": "navItem4",
+            "content": "Contact",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "95XN0",
+        "name": "CTA Button",
+        "width": "fit_content",
+        "height": "fit_content",
+        "fill": "$--primary",
+        "cornerRadius": 6,
+        "layout": "horizontal",
+        "padding": [
+          10,
+          20
+        ],
+        "justifyContent": "center",
+        "alignItems": "center",
+        "children": [
+          {
+            "type": "text",
+            "id": "AtIoF",
+            "name": "ctaText",
+            "content": "Get Started",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "fill": "$--primary-foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "QmVJ9",
+        "name": "Hero Section",
+        "width": "fill_container",
+        "height": "fit_content(500)",
+        "fill": "$--background",
+        "layout": "vertical",
+        "padding": [
+          80,
+          48
+        ],
+        "gap": 24,
+        "justifyContent": "center",
+        "alignItems": "center",
+        "children": [
+          {
+            "type": "frame",
+            "id": "UWJ9m",
+            "name": "Badge",
+            "width": "fit_content",
+            "height": "fit_content",
+            "fill": "$--muted",
+            "cornerRadius": 100,
+            "padding": [
+              6,
+              16
+            ],
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "41Okt",
+                "name": "badgeText",
+                "content": "New Launch",
+                "fontFamily": "Inter",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "fill": "$--foreground"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "id": "6KWzw",
+            "name": "Hero Headline",
+            "content": "Build Better Products",
+            "textGrowth": "fixed-width",
+            "width": "fill_container",
+            "fontFamily": "Inter",
+            "fontSize": 64,
+            "fontWeight": "bold",
+            "fill": "$--foreground",
+            "textAlign": "center",
+            "lineHeight": 1.1
+          },
+          {
+            "type": "text",
+            "id": "zlcH7",
+            "name": "Hero Subline",
+            "content": "The all-in-one platform for modern teams to collaborate, create, and ship faster.",
+            "textGrowth": "fixed-width",
+            "width": 700,
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fill": "$--muted-foreground",
+            "textAlign": "center",
+            "lineHeight": 1.5
+          },
+          {
+            "type": "frame",
+            "id": "TjdFP",
+            "name": "Hero Buttons",
+            "width": "fit_content",
+            "height": "fit_content",
+            "gap": 16,
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "frame",
+                "id": "dWXES",
+                "name": "primaryBtn",
+                "width": "fit_content",
+                "height": "fit_content",
+                "fill": "$--primary",
+                "cornerRadius": 8,
+                "padding": [
+                  14,
+                  28
+                ],
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "MtVqc",
+                    "name": "primaryBtnText",
+                    "content": "Start Free Trial",
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": "600",
+                    "fill": "$--primary-foreground"
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "vUlcw",
+                "name": "secondaryBtn",
+                "width": "fit_content",
+                "height": "fit_content",
+                "fill": "transparent",
+                "stroke": {
+                  "fill": "$--border",
+                  "thickness": 1
+                },
+                "cornerRadius": 8,
+                "padding": [
+                  14,
+                  28
+                ],
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "2o1Jj",
+                    "name": "secondaryBtnText",
+                    "content": "Watch Demo",
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": "500",
+                    "fill": "$--foreground"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "UWJ9m",
+        "name": "Badge",
+        "width": "fit_content",
+        "height": "fit_content",
+        "fill": "$--muted",
+        "cornerRadius": 100,
+        "layout": "horizontal",
+        "padding": [
+          6,
+          16
+        ],
+        "children": [
+          {
+            "type": "text",
+            "id": "41Okt",
+            "name": "badgeText",
+            "content": "New Launch",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "fill": "$--foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "TjdFP",
+        "name": "Hero Buttons",
+        "width": "fit_content",
+        "height": "fit_content",
+        "layout": "horizontal",
+        "gap": 16,
+        "children": [
+          {
+            "type": "frame",
+            "id": "dWXES",
+            "name": "primaryBtn",
+            "width": "fit_content",
+            "height": "fit_content",
+            "fill": "$--primary",
+            "cornerRadius": 8,
+            "padding": [
+              14,
+              28
+            ],
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "MtVqc",
+                "name": "primaryBtnText",
+                "content": "Start Free Trial",
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": "600",
+                "fill": "$--primary-foreground"
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "vUlcw",
+            "name": "secondaryBtn",
+            "width": "fit_content",
+            "height": "fit_content",
+            "fill": "transparent",
+            "stroke": {
+              "fill": "$--border",
+              "thickness": 1
+            },
+            "cornerRadius": 8,
+            "padding": [
+              14,
+              28
+            ],
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "2o1Jj",
+                "name": "secondaryBtnText",
+                "content": "Watch Demo",
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": "500",
+                "fill": "$--foreground"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "dWXES",
+        "name": "primaryBtn",
+        "width": "fit_content",
+        "height": "fit_content",
+        "fill": "$--primary",
+        "cornerRadius": 8,
+        "layout": "horizontal",
+        "padding": [
+          14,
+          28
+        ],
+        "children": [
+          {
+            "type": "text",
+            "id": "MtVqc",
+            "name": "primaryBtnText",
+            "content": "Start Free Trial",
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": "600",
+            "fill": "$--primary-foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "vUlcw",
+        "name": "secondaryBtn",
+        "width": "fit_content",
+        "height": "fit_content",
+        "fill": "transparent",
+        "stroke": {
+          "fill": "$--border",
+          "thickness": 1
+        },
+        "cornerRadius": 8,
+        "layout": "horizontal",
+        "padding": [
+          14,
+          28
+        ],
+        "children": [
+          {
+            "type": "text",
+            "id": "2o1Jj",
+            "name": "secondaryBtnText",
+            "content": "Watch Demo",
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "fill": "$--foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "vIMSS",
+        "name": "Features Section",
+        "width": "fill_container",
+        "height": "fit_content(600)",
+        "fill": "$--muted",
+        "layout": "vertical",
+        "padding": [
+          80,
+          48
+        ],
+        "gap": 48,
+        "children": [
+          {
+            "type": "frame",
+            "id": "ePx22",
+            "name": "Features Header",
+            "width": "fill_container",
+            "height": "fit_content",
+            "gap": 12,
+            "alignItems": "center",
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "text",
+                "id": "ha84z",
+                "name": "Features Title",
+                "content": "Everything you need",
+                "textGrowth": "fixed-width",
+                "width": "fill_container",
+                "fontFamily": "Inter",
+                "fontSize": 48,
+                "fontWeight": "bold",
+                "fill": "$--foreground",
+                "textAlign": "center"
+              },
+              {
+                "type": "text",
+                "id": "JCkwI",
+                "name": "Features Subtitle",
+                "content": "Powerful features to help your team work smarter and deliver faster.",
+                "textGrowth": "fixed-width",
+                "width": 600,
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fill": "$--muted-foreground",
+                "textAlign": "center"
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "xpLiX",
+            "name": "Feature Cards",
+            "width": "fill_container",
+            "height": "fit_content",
+            "gap": 32,
+            "justifyContent": "center",
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "frame",
+                "id": "YeD62",
+                "name": "Feature Card 1",
+                "width": 320,
+                "height": "fit_content",
+                "fill": "$--card",
+                "stroke": {
+                  "fill": "$--border",
+                  "thickness": 1
+                },
+                "cornerRadius": 12,
+                "padding": 32,
+                "gap": 16,
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "frame",
+                    "id": "vA7I6",
+                    "name": "feature1Icon",
+                    "width": 48,
+                    "height": 48,
+                    "fill": "$--primary",
+                    "cornerRadius": 8
+                  },
+                  {
+                    "type": "text",
+                    "id": "hoXNh",
+                    "name": "Feature 1 Title",
+                    "content": "Real-time Collaboration",
+                    "fontFamily": "Inter",
+                    "fontSize": 20,
+                    "fontWeight": "600",
+                    "fill": "$--foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "2DoYU",
+                    "name": "Feature 1 Desc",
+                    "content": "Work together with your team in real-time, no matter where you are.",
+                    "textGrowth": "fixed-width",
+                    "width": "fill_container",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground",
+                    "lineHeight": 1.5
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "9bFTk",
+                "name": "Feature Card 2",
+                "width": 320,
+                "height": "fit_content",
+                "fill": "$--card",
+                "stroke": {
+                  "fill": "$--border",
+                  "thickness": 1
+                },
+                "cornerRadius": 12,
+                "padding": 32,
+                "gap": 16,
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "frame",
+                    "id": "f7gNA",
+                    "name": "feature2Icon",
+                    "width": 48,
+                    "height": 48,
+                    "fill": "$--primary",
+                    "cornerRadius": 8
+                  },
+                  {
+                    "type": "text",
+                    "id": "ivLlP",
+                    "name": "Feature 2 Title",
+                    "content": "Advanced Analytics",
+                    "fontFamily": "Inter",
+                    "fontSize": 20,
+                    "fontWeight": "600",
+                    "fill": "$--foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "fBP1A",
+                    "name": "Feature 2 Desc",
+                    "content": "Get insights that help you make data-driven decisions.",
+                    "textGrowth": "fixed-width",
+                    "width": "fill_container",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground",
+                    "lineHeight": 1.5
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "hsI2h",
+                "name": "Feature Card 3",
+                "width": 320,
+                "height": "fit_content",
+                "fill": "$--card",
+                "stroke": {
+                  "fill": "$--border",
+                  "thickness": 1
+                },
+                "cornerRadius": 12,
+                "padding": 32,
+                "gap": 16,
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "frame",
+                    "id": "NoyFR",
+                    "name": "feature3Icon",
+                    "width": 48,
+                    "height": 48,
+                    "fill": "$--primary",
+                    "cornerRadius": 8
+                  },
+                  {
+                    "type": "text",
+                    "id": "7wqJl",
+                    "name": "Feature 3 Title",
+                    "content": "Enterprise Security",
+                    "fontFamily": "Inter",
+                    "fontSize": 20,
+                    "fontWeight": "600",
+                    "fill": "$--foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "voxPq",
+                    "name": "Feature 3 Desc",
+                    "content": "Bank-level security to keep your data safe and compliant.",
+                    "textGrowth": "fixed-width",
+                    "width": "fill_container",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground",
+                    "lineHeight": 1.5
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "ePx22",
+        "name": "Features Header",
+        "width": "fill_container",
+        "height": "fit_content",
+        "layout": "vertical",
+        "gap": 12,
+        "alignItems": "center",
+        "children": [
+          {
+            "type": "text",
+            "id": "ha84z",
+            "name": "Features Title",
+            "content": "Everything you need",
+            "textGrowth": "fixed-width",
+            "width": "fill_container",
+            "fontFamily": "Inter",
+            "fontSize": 48,
+            "fontWeight": "bold",
+            "fill": "$--foreground",
+            "textAlign": "center"
+          },
+          {
+            "type": "text",
+            "id": "JCkwI",
+            "name": "Features Subtitle",
+            "content": "Powerful features to help your team work smarter and deliver faster.",
+            "textGrowth": "fixed-width",
+            "width": 600,
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fill": "$--muted-foreground",
+            "textAlign": "center"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "xpLiX",
+        "name": "Feature Cards",
+        "width": "fill_container",
+        "height": "fit_content",
+        "layout": "horizontal",
+        "gap": 32,
+        "justifyContent": "center",
+        "children": [
+          {
+            "type": "frame",
+            "id": "YeD62",
+            "name": "Feature Card 1",
+            "width": 320,
+            "height": "fit_content",
+            "fill": "$--card",
+            "stroke": {
+              "fill": "$--border",
+              "thickness": 1
+            },
+            "cornerRadius": 12,
+            "padding": 32,
+            "gap": 16,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "frame",
+                "id": "vA7I6",
+                "name": "feature1Icon",
+                "width": 48,
+                "height": 48,
+                "fill": "$--primary",
+                "cornerRadius": 8
+              },
+              {
+                "type": "text",
+                "id": "hoXNh",
+                "name": "Feature 1 Title",
+                "content": "Real-time Collaboration",
+                "fontFamily": "Inter",
+                "fontSize": 20,
+                "fontWeight": "600",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "text",
+                "id": "2DoYU",
+                "name": "Feature 1 Desc",
+                "content": "Work together with your team in real-time, no matter where you are.",
+                "textGrowth": "fixed-width",
+                "width": "fill_container",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground",
+                "lineHeight": 1.5
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "9bFTk",
+            "name": "Feature Card 2",
+            "width": 320,
+            "height": "fit_content",
+            "fill": "$--card",
+            "stroke": {
+              "fill": "$--border",
+              "thickness": 1
+            },
+            "cornerRadius": 12,
+            "padding": 32,
+            "gap": 16,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "frame",
+                "id": "f7gNA",
+                "name": "feature2Icon",
+                "width": 48,
+                "height": 48,
+                "fill": "$--primary",
+                "cornerRadius": 8
+              },
+              {
+                "type": "text",
+                "id": "ivLlP",
+                "name": "Feature 2 Title",
+                "content": "Advanced Analytics",
+                "fontFamily": "Inter",
+                "fontSize": 20,
+                "fontWeight": "600",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "text",
+                "id": "fBP1A",
+                "name": "Feature 2 Desc",
+                "content": "Get insights that help you make data-driven decisions.",
+                "textGrowth": "fixed-width",
+                "width": "fill_container",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground",
+                "lineHeight": 1.5
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "hsI2h",
+            "name": "Feature Card 3",
+            "width": 320,
+            "height": "fit_content",
+            "fill": "$--card",
+            "stroke": {
+              "fill": "$--border",
+              "thickness": 1
+            },
+            "cornerRadius": 12,
+            "padding": 32,
+            "gap": 16,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "frame",
+                "id": "NoyFR",
+                "name": "feature3Icon",
+                "width": 48,
+                "height": 48,
+                "fill": "$--primary",
+                "cornerRadius": 8
+              },
+              {
+                "type": "text",
+                "id": "7wqJl",
+                "name": "Feature 3 Title",
+                "content": "Enterprise Security",
+                "fontFamily": "Inter",
+                "fontSize": 20,
+                "fontWeight": "600",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "text",
+                "id": "voxPq",
+                "name": "Feature 3 Desc",
+                "content": "Bank-level security to keep your data safe and compliant.",
+                "textGrowth": "fixed-width",
+                "width": "fill_container",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground",
+                "lineHeight": 1.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "YeD62",
+        "name": "Feature Card 1",
+        "width": 320,
+        "height": "fit_content",
+        "fill": "$--card",
+        "stroke": {
+          "fill": "$--border",
+          "thickness": 1
+        },
+        "cornerRadius": 12,
+        "layout": "vertical",
+        "padding": 32,
+        "gap": 16,
+        "children": [
+          {
+            "type": "frame",
+            "id": "vA7I6",
+            "name": "feature1Icon",
+            "width": 48,
+            "height": 48,
+            "fill": "$--primary",
+            "cornerRadius": 8
+          },
+          {
+            "type": "text",
+            "id": "hoXNh",
+            "name": "Feature 1 Title",
+            "content": "Real-time Collaboration",
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": "600",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "text",
+            "id": "2DoYU",
+            "name": "Feature 1 Desc",
+            "content": "Work together with your team in real-time, no matter where you are.",
+            "textGrowth": "fixed-width",
+            "width": "fill_container",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground",
+            "lineHeight": 1.5
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "vA7I6",
+        "name": "feature1Icon",
+        "width": 48,
+        "height": 48,
+        "fill": "$--primary",
+        "cornerRadius": 8
+      },
+      {
+        "type": "frame",
+        "id": "9bFTk",
+        "name": "Feature Card 2",
+        "width": 320,
+        "height": "fit_content",
+        "fill": "$--card",
+        "stroke": {
+          "fill": "$--border",
+          "thickness": 1
+        },
+        "cornerRadius": 12,
+        "layout": "vertical",
+        "padding": 32,
+        "gap": 16,
+        "children": [
+          {
+            "type": "frame",
+            "id": "f7gNA",
+            "name": "feature2Icon",
+            "width": 48,
+            "height": 48,
+            "fill": "$--primary",
+            "cornerRadius": 8
+          },
+          {
+            "type": "text",
+            "id": "ivLlP",
+            "name": "Feature 2 Title",
+            "content": "Advanced Analytics",
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": "600",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "text",
+            "id": "fBP1A",
+            "name": "Feature 2 Desc",
+            "content": "Get insights that help you make data-driven decisions.",
+            "textGrowth": "fixed-width",
+            "width": "fill_container",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground",
+            "lineHeight": 1.5
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "f7gNA",
+        "name": "feature2Icon",
+        "width": 48,
+        "height": 48,
+        "fill": "$--primary",
+        "cornerRadius": 8
+      },
+      {
+        "type": "frame",
+        "id": "hsI2h",
+        "name": "Feature Card 3",
+        "width": 320,
+        "height": "fit_content",
+        "fill": "$--card",
+        "stroke": {
+          "fill": "$--border",
+          "thickness": 1
+        },
+        "cornerRadius": 12,
+        "layout": "vertical",
+        "padding": 32,
+        "gap": 16,
+        "children": [
+          {
+            "type": "frame",
+            "id": "NoyFR",
+            "name": "feature3Icon",
+            "width": 48,
+            "height": 48,
+            "fill": "$--primary",
+            "cornerRadius": 8
+          },
+          {
+            "type": "text",
+            "id": "7wqJl",
+            "name": "Feature 3 Title",
+            "content": "Enterprise Security",
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": "600",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "text",
+            "id": "voxPq",
+            "name": "Feature 3 Desc",
+            "content": "Bank-level security to keep your data safe and compliant.",
+            "textGrowth": "fixed-width",
+            "width": "fill_container",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground",
+            "lineHeight": 1.5
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "NoyFR",
+        "name": "feature3Icon",
+        "width": 48,
+        "height": 48,
+        "fill": "$--primary",
+        "cornerRadius": 8
+      },
+      {
+        "type": "frame",
+        "id": "zcOqV",
+        "name": "Footer",
+        "width": "fill_container",
+        "height": "fit_content(200)",
+        "fill": "$--background",
+        "stroke": {
+          "fill": "$--border",
+          "thickness": 1
+        },
+        "layout": "vertical",
+        "padding": 48,
+        "gap": 32,
+        "children": [
+          {
+            "type": "frame",
+            "id": "QluZH",
+            "name": "Footer Content",
+            "width": "fill_container",
+            "height": "fit_content",
+            "gap": 48,
+            "justifyContent": "space_between",
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "frame",
+                "id": "jE6eF",
+                "name": "Footer Brand",
+                "width": "fit_content",
+                "height": "fit_content",
+                "gap": 12,
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "pFBCP",
+                    "name": "Footer Logo",
+                    "content": "Brand",
+                    "fontFamily": "Inter",
+                    "fontSize": 20,
+                    "fontWeight": "bold",
+                    "fill": "$--foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "heFpd",
+                    "name": "Footer Tagline",
+                    "content": "Build better products, faster.",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "2i5Ah",
+                "name": "Footer Links 1",
+                "width": "fit_content",
+                "height": "fit_content",
+                "gap": 12,
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "FGiUj",
+                    "name": "footerLinks1Title",
+                    "content": "Product",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": "600",
+                    "fill": "$--foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "JNWG7",
+                    "name": "footerLinks1Item1",
+                    "content": "Features",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "8YAjK",
+                    "name": "footerLinks1Item2",
+                    "content": "Pricing",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Ekek9",
+                    "name": "footerLinks1Item3",
+                    "content": "Integrations",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "usUBg",
+                "name": "Footer Links 2",
+                "width": "fit_content",
+                "height": "fit_content",
+                "gap": 12,
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "dLsoB",
+                    "name": "footerLinks2Title",
+                    "content": "Company",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": "600",
+                    "fill": "$--foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "CpcXV",
+                    "name": "footerLinks2Item1",
+                    "content": "About",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "N1x5S",
+                    "name": "footerLinks2Item2",
+                    "content": "Blog",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "ZStzV",
+                    "name": "footerLinks2Item3",
+                    "content": "Careers",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "tYadC",
+                "name": "Footer Links 3",
+                "width": "fit_content",
+                "height": "fit_content",
+                "gap": 12,
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "BWJz3",
+                    "name": "footerLinks3Title",
+                    "content": "Legal",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": "600",
+                    "fill": "$--foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "GdbUh",
+                    "name": "footerLinks3Item1",
+                    "content": "Privacy",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "pp0pF",
+                    "name": "footerLinks3Item2",
+                    "content": "Terms",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "0PuTX",
+                    "name": "footerLinks3Item3",
+                    "content": "Security",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "bbpZD",
+            "name": "Footer Bottom",
+            "width": "fill_container",
+            "height": "fit_content",
+            "padding": [
+              24,
+              0
+            ],
+            "justifyContent": "space_between",
+            "alignItems": "center",
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "nJiaC",
+                "name": "Copyright",
+                "content": "© 2026 Brand. All rights reserved.",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "frame",
+                "id": "6XdbQ",
+                "name": "Footer Social",
+                "width": "fit_content",
+                "height": "fit_content",
+                "gap": 16,
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "afmdw",
+                    "name": "socialText",
+                    "content": "Twitter",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Z89T2",
+                    "name": "socialText2",
+                    "content": "GitHub",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "QluZH",
+        "name": "Footer Content",
+        "width": "fill_container",
+        "height": "fit_content",
+        "layout": "horizontal",
+        "gap": 48,
+        "justifyContent": "space_between",
+        "children": [
+          {
+            "type": "frame",
+            "id": "jE6eF",
+            "name": "Footer Brand",
+            "width": "fit_content",
+            "height": "fit_content",
+            "gap": 12,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "text",
+                "id": "pFBCP",
+                "name": "Footer Logo",
+                "content": "Brand",
+                "fontFamily": "Inter",
+                "fontSize": 20,
+                "fontWeight": "bold",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "text",
+                "id": "heFpd",
+                "name": "Footer Tagline",
+                "content": "Build better products, faster.",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "2i5Ah",
+            "name": "Footer Links 1",
+            "width": "fit_content",
+            "height": "fit_content",
+            "gap": 12,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "text",
+                "id": "FGiUj",
+                "name": "footerLinks1Title",
+                "content": "Product",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": "600",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "text",
+                "id": "JNWG7",
+                "name": "footerLinks1Item1",
+                "content": "Features",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "8YAjK",
+                "name": "footerLinks1Item2",
+                "content": "Pricing",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "Ekek9",
+                "name": "footerLinks1Item3",
+                "content": "Integrations",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "usUBg",
+            "name": "Footer Links 2",
+            "width": "fit_content",
+            "height": "fit_content",
+            "gap": 12,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "text",
+                "id": "dLsoB",
+                "name": "footerLinks2Title",
+                "content": "Company",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": "600",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "text",
+                "id": "CpcXV",
+                "name": "footerLinks2Item1",
+                "content": "About",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "N1x5S",
+                "name": "footerLinks2Item2",
+                "content": "Blog",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "ZStzV",
+                "name": "footerLinks2Item3",
+                "content": "Careers",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "tYadC",
+            "name": "Footer Links 3",
+            "width": "fit_content",
+            "height": "fit_content",
+            "gap": 12,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "text",
+                "id": "BWJz3",
+                "name": "footerLinks3Title",
+                "content": "Legal",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": "600",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "text",
+                "id": "GdbUh",
+                "name": "footerLinks3Item1",
+                "content": "Privacy",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "pp0pF",
+                "name": "footerLinks3Item2",
+                "content": "Terms",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "0PuTX",
+                "name": "footerLinks3Item3",
+                "content": "Security",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "jE6eF",
+        "name": "Footer Brand",
+        "width": "fit_content",
+        "height": "fit_content",
+        "layout": "vertical",
+        "gap": 12,
+        "children": [
+          {
+            "type": "text",
+            "id": "pFBCP",
+            "name": "Footer Logo",
+            "content": "Brand",
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "text",
+            "id": "heFpd",
+            "name": "Footer Tagline",
+            "content": "Build better products, faster.",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "2i5Ah",
+        "name": "Footer Links 1",
+        "width": "fit_content",
+        "height": "fit_content",
+        "layout": "vertical",
+        "gap": 12,
+        "children": [
+          {
+            "type": "text",
+            "id": "FGiUj",
+            "name": "footerLinks1Title",
+            "content": "Product",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "text",
+            "id": "JNWG7",
+            "name": "footerLinks1Item1",
+            "content": "Features",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "8YAjK",
+            "name": "footerLinks1Item2",
+            "content": "Pricing",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "Ekek9",
+            "name": "footerLinks1Item3",
+            "content": "Integrations",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "usUBg",
+        "name": "Footer Links 2",
+        "width": "fit_content",
+        "height": "fit_content",
+        "layout": "vertical",
+        "gap": 12,
+        "children": [
+          {
+            "type": "text",
+            "id": "dLsoB",
+            "name": "footerLinks2Title",
+            "content": "Company",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "text",
+            "id": "CpcXV",
+            "name": "footerLinks2Item1",
+            "content": "About",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "N1x5S",
+            "name": "footerLinks2Item2",
+            "content": "Blog",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "ZStzV",
+            "name": "footerLinks2Item3",
+            "content": "Careers",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "tYadC",
+        "name": "Footer Links 3",
+        "width": "fit_content",
+        "height": "fit_content",
+        "layout": "vertical",
+        "gap": 12,
+        "children": [
+          {
+            "type": "text",
+            "id": "BWJz3",
+            "name": "footerLinks3Title",
+            "content": "Legal",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "text",
+            "id": "GdbUh",
+            "name": "footerLinks3Item1",
+            "content": "Privacy",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "pp0pF",
+            "name": "footerLinks3Item2",
+            "content": "Terms",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "0PuTX",
+            "name": "footerLinks3Item3",
+            "content": "Security",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "bbpZD",
+        "name": "Footer Bottom",
+        "width": "fill_container",
+        "height": "fit_content",
+        "layout": "horizontal",
+        "padding": [
+          24,
+          0
+        ],
+        "justifyContent": "space_between",
+        "alignItems": "center",
+        "children": [
+          {
+            "type": "text",
+            "id": "nJiaC",
+            "name": "Copyright",
+            "content": "© 2026 Brand. All rights reserved.",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "frame",
+            "id": "6XdbQ",
+            "name": "Footer Social",
+            "width": "fit_content",
+            "height": "fit_content",
+            "gap": 16,
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "afmdw",
+                "name": "socialText",
+                "content": "Twitter",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "Z89T2",
+                "name": "socialText2",
+                "content": "GitHub",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "6XdbQ",
+        "name": "Footer Social",
+        "width": "fit_content",
+        "height": "fit_content",
+        "layout": "horizontal",
+        "gap": 16,
+        "children": [
+          {
+            "type": "text",
+            "id": "afmdw",
+            "name": "socialText",
+            "content": "Twitter",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "Z89T2",
+            "name": "socialText2",
+            "content": "GitHub",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "DrK7n",
+        "name": "Homepage Dark",
+        "x": 1500,
+        "y": 0,
+        "width": 1440,
+        "height": "fit_content(1200)",
+        "fill": "$--background",
+        "layout": "vertical",
+        "padding": 0,
+        "theme": {
+          "Mode": "Dark"
+        },
+        "children": [
+          {
+            "type": "frame",
+            "id": "Hd9K2",
+            "name": "Header",
+            "width": "fill_container",
+            "height": 64,
+            "fill": "$--background",
+            "stroke": {
+              "fill": "$--border",
+              "thickness": 1
+            },
+            "padding": [
+              0,
+              48
+            ],
+            "justifyContent": "space_between",
+            "alignItems": "center",
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "Lm8Bx",
+                "name": "Logo",
+                "content": "Brand",
+                "fontFamily": "Inter",
+                "fontSize": 24,
+                "fontWeight": "bold",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "frame",
+                "id": "Rt4Pn",
+                "name": "Navigation",
+                "width": "fit_content",
+                "height": "fit_content",
+                "gap": 32,
+                "alignItems": "center",
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "Vg5Yh",
+                    "name": "navItem1",
+                    "content": "Features",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Bj6Uk",
+                    "name": "navItem2",
+                    "content": "Pricing",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Nz7Wl",
+                    "name": "navItem3",
+                    "content": "About",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Mx8Cm",
+                    "name": "navItem4",
+                    "content": "Contact",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "Kp9Do",
+                "name": "CTA Button",
+                "width": "fit_content",
+                "height": "fit_content",
+                "fill": "$--primary",
+                "cornerRadius": 6,
+                "padding": [
+                  10,
+                  20
+                ],
+                "justifyContent": "center",
+                "alignItems": "center",
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "Qw0Ep",
+                    "name": "ctaText",
+                    "content": "Get Started",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "fill": "$--primary-foreground"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "Sf1Gq",
+            "name": "Hero Section",
+            "width": "fill_container",
+            "height": "fit_content(500)",
+            "fill": "$--background",
+            "padding": [
+              80,
+              48
+            ],
+            "gap": 24,
+            "justifyContent": "center",
+            "alignItems": "center",
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "frame",
+                "id": "Th2Jr",
+                "name": "Badge",
+                "width": "fit_content",
+                "height": "fit_content",
+                "fill": "$--muted",
+                "cornerRadius": 100,
+                "padding": [
+                  6,
+                  16
+                ],
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "Uj3Ks",
+                    "name": "badgeText",
+                    "content": "New Launch",
+                    "fontFamily": "Inter",
+                    "fontSize": 12,
+                    "fontWeight": "500",
+                    "fill": "$--foreground"
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "id": "Vk4Lt",
+                "name": "Hero Headline",
+                "content": "Build Better Products",
+                "textGrowth": "fixed-width",
+                "width": "fill_container",
+                "fontFamily": "Inter",
+                "fontSize": 64,
+                "fontWeight": "bold",
+                "fill": "$--foreground",
+                "textAlign": "center",
+                "lineHeight": 1.1
+              },
+              {
+                "type": "text",
+                "id": "Wl5Mu",
+                "name": "Hero Subline",
+                "content": "The all-in-one platform for modern teams to collaborate, create, and ship faster.",
+                "textGrowth": "fixed-width",
+                "width": 700,
+                "fontFamily": "Inter",
+                "fontSize": 20,
+                "fill": "$--muted-foreground",
+                "textAlign": "center",
+                "lineHeight": 1.5
+              },
+              {
+                "type": "frame",
+                "id": "Xm6Nv",
+                "name": "Hero Buttons",
+                "width": "fit_content",
+                "height": "fit_content",
+                "gap": 16,
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "frame",
+                    "id": "Yn7Ow",
+                    "name": "primaryBtn",
+                    "width": "fit_content",
+                    "height": "fit_content",
+                    "fill": "$--primary",
+                    "cornerRadius": 8,
+                    "padding": [
+                      14,
+                      28
+                    ],
+                    "layout": "horizontal",
+                    "children": [
+                      {
+                        "type": "text",
+                        "id": "Zo8Px",
+                        "name": "primaryBtnText",
+                        "content": "Start Free Trial",
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": "600",
+                        "fill": "$--primary-foreground"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "frame",
+                    "id": "Aa9Qy",
+                    "name": "secondaryBtn",
+                    "width": "fit_content",
+                    "height": "fit_content",
+                    "fill": "transparent",
+                    "stroke": {
+                      "fill": "$--border",
+                      "thickness": 1
+                    },
+                    "cornerRadius": 8,
+                    "padding": [
+                      14,
+                      28
+                    ],
+                    "layout": "horizontal",
+                    "children": [
+                      {
+                        "type": "text",
+                        "id": "Bb0Rz",
+                        "name": "secondaryBtnText",
+                        "content": "Watch Demo",
+                        "fontFamily": "Inter",
+                        "fontSize": 16,
+                        "fontWeight": "500",
+                        "fill": "$--foreground"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "Cc1Sa",
+            "name": "Features Section",
+            "width": "fill_container",
+            "height": "fit_content(600)",
+            "fill": "$--muted",
+            "padding": [
+              80,
+              48
+            ],
+            "gap": 48,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "frame",
+                "id": "Dd2Tb",
+                "name": "Features Header",
+                "width": "fill_container",
+                "height": "fit_content",
+                "gap": 12,
+                "alignItems": "center",
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "Ee3Uc",
+                    "name": "Features Title",
+                    "content": "Everything you need",
+                    "textGrowth": "fixed-width",
+                    "width": "fill_container",
+                    "fontFamily": "Inter",
+                    "fontSize": 48,
+                    "fontWeight": "bold",
+                    "fill": "$--foreground",
+                    "textAlign": "center"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Ff4Vd",
+                    "name": "Features Subtitle",
+                    "content": "Powerful features to help your team work smarter and deliver faster.",
+                    "textGrowth": "fixed-width",
+                    "width": 600,
+                    "fontFamily": "Inter",
+                    "fontSize": 18,
+                    "fill": "$--muted-foreground",
+                    "textAlign": "center"
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "Gg5We",
+                "name": "Feature Cards",
+                "width": "fill_container",
+                "height": "fit_content",
+                "gap": 32,
+                "justifyContent": "center",
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "frame",
+                    "id": "Hh6Xf",
+                    "name": "Feature Card 1",
+                    "width": 320,
+                    "height": "fit_content",
+                    "fill": "$--card",
+                    "stroke": {
+                      "fill": "$--border",
+                      "thickness": 1
+                    },
+                    "cornerRadius": 12,
+                    "padding": 32,
+                    "gap": 16,
+                    "layout": "vertical",
+                    "children": [
+                      {
+                        "type": "frame",
+                        "id": "Ii7Yg",
+                        "name": "feature1Icon",
+                        "width": 48,
+                        "height": 48,
+                        "fill": "$--primary",
+                        "cornerRadius": 8
+                      },
+                      {
+                        "type": "text",
+                        "id": "Jj8Zh",
+                        "name": "Feature 1 Title",
+                        "content": "Real-time Collaboration",
+                        "fontFamily": "Inter",
+                        "fontSize": 20,
+                        "fontWeight": "600",
+                        "fill": "$--foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Kk9Ai",
+                        "name": "Feature 1 Desc",
+                        "content": "Work together with your team in real-time, no matter where you are.",
+                        "textGrowth": "fixed-width",
+                        "width": "fill_container",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground",
+                        "lineHeight": 1.5
+                      }
+                    ]
+                  },
+                  {
+                    "type": "frame",
+                    "id": "Ll0Bj",
+                    "name": "Feature Card 2",
+                    "width": 320,
+                    "height": "fit_content",
+                    "fill": "$--card",
+                    "stroke": {
+                      "fill": "$--border",
+                      "thickness": 1
+                    },
+                    "cornerRadius": 12,
+                    "padding": 32,
+                    "gap": 16,
+                    "layout": "vertical",
+                    "children": [
+                      {
+                        "type": "frame",
+                        "id": "Mm1Ck",
+                        "name": "feature2Icon",
+                        "width": 48,
+                        "height": 48,
+                        "fill": "$--primary",
+                        "cornerRadius": 8
+                      },
+                      {
+                        "type": "text",
+                        "id": "Nn2Dl",
+                        "name": "Feature 2 Title",
+                        "content": "Advanced Analytics",
+                        "fontFamily": "Inter",
+                        "fontSize": 20,
+                        "fontWeight": "600",
+                        "fill": "$--foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Oo3Em",
+                        "name": "Feature 2 Desc",
+                        "content": "Get insights that help you make data-driven decisions.",
+                        "textGrowth": "fixed-width",
+                        "width": "fill_container",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground",
+                        "lineHeight": 1.5
+                      }
+                    ]
+                  },
+                  {
+                    "type": "frame",
+                    "id": "Pp4Fn",
+                    "name": "Feature Card 3",
+                    "width": 320,
+                    "height": "fit_content",
+                    "fill": "$--card",
+                    "stroke": {
+                      "fill": "$--border",
+                      "thickness": 1
+                    },
+                    "cornerRadius": 12,
+                    "padding": 32,
+                    "gap": 16,
+                    "layout": "vertical",
+                    "children": [
+                      {
+                        "type": "frame",
+                        "id": "Qq5Go",
+                        "name": "feature3Icon",
+                        "width": 48,
+                        "height": 48,
+                        "fill": "$--primary",
+                        "cornerRadius": 8
+                      },
+                      {
+                        "type": "text",
+                        "id": "Rr6Hp",
+                        "name": "Feature 3 Title",
+                        "content": "Enterprise Security",
+                        "fontFamily": "Inter",
+                        "fontSize": 20,
+                        "fontWeight": "600",
+                        "fill": "$--foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Ss7Iq",
+                        "name": "Feature 3 Desc",
+                        "content": "Bank-level security to keep your data safe and compliant.",
+                        "textGrowth": "fixed-width",
+                        "width": "fill_container",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground",
+                        "lineHeight": 1.5
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "Tt8Jr",
+            "name": "Footer",
+            "width": "fill_container",
+            "height": "fit_content(200)",
+            "fill": "$--background",
+            "stroke": {
+              "fill": "$--border",
+              "thickness": 1
+            },
+            "padding": 48,
+            "gap": 32,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "frame",
+                "id": "Uu9Ks",
+                "name": "Footer Content",
+                "width": "fill_container",
+                "height": "fit_content",
+                "gap": 48,
+                "justifyContent": "space_between",
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "frame",
+                    "id": "Vv0Lt",
+                    "name": "Footer Brand",
+                    "width": "fit_content",
+                    "height": "fit_content",
+                    "gap": 12,
+                    "layout": "vertical",
+                    "children": [
+                      {
+                        "type": "text",
+                        "id": "Ww1Mu",
+                        "name": "Footer Logo",
+                        "content": "Brand",
+                        "fontFamily": "Inter",
+                        "fontSize": 20,
+                        "fontWeight": "bold",
+                        "fill": "$--foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Xx2Nv",
+                        "name": "Footer Tagline",
+                        "content": "Build better products, faster.",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "frame",
+                    "id": "Yy3Ow",
+                    "name": "Footer Links 1",
+                    "width": "fit_content",
+                    "height": "fit_content",
+                    "gap": 12,
+                    "layout": "vertical",
+                    "children": [
+                      {
+                        "type": "text",
+                        "id": "Zz4Px",
+                        "name": "footerLinks1Title",
+                        "content": "Product",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                        "fill": "$--foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Aa5Qy",
+                        "name": "footerLinks1Item1",
+                        "content": "Features",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Bb6Rz",
+                        "name": "footerLinks1Item2",
+                        "content": "Pricing",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Cc7Sa",
+                        "name": "footerLinks1Item3",
+                        "content": "Integrations",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "frame",
+                    "id": "Dd8Tb",
+                    "name": "Footer Links 2",
+                    "width": "fit_content",
+                    "height": "fit_content",
+                    "gap": 12,
+                    "layout": "vertical",
+                    "children": [
+                      {
+                        "type": "text",
+                        "id": "Ee9Uc",
+                        "name": "footerLinks2Title",
+                        "content": "Company",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                        "fill": "$--foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Ff0Vd",
+                        "name": "footerLinks2Item1",
+                        "content": "About",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Gg1We",
+                        "name": "footerLinks2Item2",
+                        "content": "Blog",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Hh2Xf",
+                        "name": "footerLinks2Item3",
+                        "content": "Careers",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "frame",
+                    "id": "Ii3Yg",
+                    "name": "Footer Links 3",
+                    "width": "fit_content",
+                    "height": "fit_content",
+                    "gap": 12,
+                    "layout": "vertical",
+                    "children": [
+                      {
+                        "type": "text",
+                        "id": "Jj4Zh",
+                        "name": "footerLinks3Title",
+                        "content": "Legal",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                        "fill": "$--foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Kk5Ai",
+                        "name": "footerLinks3Item1",
+                        "content": "Privacy",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Ll6Bj",
+                        "name": "footerLinks3Item2",
+                        "content": "Terms",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Mm7Ck",
+                        "name": "footerLinks3Item3",
+                        "content": "Security",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "Nn8Dl",
+                "name": "Footer Bottom",
+                "width": "fill_container",
+                "height": "fit_content",
+                "padding": [
+                  24,
+                  0
+                ],
+                "justifyContent": "space_between",
+                "alignItems": "center",
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "Oo9Em",
+                    "name": "Copyright",
+                    "content": "© 2026 Brand. All rights reserved.",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "frame",
+                    "id": "Pp0Fn",
+                    "name": "Footer Social",
+                    "width": "fit_content",
+                    "height": "fit_content",
+                    "gap": 16,
+                    "layout": "horizontal",
+                    "children": [
+                      {
+                        "type": "text",
+                        "id": "Qq1Go",
+                        "name": "socialText",
+                        "content": "Twitter",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      },
+                      {
+                        "type": "text",
+                        "id": "Rr2Hp",
+                        "name": "socialText2",
+                        "content": "GitHub",
+                        "fontFamily": "Inter",
+                        "fontSize": 14,
+                        "fill": "$--muted-foreground"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Hd9K2",
+        "name": "Header",
+        "width": "fill_container",
+        "height": 64,
+        "fill": "$--background",
+        "stroke": {
+          "fill": "$--border",
+          "thickness": 1
+        },
+        "layout": "horizontal",
+        "padding": [
+          0,
+          48
+        ],
+        "justifyContent": "space_between",
+        "alignItems": "center",
+        "children": [
+          {
+            "type": "text",
+            "id": "Lm8Bx",
+            "name": "Logo",
+            "content": "Brand",
+            "fontFamily": "Inter",
+            "fontSize": 24,
+            "fontWeight": "bold",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "frame",
+            "id": "Rt4Pn",
+            "name": "Navigation",
+            "width": "fit_content",
+            "height": "fit_content",
+            "gap": 32,
+            "alignItems": "center",
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "Vg5Yh",
+                "name": "navItem1",
+                "content": "Features",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "Bj6Uk",
+                "name": "navItem2",
+                "content": "Pricing",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "Nz7Wl",
+                "name": "navItem3",
+                "content": "About",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "Mx8Cm",
+                "name": "navItem4",
+                "content": "Contact",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "Kp9Do",
+            "name": "CTA Button",
+            "width": "fit_content",
+            "height": "fit_content",
+            "fill": "$--primary",
+            "cornerRadius": 6,
+            "padding": [
+              10,
+              20
+            ],
+            "justifyContent": "center",
+            "alignItems": "center",
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "Qw0Ep",
+                "name": "ctaText",
+                "content": "Get Started",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": "500",
+                "fill": "$--primary-foreground"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Rt4Pn",
+        "name": "Navigation",
+        "width": "fit_content",
+        "height": "fit_content",
+        "layout": "horizontal",
+        "gap": 32,
+        "alignItems": "center",
+        "children": [
+          {
+            "type": "text",
+            "id": "Vg5Yh",
+            "name": "navItem1",
+            "content": "Features",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "Bj6Uk",
+            "name": "navItem2",
+            "content": "Pricing",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "Nz7Wl",
+            "name": "navItem3",
+            "content": "About",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "Mx8Cm",
+            "name": "navItem4",
+            "content": "Contact",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Kp9Do",
+        "name": "CTA Button",
+        "width": "fit_content",
+        "height": "fit_content",
+        "fill": "$--primary",
+        "cornerRadius": 6,
+        "layout": "horizontal",
+        "padding": [
+          10,
+          20
+        ],
+        "justifyContent": "center",
+        "alignItems": "center",
+        "children": [
+          {
+            "type": "text",
+            "id": "Qw0Ep",
+            "name": "ctaText",
+            "content": "Get Started",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "fill": "$--primary-foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Sf1Gq",
+        "name": "Hero Section",
+        "width": "fill_container",
+        "height": "fit_content(500)",
+        "fill": "$--background",
+        "layout": "vertical",
+        "padding": [
+          80,
+          48
+        ],
+        "gap": 24,
+        "justifyContent": "center",
+        "alignItems": "center",
+        "children": [
+          {
+            "type": "frame",
+            "id": "Th2Jr",
+            "name": "Badge",
+            "width": "fit_content",
+            "height": "fit_content",
+            "fill": "$--muted",
+            "cornerRadius": 100,
+            "padding": [
+              6,
+              16
+            ],
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "Uj3Ks",
+                "name": "badgeText",
+                "content": "New Launch",
+                "fontFamily": "Inter",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "fill": "$--foreground"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "id": "Vk4Lt",
+            "name": "Hero Headline",
+            "content": "Build Better Products",
+            "textGrowth": "fixed-width",
+            "width": "fill_container",
+            "fontFamily": "Inter",
+            "fontSize": 64,
+            "fontWeight": "bold",
+            "fill": "$--foreground",
+            "textAlign": "center",
+            "lineHeight": 1.1
+          },
+          {
+            "type": "text",
+            "id": "Wl5Mu",
+            "name": "Hero Subline",
+            "content": "The all-in-one platform for modern teams to collaborate, create, and ship faster.",
+            "textGrowth": "fixed-width",
+            "width": 700,
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fill": "$--muted-foreground",
+            "textAlign": "center",
+            "lineHeight": 1.5
+          },
+          {
+            "type": "frame",
+            "id": "Xm6Nv",
+            "name": "Hero Buttons",
+            "width": "fit_content",
+            "height": "fit_content",
+            "gap": 16,
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "frame",
+                "id": "Yn7Ow",
+                "name": "primaryBtn",
+                "width": "fit_content",
+                "height": "fit_content",
+                "fill": "$--primary",
+                "cornerRadius": 8,
+                "padding": [
+                  14,
+                  28
+                ],
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "Zo8Px",
+                    "name": "primaryBtnText",
+                    "content": "Start Free Trial",
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": "600",
+                    "fill": "$--primary-foreground"
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "Aa9Qy",
+                "name": "secondaryBtn",
+                "width": "fit_content",
+                "height": "fit_content",
+                "fill": "transparent",
+                "stroke": {
+                  "fill": "$--border",
+                  "thickness": 1
+                },
+                "cornerRadius": 8,
+                "padding": [
+                  14,
+                  28
+                ],
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "Bb0Rz",
+                    "name": "secondaryBtnText",
+                    "content": "Watch Demo",
+                    "fontFamily": "Inter",
+                    "fontSize": 16,
+                    "fontWeight": "500",
+                    "fill": "$--foreground"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Th2Jr",
+        "name": "Badge",
+        "width": "fit_content",
+        "height": "fit_content",
+        "fill": "$--muted",
+        "cornerRadius": 100,
+        "layout": "horizontal",
+        "padding": [
+          6,
+          16
+        ],
+        "children": [
+          {
+            "type": "text",
+            "id": "Uj3Ks",
+            "name": "badgeText",
+            "content": "New Launch",
+            "fontFamily": "Inter",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "fill": "$--foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Xm6Nv",
+        "name": "Hero Buttons",
+        "width": "fit_content",
+        "height": "fit_content",
+        "layout": "horizontal",
+        "gap": 16,
+        "children": [
+          {
+            "type": "frame",
+            "id": "Yn7Ow",
+            "name": "primaryBtn",
+            "width": "fit_content",
+            "height": "fit_content",
+            "fill": "$--primary",
+            "cornerRadius": 8,
+            "padding": [
+              14,
+              28
+            ],
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "Zo8Px",
+                "name": "primaryBtnText",
+                "content": "Start Free Trial",
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": "600",
+                "fill": "$--primary-foreground"
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "Aa9Qy",
+            "name": "secondaryBtn",
+            "width": "fit_content",
+            "height": "fit_content",
+            "fill": "transparent",
+            "stroke": {
+              "fill": "$--border",
+              "thickness": 1
+            },
+            "cornerRadius": 8,
+            "padding": [
+              14,
+              28
+            ],
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "Bb0Rz",
+                "name": "secondaryBtnText",
+                "content": "Watch Demo",
+                "fontFamily": "Inter",
+                "fontSize": 16,
+                "fontWeight": "500",
+                "fill": "$--foreground"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Yn7Ow",
+        "name": "primaryBtn",
+        "width": "fit_content",
+        "height": "fit_content",
+        "fill": "$--primary",
+        "cornerRadius": 8,
+        "layout": "horizontal",
+        "padding": [
+          14,
+          28
+        ],
+        "children": [
+          {
+            "type": "text",
+            "id": "Zo8Px",
+            "name": "primaryBtnText",
+            "content": "Start Free Trial",
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": "600",
+            "fill": "$--primary-foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Aa9Qy",
+        "name": "secondaryBtn",
+        "width": "fit_content",
+        "height": "fit_content",
+        "fill": "transparent",
+        "stroke": {
+          "fill": "$--border",
+          "thickness": 1
+        },
+        "cornerRadius": 8,
+        "layout": "horizontal",
+        "padding": [
+          14,
+          28
+        ],
+        "children": [
+          {
+            "type": "text",
+            "id": "Bb0Rz",
+            "name": "secondaryBtnText",
+            "content": "Watch Demo",
+            "fontFamily": "Inter",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "fill": "$--foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Cc1Sa",
+        "name": "Features Section",
+        "width": "fill_container",
+        "height": "fit_content(600)",
+        "fill": "$--muted",
+        "layout": "vertical",
+        "padding": [
+          80,
+          48
+        ],
+        "gap": 48,
+        "children": [
+          {
+            "type": "frame",
+            "id": "Dd2Tb",
+            "name": "Features Header",
+            "width": "fill_container",
+            "height": "fit_content",
+            "gap": 12,
+            "alignItems": "center",
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "text",
+                "id": "Ee3Uc",
+                "name": "Features Title",
+                "content": "Everything you need",
+                "textGrowth": "fixed-width",
+                "width": "fill_container",
+                "fontFamily": "Inter",
+                "fontSize": 48,
+                "fontWeight": "bold",
+                "fill": "$--foreground",
+                "textAlign": "center"
+              },
+              {
+                "type": "text",
+                "id": "Ff4Vd",
+                "name": "Features Subtitle",
+                "content": "Powerful features to help your team work smarter and deliver faster.",
+                "textGrowth": "fixed-width",
+                "width": 600,
+                "fontFamily": "Inter",
+                "fontSize": 18,
+                "fill": "$--muted-foreground",
+                "textAlign": "center"
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "Gg5We",
+            "name": "Feature Cards",
+            "width": "fill_container",
+            "height": "fit_content",
+            "gap": 32,
+            "justifyContent": "center",
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "frame",
+                "id": "Hh6Xf",
+                "name": "Feature Card 1",
+                "width": 320,
+                "height": "fit_content",
+                "fill": "$--card",
+                "stroke": {
+                  "fill": "$--border",
+                  "thickness": 1
+                },
+                "cornerRadius": 12,
+                "padding": 32,
+                "gap": 16,
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "frame",
+                    "id": "Ii7Yg",
+                    "name": "feature1Icon",
+                    "width": 48,
+                    "height": 48,
+                    "fill": "$--primary",
+                    "cornerRadius": 8
+                  },
+                  {
+                    "type": "text",
+                    "id": "Jj8Zh",
+                    "name": "Feature 1 Title",
+                    "content": "Real-time Collaboration",
+                    "fontFamily": "Inter",
+                    "fontSize": 20,
+                    "fontWeight": "600",
+                    "fill": "$--foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Kk9Ai",
+                    "name": "Feature 1 Desc",
+                    "content": "Work together with your team in real-time, no matter where you are.",
+                    "textGrowth": "fixed-width",
+                    "width": "fill_container",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground",
+                    "lineHeight": 1.5
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "Ll0Bj",
+                "name": "Feature Card 2",
+                "width": 320,
+                "height": "fit_content",
+                "fill": "$--card",
+                "stroke": {
+                  "fill": "$--border",
+                  "thickness": 1
+                },
+                "cornerRadius": 12,
+                "padding": 32,
+                "gap": 16,
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "frame",
+                    "id": "Mm1Ck",
+                    "name": "feature2Icon",
+                    "width": 48,
+                    "height": 48,
+                    "fill": "$--primary",
+                    "cornerRadius": 8
+                  },
+                  {
+                    "type": "text",
+                    "id": "Nn2Dl",
+                    "name": "Feature 2 Title",
+                    "content": "Advanced Analytics",
+                    "fontFamily": "Inter",
+                    "fontSize": 20,
+                    "fontWeight": "600",
+                    "fill": "$--foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Oo3Em",
+                    "name": "Feature 2 Desc",
+                    "content": "Get insights that help you make data-driven decisions.",
+                    "textGrowth": "fixed-width",
+                    "width": "fill_container",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground",
+                    "lineHeight": 1.5
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "Pp4Fn",
+                "name": "Feature Card 3",
+                "width": 320,
+                "height": "fit_content",
+                "fill": "$--card",
+                "stroke": {
+                  "fill": "$--border",
+                  "thickness": 1
+                },
+                "cornerRadius": 12,
+                "padding": 32,
+                "gap": 16,
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "frame",
+                    "id": "Qq5Go",
+                    "name": "feature3Icon",
+                    "width": 48,
+                    "height": 48,
+                    "fill": "$--primary",
+                    "cornerRadius": 8
+                  },
+                  {
+                    "type": "text",
+                    "id": "Rr6Hp",
+                    "name": "Feature 3 Title",
+                    "content": "Enterprise Security",
+                    "fontFamily": "Inter",
+                    "fontSize": 20,
+                    "fontWeight": "600",
+                    "fill": "$--foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Ss7Iq",
+                    "name": "Feature 3 Desc",
+                    "content": "Bank-level security to keep your data safe and compliant.",
+                    "textGrowth": "fixed-width",
+                    "width": "fill_container",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground",
+                    "lineHeight": 1.5
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Dd2Tb",
+        "name": "Features Header",
+        "width": "fill_container",
+        "height": "fit_content",
+        "layout": "vertical",
+        "gap": 12,
+        "alignItems": "center",
+        "children": [
+          {
+            "type": "text",
+            "id": "Ee3Uc",
+            "name": "Features Title",
+            "content": "Everything you need",
+            "textGrowth": "fixed-width",
+            "width": "fill_container",
+            "fontFamily": "Inter",
+            "fontSize": 48,
+            "fontWeight": "bold",
+            "fill": "$--foreground",
+            "textAlign": "center"
+          },
+          {
+            "type": "text",
+            "id": "Ff4Vd",
+            "name": "Features Subtitle",
+            "content": "Powerful features to help your team work smarter and deliver faster.",
+            "textGrowth": "fixed-width",
+            "width": 600,
+            "fontFamily": "Inter",
+            "fontSize": 18,
+            "fill": "$--muted-foreground",
+            "textAlign": "center"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Gg5We",
+        "name": "Feature Cards",
+        "width": "fill_container",
+        "height": "fit_content",
+        "layout": "horizontal",
+        "gap": 32,
+        "justifyContent": "center",
+        "children": [
+          {
+            "type": "frame",
+            "id": "Hh6Xf",
+            "name": "Feature Card 1",
+            "width": 320,
+            "height": "fit_content",
+            "fill": "$--card",
+            "stroke": {
+              "fill": "$--border",
+              "thickness": 1
+            },
+            "cornerRadius": 12,
+            "padding": 32,
+            "gap": 16,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "frame",
+                "id": "Ii7Yg",
+                "name": "feature1Icon",
+                "width": 48,
+                "height": 48,
+                "fill": "$--primary",
+                "cornerRadius": 8
+              },
+              {
+                "type": "text",
+                "id": "Jj8Zh",
+                "name": "Feature 1 Title",
+                "content": "Real-time Collaboration",
+                "fontFamily": "Inter",
+                "fontSize": 20,
+                "fontWeight": "600",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "text",
+                "id": "Kk9Ai",
+                "name": "Feature 1 Desc",
+                "content": "Work together with your team in real-time, no matter where you are.",
+                "textGrowth": "fixed-width",
+                "width": "fill_container",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground",
+                "lineHeight": 1.5
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "Ll0Bj",
+            "name": "Feature Card 2",
+            "width": 320,
+            "height": "fit_content",
+            "fill": "$--card",
+            "stroke": {
+              "fill": "$--border",
+              "thickness": 1
+            },
+            "cornerRadius": 12,
+            "padding": 32,
+            "gap": 16,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "frame",
+                "id": "Mm1Ck",
+                "name": "feature2Icon",
+                "width": 48,
+                "height": 48,
+                "fill": "$--primary",
+                "cornerRadius": 8
+              },
+              {
+                "type": "text",
+                "id": "Nn2Dl",
+                "name": "Feature 2 Title",
+                "content": "Advanced Analytics",
+                "fontFamily": "Inter",
+                "fontSize": 20,
+                "fontWeight": "600",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "text",
+                "id": "Oo3Em",
+                "name": "Feature 2 Desc",
+                "content": "Get insights that help you make data-driven decisions.",
+                "textGrowth": "fixed-width",
+                "width": "fill_container",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground",
+                "lineHeight": 1.5
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "Pp4Fn",
+            "name": "Feature Card 3",
+            "width": 320,
+            "height": "fit_content",
+            "fill": "$--card",
+            "stroke": {
+              "fill": "$--border",
+              "thickness": 1
+            },
+            "cornerRadius": 12,
+            "padding": 32,
+            "gap": 16,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "frame",
+                "id": "Qq5Go",
+                "name": "feature3Icon",
+                "width": 48,
+                "height": 48,
+                "fill": "$--primary",
+                "cornerRadius": 8
+              },
+              {
+                "type": "text",
+                "id": "Rr6Hp",
+                "name": "Feature 3 Title",
+                "content": "Enterprise Security",
+                "fontFamily": "Inter",
+                "fontSize": 20,
+                "fontWeight": "600",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "text",
+                "id": "Ss7Iq",
+                "name": "Feature 3 Desc",
+                "content": "Bank-level security to keep your data safe and compliant.",
+                "textGrowth": "fixed-width",
+                "width": "fill_container",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground",
+                "lineHeight": 1.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Hh6Xf",
+        "name": "Feature Card 1",
+        "width": 320,
+        "height": "fit_content",
+        "fill": "$--card",
+        "stroke": {
+          "fill": "$--border",
+          "thickness": 1
+        },
+        "cornerRadius": 12,
+        "layout": "vertical",
+        "padding": 32,
+        "gap": 16,
+        "children": [
+          {
+            "type": "frame",
+            "id": "Ii7Yg",
+            "name": "feature1Icon",
+            "width": 48,
+            "height": 48,
+            "fill": "$--primary",
+            "cornerRadius": 8
+          },
+          {
+            "type": "text",
+            "id": "Jj8Zh",
+            "name": "Feature 1 Title",
+            "content": "Real-time Collaboration",
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": "600",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "text",
+            "id": "Kk9Ai",
+            "name": "Feature 1 Desc",
+            "content": "Work together with your team in real-time, no matter where you are.",
+            "textGrowth": "fixed-width",
+            "width": "fill_container",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground",
+            "lineHeight": 1.5
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Ii7Yg",
+        "name": "feature1Icon",
+        "width": 48,
+        "height": 48,
+        "fill": "$--primary",
+        "cornerRadius": 8
+      },
+      {
+        "type": "frame",
+        "id": "Ll0Bj",
+        "name": "Feature Card 2",
+        "width": 320,
+        "height": "fit_content",
+        "fill": "$--card",
+        "stroke": {
+          "fill": "$--border",
+          "thickness": 1
+        },
+        "cornerRadius": 12,
+        "layout": "vertical",
+        "padding": 32,
+        "gap": 16,
+        "children": [
+          {
+            "type": "frame",
+            "id": "Mm1Ck",
+            "name": "feature2Icon",
+            "width": 48,
+            "height": 48,
+            "fill": "$--primary",
+            "cornerRadius": 8
+          },
+          {
+            "type": "text",
+            "id": "Nn2Dl",
+            "name": "Feature 2 Title",
+            "content": "Advanced Analytics",
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": "600",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "text",
+            "id": "Oo3Em",
+            "name": "Feature 2 Desc",
+            "content": "Get insights that help you make data-driven decisions.",
+            "textGrowth": "fixed-width",
+            "width": "fill_container",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground",
+            "lineHeight": 1.5
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Mm1Ck",
+        "name": "feature2Icon",
+        "width": 48,
+        "height": 48,
+        "fill": "$--primary",
+        "cornerRadius": 8
+      },
+      {
+        "type": "frame",
+        "id": "Pp4Fn",
+        "name": "Feature Card 3",
+        "width": 320,
+        "height": "fit_content",
+        "fill": "$--card",
+        "stroke": {
+          "fill": "$--border",
+          "thickness": 1
+        },
+        "cornerRadius": 12,
+        "layout": "vertical",
+        "padding": 32,
+        "gap": 16,
+        "children": [
+          {
+            "type": "frame",
+            "id": "Qq5Go",
+            "name": "feature3Icon",
+            "width": 48,
+            "height": 48,
+            "fill": "$--primary",
+            "cornerRadius": 8
+          },
+          {
+            "type": "text",
+            "id": "Rr6Hp",
+            "name": "Feature 3 Title",
+            "content": "Enterprise Security",
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": "600",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "text",
+            "id": "Ss7Iq",
+            "name": "Feature 3 Desc",
+            "content": "Bank-level security to keep your data safe and compliant.",
+            "textGrowth": "fixed-width",
+            "width": "fill_container",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground",
+            "lineHeight": 1.5
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Qq5Go",
+        "name": "feature3Icon",
+        "width": 48,
+        "height": 48,
+        "fill": "$--primary",
+        "cornerRadius": 8
+      },
+      {
+        "type": "frame",
+        "id": "Tt8Jr",
+        "name": "Footer",
+        "width": "fill_container",
+        "height": "fit_content(200)",
+        "fill": "$--background",
+        "stroke": {
+          "fill": "$--border",
+          "thickness": 1
+        },
+        "layout": "vertical",
+        "padding": 48,
+        "gap": 32,
+        "children": [
+          {
+            "type": "frame",
+            "id": "Uu9Ks",
+            "name": "Footer Content",
+            "width": "fill_container",
+            "height": "fit_content",
+            "gap": 48,
+            "justifyContent": "space_between",
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "frame",
+                "id": "Vv0Lt",
+                "name": "Footer Brand",
+                "width": "fit_content",
+                "height": "fit_content",
+                "gap": 12,
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "Ww1Mu",
+                    "name": "Footer Logo",
+                    "content": "Brand",
+                    "fontFamily": "Inter",
+                    "fontSize": 20,
+                    "fontWeight": "bold",
+                    "fill": "$--foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Xx2Nv",
+                    "name": "Footer Tagline",
+                    "content": "Build better products, faster.",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "Yy3Ow",
+                "name": "Footer Links 1",
+                "width": "fit_content",
+                "height": "fit_content",
+                "gap": 12,
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "Zz4Px",
+                    "name": "footerLinks1Title",
+                    "content": "Product",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": "600",
+                    "fill": "$--foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Aa5Qy",
+                    "name": "footerLinks1Item1",
+                    "content": "Features",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Bb6Rz",
+                    "name": "footerLinks1Item2",
+                    "content": "Pricing",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Cc7Sa",
+                    "name": "footerLinks1Item3",
+                    "content": "Integrations",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "Dd8Tb",
+                "name": "Footer Links 2",
+                "width": "fit_content",
+                "height": "fit_content",
+                "gap": 12,
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "Ee9Uc",
+                    "name": "footerLinks2Title",
+                    "content": "Company",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": "600",
+                    "fill": "$--foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Ff0Vd",
+                    "name": "footerLinks2Item1",
+                    "content": "About",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Gg1We",
+                    "name": "footerLinks2Item2",
+                    "content": "Blog",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Hh2Xf",
+                    "name": "footerLinks2Item3",
+                    "content": "Careers",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  }
+                ]
+              },
+              {
+                "type": "frame",
+                "id": "Ii3Yg",
+                "name": "Footer Links 3",
+                "width": "fit_content",
+                "height": "fit_content",
+                "gap": 12,
+                "layout": "vertical",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "Jj4Zh",
+                    "name": "footerLinks3Title",
+                    "content": "Legal",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fontWeight": "600",
+                    "fill": "$--foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Kk5Ai",
+                    "name": "footerLinks3Item1",
+                    "content": "Privacy",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Ll6Bj",
+                    "name": "footerLinks3Item2",
+                    "content": "Terms",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Mm7Ck",
+                    "name": "footerLinks3Item3",
+                    "content": "Security",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "Nn8Dl",
+            "name": "Footer Bottom",
+            "width": "fill_container",
+            "height": "fit_content",
+            "padding": [
+              24,
+              0
+            ],
+            "justifyContent": "space_between",
+            "alignItems": "center",
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "Oo9Em",
+                "name": "Copyright",
+                "content": "© 2026 Brand. All rights reserved.",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "frame",
+                "id": "Pp0Fn",
+                "name": "Footer Social",
+                "width": "fit_content",
+                "height": "fit_content",
+                "gap": 16,
+                "layout": "horizontal",
+                "children": [
+                  {
+                    "type": "text",
+                    "id": "Qq1Go",
+                    "name": "socialText",
+                    "content": "Twitter",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  },
+                  {
+                    "type": "text",
+                    "id": "Rr2Hp",
+                    "name": "socialText2",
+                    "content": "GitHub",
+                    "fontFamily": "Inter",
+                    "fontSize": 14,
+                    "fill": "$--muted-foreground"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Uu9Ks",
+        "name": "Footer Content",
+        "width": "fill_container",
+        "height": "fit_content",
+        "layout": "horizontal",
+        "gap": 48,
+        "justifyContent": "space_between",
+        "children": [
+          {
+            "type": "frame",
+            "id": "Vv0Lt",
+            "name": "Footer Brand",
+            "width": "fit_content",
+            "height": "fit_content",
+            "gap": 12,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "text",
+                "id": "Ww1Mu",
+                "name": "Footer Logo",
+                "content": "Brand",
+                "fontFamily": "Inter",
+                "fontSize": 20,
+                "fontWeight": "bold",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "text",
+                "id": "Xx2Nv",
+                "name": "Footer Tagline",
+                "content": "Build better products, faster.",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "Yy3Ow",
+            "name": "Footer Links 1",
+            "width": "fit_content",
+            "height": "fit_content",
+            "gap": 12,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "text",
+                "id": "Zz4Px",
+                "name": "footerLinks1Title",
+                "content": "Product",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": "600",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "text",
+                "id": "Aa5Qy",
+                "name": "footerLinks1Item1",
+                "content": "Features",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "Bb6Rz",
+                "name": "footerLinks1Item2",
+                "content": "Pricing",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "Cc7Sa",
+                "name": "footerLinks1Item3",
+                "content": "Integrations",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "Dd8Tb",
+            "name": "Footer Links 2",
+            "width": "fit_content",
+            "height": "fit_content",
+            "gap": 12,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "text",
+                "id": "Ee9Uc",
+                "name": "footerLinks2Title",
+                "content": "Company",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": "600",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "text",
+                "id": "Ff0Vd",
+                "name": "footerLinks2Item1",
+                "content": "About",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "Gg1We",
+                "name": "footerLinks2Item2",
+                "content": "Blog",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "Hh2Xf",
+                "name": "footerLinks2Item3",
+                "content": "Careers",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              }
+            ]
+          },
+          {
+            "type": "frame",
+            "id": "Ii3Yg",
+            "name": "Footer Links 3",
+            "width": "fit_content",
+            "height": "fit_content",
+            "gap": 12,
+            "layout": "vertical",
+            "children": [
+              {
+                "type": "text",
+                "id": "Jj4Zh",
+                "name": "footerLinks3Title",
+                "content": "Legal",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fontWeight": "600",
+                "fill": "$--foreground"
+              },
+              {
+                "type": "text",
+                "id": "Kk5Ai",
+                "name": "footerLinks3Item1",
+                "content": "Privacy",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "Ll6Bj",
+                "name": "footerLinks3Item2",
+                "content": "Terms",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "Mm7Ck",
+                "name": "footerLinks3Item3",
+                "content": "Security",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Vv0Lt",
+        "name": "Footer Brand",
+        "width": "fit_content",
+        "height": "fit_content",
+        "layout": "vertical",
+        "gap": 12,
+        "children": [
+          {
+            "type": "text",
+            "id": "Ww1Mu",
+            "name": "Footer Logo",
+            "content": "Brand",
+            "fontFamily": "Inter",
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "text",
+            "id": "Xx2Nv",
+            "name": "Footer Tagline",
+            "content": "Build better products, faster.",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Yy3Ow",
+        "name": "Footer Links 1",
+        "width": "fit_content",
+        "height": "fit_content",
+        "layout": "vertical",
+        "gap": 12,
+        "children": [
+          {
+            "type": "text",
+            "id": "Zz4Px",
+            "name": "footerLinks1Title",
+            "content": "Product",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "text",
+            "id": "Aa5Qy",
+            "name": "footerLinks1Item1",
+            "content": "Features",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "Bb6Rz",
+            "name": "footerLinks1Item2",
+            "content": "Pricing",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "Cc7Sa",
+            "name": "footerLinks1Item3",
+            "content": "Integrations",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Dd8Tb",
+        "name": "Footer Links 2",
+        "width": "fit_content",
+        "height": "fit_content",
+        "layout": "vertical",
+        "gap": 12,
+        "children": [
+          {
+            "type": "text",
+            "id": "Ee9Uc",
+            "name": "footerLinks2Title",
+            "content": "Company",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "text",
+            "id": "Ff0Vd",
+            "name": "footerLinks2Item1",
+            "content": "About",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "Gg1We",
+            "name": "footerLinks2Item2",
+            "content": "Blog",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "Hh2Xf",
+            "name": "footerLinks2Item3",
+            "content": "Careers",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Ii3Yg",
+        "name": "Footer Links 3",
+        "width": "fit_content",
+        "height": "fit_content",
+        "layout": "vertical",
+        "gap": 12,
+        "children": [
+          {
+            "type": "text",
+            "id": "Jj4Zh",
+            "name": "footerLinks3Title",
+            "content": "Legal",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fontWeight": "600",
+            "fill": "$--foreground"
+          },
+          {
+            "type": "text",
+            "id": "Kk5Ai",
+            "name": "footerLinks3Item1",
+            "content": "Privacy",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "Ll6Bj",
+            "name": "footerLinks3Item2",
+            "content": "Terms",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "Mm7Ck",
+            "name": "footerLinks3Item3",
+            "content": "Security",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Nn8Dl",
+        "name": "Footer Bottom",
+        "width": "fill_container",
+        "height": "fit_content",
+        "layout": "horizontal",
+        "padding": [
+          24,
+          0
+        ],
+        "justifyContent": "space_between",
+        "alignItems": "center",
+        "children": [
+          {
+            "type": "text",
+            "id": "Oo9Em",
+            "name": "Copyright",
+            "content": "© 2026 Brand. All rights reserved.",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "frame",
+            "id": "Pp0Fn",
+            "name": "Footer Social",
+            "width": "fit_content",
+            "height": "fit_content",
+            "gap": 16,
+            "layout": "horizontal",
+            "children": [
+              {
+                "type": "text",
+                "id": "Qq1Go",
+                "name": "socialText",
+                "content": "Twitter",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              },
+              {
+                "type": "text",
+                "id": "Rr2Hp",
+                "name": "socialText2",
+                "content": "GitHub",
+                "fontFamily": "Inter",
+                "fontSize": 14,
+                "fill": "$--muted-foreground"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "frame",
+        "id": "Pp0Fn",
+        "name": "Footer Social",
+        "width": "fit_content",
+        "height": "fit_content",
+        "layout": "horizontal",
+        "gap": 16,
+        "children": [
+          {
+            "type": "text",
+            "id": "Qq1Go",
+            "name": "socialText",
+            "content": "Twitter",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          },
+          {
+            "type": "text",
+            "id": "Rr2Hp",
+            "name": "socialText2",
+            "content": "GitHub",
+            "fontFamily": "Inter",
+            "fontSize": 14,
+            "fill": "$--muted-foreground"
+          }
+        ]
+      }
+    ],
+    "texts": [
+      {
+        "type": "text",
+        "id": "qbBKR",
+        "name": "Logo",
+        "content": "Brand",
+        "fontFamily": "Inter",
+        "fontSize": 24,
+        "fontWeight": "bold",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "XXmeb",
+        "name": "navItem1",
+        "content": "Features",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "1xYVs",
+        "name": "navItem2",
+        "content": "Pricing",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "zhjB1",
+        "name": "navItem3",
+        "content": "About",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "DynMr",
+        "name": "navItem4",
+        "content": "Contact",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "AtIoF",
+        "name": "ctaText",
+        "content": "Get Started",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": "500",
+        "fill": "$--primary-foreground"
+      },
+      {
+        "type": "text",
+        "id": "41Okt",
+        "name": "badgeText",
+        "content": "New Launch",
+        "fontFamily": "Inter",
+        "fontSize": 12,
+        "fontWeight": "500",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "6KWzw",
+        "name": "Hero Headline",
+        "content": "Build Better Products",
+        "fontFamily": "Inter",
+        "fontSize": 64,
+        "fontWeight": "bold",
+        "fill": "$--foreground",
+        "textAlign": "center"
+      },
+      {
+        "type": "text",
+        "id": "zlcH7",
+        "name": "Hero Subline",
+        "content": "The all-in-one platform for modern teams to collaborate, create, and ship faster.",
+        "fontFamily": "Inter",
+        "fontSize": 20,
+        "fill": "$--muted-foreground",
+        "textAlign": "center"
+      },
+      {
+        "type": "text",
+        "id": "MtVqc",
+        "name": "primaryBtnText",
+        "content": "Start Free Trial",
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": "600",
+        "fill": "$--primary-foreground"
+      },
+      {
+        "type": "text",
+        "id": "2o1Jj",
+        "name": "secondaryBtnText",
+        "content": "Watch Demo",
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": "500",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "ha84z",
+        "name": "Features Title",
+        "content": "Everything you need",
+        "fontFamily": "Inter",
+        "fontSize": 48,
+        "fontWeight": "bold",
+        "fill": "$--foreground",
+        "textAlign": "center"
+      },
+      {
+        "type": "text",
+        "id": "JCkwI",
+        "name": "Features Subtitle",
+        "content": "Powerful features to help your team work smarter and deliver faster.",
+        "fontFamily": "Inter",
+        "fontSize": 18,
+        "fill": "$--muted-foreground",
+        "textAlign": "center"
+      },
+      {
+        "type": "text",
+        "id": "hoXNh",
+        "name": "Feature 1 Title",
+        "content": "Real-time Collaboration",
+        "fontFamily": "Inter",
+        "fontSize": 20,
+        "fontWeight": "600",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "2DoYU",
+        "name": "Feature 1 Desc",
+        "content": "Work together with your team in real-time, no matter where you are.",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "ivLlP",
+        "name": "Feature 2 Title",
+        "content": "Advanced Analytics",
+        "fontFamily": "Inter",
+        "fontSize": 20,
+        "fontWeight": "600",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "fBP1A",
+        "name": "Feature 2 Desc",
+        "content": "Get insights that help you make data-driven decisions.",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "7wqJl",
+        "name": "Feature 3 Title",
+        "content": "Enterprise Security",
+        "fontFamily": "Inter",
+        "fontSize": 20,
+        "fontWeight": "600",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "voxPq",
+        "name": "Feature 3 Desc",
+        "content": "Bank-level security to keep your data safe and compliant.",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "pFBCP",
+        "name": "Footer Logo",
+        "content": "Brand",
+        "fontFamily": "Inter",
+        "fontSize": 20,
+        "fontWeight": "bold",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "heFpd",
+        "name": "Footer Tagline",
+        "content": "Build better products, faster.",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "FGiUj",
+        "name": "footerLinks1Title",
+        "content": "Product",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": "600",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "JNWG7",
+        "name": "footerLinks1Item1",
+        "content": "Features",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "8YAjK",
+        "name": "footerLinks1Item2",
+        "content": "Pricing",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Ekek9",
+        "name": "footerLinks1Item3",
+        "content": "Integrations",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "dLsoB",
+        "name": "footerLinks2Title",
+        "content": "Company",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": "600",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "CpcXV",
+        "name": "footerLinks2Item1",
+        "content": "About",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "N1x5S",
+        "name": "footerLinks2Item2",
+        "content": "Blog",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "ZStzV",
+        "name": "footerLinks2Item3",
+        "content": "Careers",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "BWJz3",
+        "name": "footerLinks3Title",
+        "content": "Legal",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": "600",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "GdbUh",
+        "name": "footerLinks3Item1",
+        "content": "Privacy",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "pp0pF",
+        "name": "footerLinks3Item2",
+        "content": "Terms",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "0PuTX",
+        "name": "footerLinks3Item3",
+        "content": "Security",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "nJiaC",
+        "name": "Copyright",
+        "content": "© 2026 Brand. All rights reserved.",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "afmdw",
+        "name": "socialText",
+        "content": "Twitter",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Z89T2",
+        "name": "socialText2",
+        "content": "GitHub",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Lm8Bx",
+        "name": "Logo",
+        "content": "Brand",
+        "fontFamily": "Inter",
+        "fontSize": 24,
+        "fontWeight": "bold",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "Vg5Yh",
+        "name": "navItem1",
+        "content": "Features",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Bj6Uk",
+        "name": "navItem2",
+        "content": "Pricing",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Nz7Wl",
+        "name": "navItem3",
+        "content": "About",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Mx8Cm",
+        "name": "navItem4",
+        "content": "Contact",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Qw0Ep",
+        "name": "ctaText",
+        "content": "Get Started",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": "500",
+        "fill": "$--primary-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Uj3Ks",
+        "name": "badgeText",
+        "content": "New Launch",
+        "fontFamily": "Inter",
+        "fontSize": 12,
+        "fontWeight": "500",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "Vk4Lt",
+        "name": "Hero Headline",
+        "content": "Build Better Products",
+        "fontFamily": "Inter",
+        "fontSize": 64,
+        "fontWeight": "bold",
+        "fill": "$--foreground",
+        "textAlign": "center"
+      },
+      {
+        "type": "text",
+        "id": "Wl5Mu",
+        "name": "Hero Subline",
+        "content": "The all-in-one platform for modern teams to collaborate, create, and ship faster.",
+        "fontFamily": "Inter",
+        "fontSize": 20,
+        "fill": "$--muted-foreground",
+        "textAlign": "center"
+      },
+      {
+        "type": "text",
+        "id": "Zo8Px",
+        "name": "primaryBtnText",
+        "content": "Start Free Trial",
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": "600",
+        "fill": "$--primary-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Bb0Rz",
+        "name": "secondaryBtnText",
+        "content": "Watch Demo",
+        "fontFamily": "Inter",
+        "fontSize": 16,
+        "fontWeight": "500",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "Ee3Uc",
+        "name": "Features Title",
+        "content": "Everything you need",
+        "fontFamily": "Inter",
+        "fontSize": 48,
+        "fontWeight": "bold",
+        "fill": "$--foreground",
+        "textAlign": "center"
+      },
+      {
+        "type": "text",
+        "id": "Ff4Vd",
+        "name": "Features Subtitle",
+        "content": "Powerful features to help your team work smarter and deliver faster.",
+        "fontFamily": "Inter",
+        "fontSize": 18,
+        "fill": "$--muted-foreground",
+        "textAlign": "center"
+      },
+      {
+        "type": "text",
+        "id": "Jj8Zh",
+        "name": "Feature 1 Title",
+        "content": "Real-time Collaboration",
+        "fontFamily": "Inter",
+        "fontSize": 20,
+        "fontWeight": "600",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "Kk9Ai",
+        "name": "Feature 1 Desc",
+        "content": "Work together with your team in real-time, no matter where you are.",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Nn2Dl",
+        "name": "Feature 2 Title",
+        "content": "Advanced Analytics",
+        "fontFamily": "Inter",
+        "fontSize": 20,
+        "fontWeight": "600",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "Oo3Em",
+        "name": "Feature 2 Desc",
+        "content": "Get insights that help you make data-driven decisions.",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Rr6Hp",
+        "name": "Feature 3 Title",
+        "content": "Enterprise Security",
+        "fontFamily": "Inter",
+        "fontSize": 20,
+        "fontWeight": "600",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "Ss7Iq",
+        "name": "Feature 3 Desc",
+        "content": "Bank-level security to keep your data safe and compliant.",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Ww1Mu",
+        "name": "Footer Logo",
+        "content": "Brand",
+        "fontFamily": "Inter",
+        "fontSize": 20,
+        "fontWeight": "bold",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "Xx2Nv",
+        "name": "Footer Tagline",
+        "content": "Build better products, faster.",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Zz4Px",
+        "name": "footerLinks1Title",
+        "content": "Product",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": "600",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "Aa5Qy",
+        "name": "footerLinks1Item1",
+        "content": "Features",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Bb6Rz",
+        "name": "footerLinks1Item2",
+        "content": "Pricing",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Cc7Sa",
+        "name": "footerLinks1Item3",
+        "content": "Integrations",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Ee9Uc",
+        "name": "footerLinks2Title",
+        "content": "Company",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": "600",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "Ff0Vd",
+        "name": "footerLinks2Item1",
+        "content": "About",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Gg1We",
+        "name": "footerLinks2Item2",
+        "content": "Blog",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Hh2Xf",
+        "name": "footerLinks2Item3",
+        "content": "Careers",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Jj4Zh",
+        "name": "footerLinks3Title",
+        "content": "Legal",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fontWeight": "600",
+        "fill": "$--foreground"
+      },
+      {
+        "type": "text",
+        "id": "Kk5Ai",
+        "name": "footerLinks3Item1",
+        "content": "Privacy",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Ll6Bj",
+        "name": "footerLinks3Item2",
+        "content": "Terms",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Mm7Ck",
+        "name": "footerLinks3Item3",
+        "content": "Security",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Oo9Em",
+        "name": "Copyright",
+        "content": "© 2026 Brand. All rights reserved.",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Qq1Go",
+        "name": "socialText",
+        "content": "Twitter",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      },
+      {
+        "type": "text",
+        "id": "Rr2Hp",
+        "name": "socialText2",
+        "content": "GitHub",
+        "fontFamily": "Inter",
+        "fontSize": 14,
+        "fill": "$--muted-foreground"
+      }
+    ],
+    "rectangles": [],
+    "circles": [],
+    "lines": []
+  }
+}
