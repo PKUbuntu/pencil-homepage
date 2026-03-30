@@ -18,15 +18,15 @@ function ArrivalCard() {
       {/* 指标数据 */}
       <div className="flex justify-between">
         <div className="flex flex-col">
-          <span className="text-sm text-gray-400">今日到场</span>
+          <span className="text-sm text-muted-foreground">今日到场</span>
           <span className="text-3xl font-bold text-occ-cyan">{data.today.toLocaleString()}</span>
         </div>
         <div className="flex flex-col">
-          <span className="text-sm text-gray-400">累计到场</span>
+          <span className="text-sm text-muted-foreground">累计到场</span>
           <span className="text-3xl font-bold text-occ-blue">{data.total.toLocaleString()}</span>
         </div>
         <div className="flex flex-col">
-          <span className="text-sm text-gray-400">已签到</span>
+          <span className="text-sm text-muted-foreground">已签到</span>
           <span className="text-3xl font-bold text-occ-green">{data.signed.toLocaleString()}</span>
         </div>
       </div>
@@ -39,7 +39,7 @@ function ArrivalCard() {
             style={{ width: `${data.rate}%` }}
           ></div>
         </div>
-        <span className="text-xs text-gray-500">签到率 {data.rate}%</span>
+        <span className="text-xs text-muted-foreground">签到率 {data.rate}%</span>
       </div>
     </div>
   )
