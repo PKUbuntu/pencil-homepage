@@ -30,17 +30,42 @@ export default {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
-        // 华为大屏配色
-        'occ-dark': '#0B1120',
-        'occ-darker': '#0A1629',
-        'occ-card': '#0F2940',
-        'occ-card-light': '#163A5A',
-        'occ-cyan': '#00D9FF',
-        'occ-blue': '#3B82F6',
-        'occ-purple': '#8B5CF6',
-        'occ-green': '#10B981',
-        'occ-orange': '#F59E0B',
-        'occ-border': '#1E40AF',
+        accent: {
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))',
+        },
+        ring: 'hsl(var(--ring))',
+        // 华为大屏配色 - 使用 CSS 变量
+        'occ-dark': 'hsl(var(--occ-dark))',
+        'occ-darker': 'hsl(var(--occ-darker))',
+        'occ-card': 'hsl(var(--occ-card))',
+        'occ-card-light': 'hsl(var(--occ-card-light))',
+        'occ-cyan': 'hsl(var(--occ-cyan))',
+        'occ-blue': 'hsl(var(--occ-blue))',
+        'occ-purple': 'hsl(var(--occ-purple))',
+        'occ-green': 'hsl(var(--occ-green))',
+        'occ-orange': 'hsl(var(--occ-orange))',
+        'occ-border': 'hsl(var(--occ-border))',
+        // 语义化颜色
+        success: {
+          DEFAULT: 'hsl(var(--success))',
+          foreground: 'hsl(var(--success-foreground))',
+        },
+        warning: {
+          DEFAULT: 'hsl(var(--warning))',
+          foreground: 'hsl(var(--warning-foreground))',
+        },
+        error: {
+          DEFAULT: 'hsl(var(--error))',
+          foreground: 'hsl(var(--error-foreground))',
+        },
+        info: {
+          DEFAULT: 'hsl(var(--info))',
+          foreground: 'hsl(var(--info-foreground))',
+        },
+        // 渐变背景
+        'gradient-start': 'hsl(var(--gradient-start))',
+        'gradient-end': 'hsl(var(--gradient-end))',
       },
     },
   },
