@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "description": "Component mappings for Pencil Code Generator - Maps .pen component names to React component paths",
+  "components": {
+    "Header": "../components/Header",
+    "Footer": "../components/Footer",
+    "Hero": "../components/Hero",
+    "Features": "../components/Features",
+    "Stats": "../components/Stats",
+    "Weather": "../components/Weather",
+    "ArrivalCard": "../components/ArrivalCard",
+    "HeatMapCard": "../components/HeatMapCard",
+    "LivestreamCard": "../components/LivestreamCard",
+    "TimeWeatherCard": "../components/TimeWeatherCard",
+    "TopZonesCard": "../components/TopZonesCard",
+    "TrafficCard": "../components/TrafficCard",
+    "VisitStatsCard": "../components/VisitStatsCard",
+    "Button": "../components/Button"
+  }
+}
