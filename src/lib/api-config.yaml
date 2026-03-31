@@ -1,0 +1,173 @@
+# API Configuration for tRPC Router + Zod Schema Generator
+# This file defines all API endpoints that will be auto-generated
+
+apis:
+  # Weather API (Open-Meteo)
+  - name: getWeather
+    type: query
+    method: GET
+    path: https://api.open-meteo.com/v1/forecast
+    description: 获取指定位置的天气信息
+    params:
+      - name: latitude
+        type: number
+        required: true
+        description: 纬度
+      - name: longitude
+        type: number
+        required: true
+        description: 经度
+      - name: current
+        type: string
+        required: false
+        default: temperature_2m,weather_code,wind_speed_10m
+        description: 当前天气数据字段
+      - name: timezone
+        type: string
+        required: false
+        default: Asia/Shanghai
+        description: 时区
+    response:
+      type: object
+      properties:
+        latitude:
+          type: number
+        longitude:
+          type: number
+        timezone:
+          type: string
+        current:
+          type: object
+          properties:
+            time:
+              type: string
+            temperature_2m:
+              type: number
+            weather_code:
+              type: number
+            wind_speed_10m:
+              type: number
+
+  # SpaceX Launch API (GraphQL)
+  - name: getLaunches
+    type: query
+    method: POST
+    path: https://spacex-api.fly.dev/graphql
+    description: 获取 SpaceX 火箭发射记录
+    params:
+      - name: limit
+        type: number
+        required: false
+        default: 10
+        description: 返回的发射记录数量
+      - name: offset
+        type: number
+        required: false
+        default: 0
+        description: 偏移量
+    response:
+      type: object
+      properties:
+        launches:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: string
+              name:
+                type: string
+              date_utc:
+                type: string
+              success:
+                type: boolean
+              rocket:
+                type: string
+
+  # Traffic Stats API (Mock)
+  - name: getTrafficStats
+    type: query
+    method: GET
+    path: /api/traffic
+    description: 获取流量统计数据
+    params:
+      - name: pageId
+        type: string
+        required: true
+        description: 页面 ID
+      - name: days
+        type: number
+        required: false
+        default: 7
+        description: 统计天数
+    response:
+      type: object
+      properties:
+        pageId:
+          type: string
+        totalVisits:
+          type: number
+        uniqueVisitors:
+          type: number
+        bounceRate:
+          type: number
+        avgDuration:
+          type: number
+
+  # User Profile API (Mock)
+  - name: getUserProfile
+    type: query
+    method: GET
+    path: /api/user/profile
+    description: 获取用户个人资料
+    params:
+      - name: userId
+        type: string
+        required: true
+        description: 用户 ID
+    response:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        email:
+          type: string
+        avatar:
+          type: string
+        createdAt:
+          type: string
+
+  # Contact Form API (Mutation)
+  - name: submitContactForm
+    type: mutation
+    method: POST
+    path: /api/contact
+    description: 提交联系表单
+    params:
+      - name: name
+        type: string
+        required: true
+        description: 姓名
+      - name: email
+        type: string
+        required: true
+        description: 邮箱
+      - name: subject
+        type: string
+        required: false
+        description: 主题
+      - name: message
+        type: string
+        required: true
+        description: 消息内容
+    response:
+      type: object
+      properties:
+        success:
+          type: boolean
+        messageId:
+          type: string
+        timestamp:
+          type: string
