@@ -1,0 +1,325 @@
+openapi: 3.0.0
+info:
+  title: Pencil Homepage API
+  version: '1.0'
+  description: Auto-generated OpenAPI spec from api-config.yaml
+paths:
+  /api/weather:
+    get:
+      summary: 获取指定位置的当前天气信息
+      operationId: getWeather
+      tags:
+        - get
+      parameters:
+        - name: lat
+          in: query
+          required: true
+          schema:
+            type: number
+            default: 39.9042
+          description: 纬度
+        - name: lon
+          in: query
+          required: true
+          schema:
+            type: number
+            default: 116.4074
+          description: 经度
+        - name: units
+          in: query
+          required: false
+          schema:
+            type: string
+            enum:
+              - celsius
+              - fahrenheit
+            default: celsius
+          description: 温度单位
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  /api/weather/forecast:
+    get:
+      summary: 获取指定位置的天气预报
+      operationId: getWeatherForecast
+      tags:
+        - get
+      parameters:
+        - name: lat
+          in: query
+          required: true
+          schema:
+            type: number
+        - name: lon
+          in: query
+          required: true
+          schema:
+            type: number
+        - name: days
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 7
+          description: 预报天数
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  launches:
+    get:
+      summary: 获取 SpaceX 火箭发射列表
+      operationId: getLaunches
+      tags:
+        - get
+      parameters:
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 10
+          description: 返回数量限制
+        - name: offset
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 0
+          description: 偏移量
+        - name: upcoming
+          in: query
+          required: false
+          schema:
+            type: boolean
+            default: false
+          description: 是否仅查询即将发射的任务
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  /api/users/:id:
+    get:
+      summary: 获取用户资料
+      operationId: getUserProfile
+      tags:
+        - get
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: 用户 ID
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    put:
+      summary: 更新用户资料
+      operationId: updateUser
+      tags:
+        - update
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: 用户 ID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                email:
+                  type: string
+                bio:
+                  type: string
+                avatar:
+                  type: string
+              required: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      summary: 删除用户
+      operationId: deleteUser
+      tags:
+        - delete
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: 用户 ID
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  /api/users:
+    post:
+      summary: 创建新用户
+      operationId: createUser
+      tags:
+        - create
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                  description: 用户名
+                email:
+                  type: string
+                  description: 邮箱
+                password:
+                  type: string
+                  description: 密码
+                bio:
+                  type: string
+                  description: 个人简介
+              required:
+                - username
+                - email
+                - password
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  /api/stats:
+    get:
+      summary: 获取网站统计数据
+      operationId: getStats
+      tags:
+        - get
+      parameters:
+        - name: period
+          in: query
+          required: false
+          schema:
+            type: string
+            enum:
+              - day
+              - week
+              - month
+              - year
+            default: week
+          description: 统计周期
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+  /api/contact:
+    post:
+      summary: 提交联系表单
+      operationId: submitContactForm
+      tags:
+        - submit
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+                subject:
+                  type: string
+                message:
+                  type: string
+              required:
+                - name
+                - email
+                - subject
+                - message
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  schemas:
+    PageInfo:
+      type: object
+      properties:
+        total:
+          type: integer
+          description: 总数
+        page:
+          type: integer
+          description: 当前页码
+        pageSize:
+          type: integer
+          description: 每页数量
+        hasMore:
+          type: boolean
+          description: 是否有更多数据
+      required:
+        - total
+        - page
+        - pageSize
+        - hasMore
+    WeatherData:
+      type: object
+      properties:
+        temperature:
+          type: number
+          description: 温度（摄氏度）
+        feelsLike:
+          type: number
+          description: 体感温度
+        humidity:
+          type: number
+          description: 湿度（百分比）
+        windSpeed:
+          type: number
+          description: 风速（km/h）
+        condition:
+          type: string
+          description: 天气状况
+        icon:
+          type: string
+          description: 天气图标代码
+      required:
+        - temperature
+        - condition
