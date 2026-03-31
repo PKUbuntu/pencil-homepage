@@ -98,7 +98,13 @@ npm run preview
 pencil-homepage/
 ├── docs/                    # 项目文档
 │   ├── ARCHITECTURE.md      # 架构文档
-│   └── CONTRIBUTING.md      # 开发指南
+│   ├── CONTRIBUTING.md      # 开发指南
+│   ├── codegen-guide.md     # 使用指南
+│   └── api-config-reference.md  # API 配置参考
+├── examples/                # 示例项目
+│   ├── basic-header/        # 基础 Header 组件示例
+│   ├── full-page/           # 完整页面示例
+│   └── theme-demo/          # 主题系统示例
 ├── src/
 │   ├── components/          # React 组件
 │   │   ├── Header.jsx       # 头部导航
@@ -123,8 +129,21 @@ pencil-homepage/
 
 ## 文档
 
+### 快速开始
+
+- [📖 使用指南](docs/codegen-guide.md) - 代码生成工具快速入门
+- [⚙️ API 配置参考](docs/api-config-reference.md) - 详细配置说明
+
+### 深入阅读
+
 - [架构文档](docs/ARCHITECTURE.md) - 组件架构、API 层设计、数据流说明
 - [开发指南](docs/CONTRIBUTING.md) - 本地开发配置、代码规范、Git 流程
+
+### 示例项目
+
+- [基础 Header 组件](examples/basic-header/README.md) - 从设计文件到组件
+- [完整页面](examples/full-page/README.md) - 包含 Header、Hero、Features、Footer
+- [主题系统](examples/theme-demo/README.md) - 浅色/深色主题切换实现
 
 ## 组件说明
 
