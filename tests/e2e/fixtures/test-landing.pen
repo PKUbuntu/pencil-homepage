@@ -1,0 +1,354 @@
+{
+  "version": "2.6",
+  "themes": {
+    "Mode": ["Light", "Dark"]
+  },
+  "variables": {
+    "--background": {
+      "type": "color",
+      "value": [
+        { "value": "#ffffff" },
+        { "value": "#09090b", "theme": { "Mode": "Dark" } }
+      ]
+    },
+    "--foreground": {
+      "type": "color",
+      "value": [
+        { "value": "#09090b" },
+        { "value": "#fafafa", "theme": { "Mode": "Dark" } }
+      ]
+    },
+    "--primary": {
+      "type": "color",
+      "value": [
+        { "value": "#3b82f6" },
+        { "value": "#60a5fa", "theme": { "Mode": "Dark" } }
+      ]
+    },
+    "--muted-foreground": {
+      "type": "color",
+      "value": [
+        { "value": "#71717a" },
+        { "value": "#a1a1aa", "theme": { "Mode": "Dark" } }
+      ]
+    }
+  },
+  "children": [
+    {
+      "type": "frame",
+      "id": "landing-page",
+      "name": "Test Landing Page",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": "fit_content",
+      "fill": "$--background",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "header",
+          "name": "Header",
+          "width": "fill",
+          "height": 64,
+          "fill": "$--background",
+          "layout": "horizontal",
+          "padding": [0, 24],
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "logo-text",
+              "name": "Logo",
+              "content": "Pencil",
+              "fontSize": 24,
+              "fontWeight": "bold",
+              "fill": "$--foreground"
+            },
+            {
+              "type": "frame",
+              "id": "nav-links",
+              "name": "Navigation",
+              "layout": "horizontal",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nav-home",
+                  "content": "Home",
+                  "fontSize": 14,
+                  "fill": "$--foreground"
+                },
+                {
+                  "type": "text",
+                  "id": "nav-features",
+                  "content": "Features",
+                  "fontSize": 14,
+                  "fill": "$--muted-foreground"
+                },
+                {
+                  "type": "text",
+                  "id": "nav-pricing",
+                  "content": "Pricing",
+                  "fontSize": 14,
+                  "fill": "$--muted-foreground"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hero-section",
+          "name": "Hero",
+          "width": "fill",
+          "height": 500,
+          "fill": "$--background",
+          "layout": "vertical",
+          "padding": [80, 24],
+          "gap": 24,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "hero-title",
+              "name": "Hero Title",
+              "content": "Build Beautiful Interfaces",
+              "fontSize": 56,
+              "fontWeight": "bold",
+              "fontFamily": "Inter",
+              "fill": "$--foreground",
+              "textAlign": "center"
+            },
+            {
+              "type": "text",
+              "id": "hero-subtitle",
+              "name": "Hero Subtitle",
+              "content": "Design to code, seamlessly. Transform your .pen files into production React code.",
+              "fontSize": 20,
+              "fontFamily": "Inter",
+              "fill": "$--muted-foreground",
+              "textAlign": "center"
+            },
+            {
+              "type": "frame",
+              "id": "cta-buttons",
+              "name": "CTA Buttons",
+              "layout": "horizontal",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "btn-primary",
+                  "name": "Primary Button",
+                  "width": 160,
+                  "height": 48,
+                  "fill": "$--primary",
+                  "cornerRadius": 8,
+                  "layout": "horizontal",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "btn-primary-text",
+                      "content": "Get Started",
+                      "fontSize": 16,
+                      "fontWeight": 600,
+                      "fill": "#ffffff"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "btn-secondary",
+                  "name": "Secondary Button",
+                  "width": 160,
+                  "height": 48,
+                  "fill": "transparent",
+                  "cornerRadius": 8,
+                  "stroke": { "fill": "$--primary", "thickness": 1 },
+                  "layout": "horizontal",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "btn-secondary-text",
+                      "content": "Learn More",
+                      "fontSize": 16,
+                      "fontWeight": 600,
+                      "fill": "$--primary"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "features-section",
+          "name": "Features",
+          "width": "fill",
+          "fill": "$--background",
+          "layout": "vertical",
+          "padding": [64, 24],
+          "gap": 32,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "features-title",
+              "content": "Why Choose Pencil",
+              "fontSize": 36,
+              "fontWeight": "bold",
+              "fill": "$--foreground",
+              "textAlign": "center"
+            },
+            {
+              "type": "frame",
+              "id": "feature-cards",
+              "name": "Feature Cards",
+              "layout": "horizontal",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "feature-1",
+                  "name": "Feature Card 1",
+                  "width": 320,
+                  "height": 200,
+                  "fill": "$--background",
+                  "cornerRadius": 12,
+                  "stroke": { "fill": "#e4e4e7", "thickness": 1 },
+                  "layout": "vertical",
+                  "padding": 24,
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "circle",
+                      "id": "icon-1",
+                      "radius": 20,
+                      "fill": "$--primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "feature-1-title",
+                      "content": "Fast Generation",
+                      "fontSize": 20,
+                      "fontWeight": "bold",
+                      "fill": "$--foreground"
+                    },
+                    {
+                      "type": "text",
+                      "id": "feature-1-desc",
+                      "content": "Convert designs to code in seconds, not hours.",
+                      "fontSize": 14,
+                      "fill": "$--muted-foreground"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "feature-2",
+                  "name": "Feature Card 2",
+                  "width": 320,
+                  "height": 200,
+                  "fill": "$--background",
+                  "cornerRadius": 12,
+                  "stroke": { "fill": "#e4e4e7", "thickness": 1 },
+                  "layout": "vertical",
+                  "padding": 24,
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "circle",
+                      "id": "icon-2",
+                      "radius": 20,
+                      "fill": "$--primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "feature-2-title",
+                      "content": "Pixel Perfect",
+                      "fontSize": 20,
+                      "fontWeight": "bold",
+                      "fill": "$--foreground"
+                    },
+                    {
+                      "type": "text",
+                      "id": "feature-2-desc",
+                      "content": "Generated code matches your designs exactly.",
+                      "fontSize": 14,
+                      "fill": "$--muted-foreground"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "feature-3",
+                  "name": "Feature Card 3",
+                  "width": 320,
+                  "height": 200,
+                  "fill": "$--background",
+                  "cornerRadius": 12,
+                  "stroke": { "fill": "#e4e4e7", "thickness": 1 },
+                  "layout": "vertical",
+                  "padding": 24,
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "circle",
+                      "id": "icon-3",
+                      "radius": 20,
+                      "fill": "$--primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "feature-3-title",
+                      "content": "API Ready",
+                      "fontSize": 20,
+                      "fontWeight": "bold",
+                      "fill": "$--foreground"
+                    },
+                    {
+                      "type": "text",
+                      "id": "feature-3-desc",
+                      "content": "Built-in API integration with type-safe clients.",
+                      "fontSize": 14,
+                      "fill": "$--muted-foreground"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "footer",
+          "name": "Footer",
+          "width": "fill",
+          "height": 80,
+          "fill": "$--background",
+          "layout": "horizontal",
+          "padding": [0, 24],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "footer-text",
+              "content": "© 2024 Pencil. All rights reserved.",
+              "fontSize": 14,
+              "fill": "$--muted-foreground"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "version": "2.6",
+  "themes": {
+    "Mode": ["Light", "Dark"]
+  },
+  "variables": {
+    "--background": {
+      "type": "color",
+      "value": [
+        { "value": "#ffffff" },
+        { "value": "#09090b", "theme": { "Mode": "Dark" } }
+      ]
+    },
+    "--foreground": {
+      "type": "color",
+      "value": [
+        { "value": "#09090b" },
+        { "value": "#fafafa", "theme": { "Mode": "Dark" } }
+      ]
+    },
+    "--primary": {
+      "type": "color",
+      "value": [
+        { "value": "#3b82f6" },
+        { "value": "#60a5fa", "theme": { "Mode": "Dark" } }
+      ]
+    },
+    "--muted-foreground": {
+      "type": "color",
+      "value": [
+        { "value": "#71717a" },
+        { "value": "#a1a1aa", "theme": { "Mode": "Dark" } }
+      ]
+    },
+    "--border": {
+      "type": "color",
+      "value": [
+        { "value": "#e4e4e7" },
+        { "value": "#27272a", "theme": { "Mode": "Dark" } }
+      ]
+    }
+  },
+  "children": [
+    {
+      "type": "frame",
+      "id": "contact-page",
+      "name": "Test Contact Page",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": "fit_content",
+      "fill": "$--background",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "contact-header",
+          "name": "Header",
+          "width": "fill",
+          "height": 64,
+          "fill": "$--background",
+          "layout": "horizontal",
+          "padding": [0, 24],
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "contact-logo",
+              "content": "Pencil",
+              "fontSize": 24,
+              "fontWeight": "bold",
+              "fill": "$--foreground"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "contact-hero",
+          "name": "Contact Hero",
+          "width": "fill",
+          "height": 300,
+          "fill": "$--background",
+          "layout": "vertical",
+          "padding": [64, 24],
+          "gap": 16,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "contact-title",
+              "content": "Get in Touch",
+              "fontSize": 48,
+              "fontWeight": "bold",
+              "fill": "$--foreground",
+              "textAlign": "center"
+            },
+            {
+              "type": "text",
+              "id": "contact-subtitle",
+              "content": "We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
+              "fontSize": 18,
+              "fill": "$--muted-foreground",
+              "textAlign": "center"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "contact-form-section",
+          "name": "Contact Form Section",
+          "width": "fill",
+          "fill": "$--background",
+          "layout": "horizontal",
+          "padding": [0, 120],
+          "gap": 48,
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "contact-form",
+              "name": "Contact Form",
+              "width": 500,
+              "fill": "$--background",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "name-field",
+                  "name": "Name Field",
+                  "width": "fill",
+                  "height": 48,
+                  "cornerRadius": 8,
+                  "stroke": { "fill": "$--border", "thickness": 1 },
+                  "layout": "horizontal",
+                  "padding": [0, 12],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "name-placeholder",
+                      "content": "Your Name",
+                      "fontSize": 14,
+                      "fill": "$--muted-foreground"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "email-field",
+                  "name": "Email Field",
+                  "width": "fill",
+                  "height": 48,
+                  "cornerRadius": 8,
+                  "stroke": { "fill": "$--border", "thickness": 1 },
+                  "layout": "horizontal",
+                  "padding": [0, 12],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "email-placeholder",
+                      "content": "your@email.com",
+                      "fontSize": 14,
+                      "fill": "$--muted-foreground"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "message-field",
+                  "name": "Message Field",
+                  "width": "fill",
+                  "height": 120,
+                  "cornerRadius": 8,
+                  "stroke": { "fill": "$--border", "thickness": 1 },
+                  "layout": "vertical",
+                  "padding": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "message-placeholder",
+                      "content": "Your message...",
+                      "fontSize": 14,
+                      "fill": "$--muted-foreground"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "submit-btn",
+                  "name": "Submit Button",
+                  "width": "fill",
+                  "height": 48,
+                  "fill": "$--primary",
+                  "cornerRadius": 8,
+                  "layout": "horizontal",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "submit-text",
+                      "content": "Send Message",
+                      "fontSize": 16,
+                      "fontWeight": 600,
+                      "fill": "#ffffff"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "contact-info",
+              "name": "Contact Info",
+              "width": 400,
+              "fill": "$--background",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "info-title",
+                  "content": "Contact Information",
+                  "fontSize": 24,
+                  "fontWeight": "bold",
+                  "fill": "$--foreground"
+                },
+                {
+                  "type": "text",
+                  "id": "info-email",
+                  "content": "Email: hello@pencil.dev",
+                  "fontSize": 16,
+                  "fill": "$--muted-foreground"
+                },
+                {
+                  "type": "text",
+                  "id": "info-phone",
+                  "content": "Phone: +1 (555) 123-4567",
+                  "fontSize": 16,
+                  "fill": "$--muted-foreground"
+                },
+                {
+                  "type": "text",
+                  "id": "info-address",
+                  "content": "Address: 123 Design Street, San Francisco, CA",
+                  "fontSize": 16,
+                  "fill": "$--muted-foreground"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "contact-footer",
+          "name": "Footer",
+          "width": "fill",
+          "height": 80,
+          "fill": "$--background",
+          "layout": "horizontal",
+          "padding": [0, 24],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "footer-copyright",
+              "content": "© 2024 Pencil. All rights reserved.",
+              "fontSize": 14,
+              "fill": "$--muted-foreground"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
